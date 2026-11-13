@@ -34,7 +34,7 @@ const HAN_CHO_MS = Number(process.env.GEMINI_TIMEOUT_MS) || 30000;
 
 /** Số tin tối đa nhận từ client, số ký tự tối đa mỗi tin (brief 7.2) */
 const TOI_DA_TIN = 10;
-const TOI_DA_KY_TU = 600;
+const TOI_DA_KY_TU = 8000;
 const TOI_DA_TONG_KY_TU = 6000;
 
 function khoaGemini() {
