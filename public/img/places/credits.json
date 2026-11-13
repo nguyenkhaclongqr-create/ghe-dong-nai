@@ -1,0 +1,16 @@
+# Ghi chú bản quyền ảnh — Ghé Đồng Nai
+#
+# Ảnh thật được nạp bằng `npm run photos` (scripts/auto-ingest-photos.mjs) theo bảng
+# ánh xạ cố định 25 khoá — không bao giờ đoán ảnh theo độ giống tên.
+# Mỗi tệp <id>.jpg trong thư mục này được ghi tương ứng vào `images[]` của mục đó
+# trong data/places.json (kèm credit/license/source). Bản ghi chính thức nằm ngay
+# trong places.json; tệp này là bản tổng hợp để rà giấy phép một chỗ.
+#
+# Định dạng (sau tiêu đề, phần JSON thuần):
+#   "ten-anh.jpg": { "id": "<mục>", "credit": "...", "license": "...", "source": "..." }
+#
+# LƯU Ý: các ảnh hiện có do người dùng cung cấp, giấy phép CHƯA xác nhận —
+# phải xác nhận quyền sử dụng trước khi phát hành công khai.
+# Mục chưa có ảnh dùng hình minh họa SVG ở public/img/placeholders/ (xem MISSING_PHOTOS.md).
+{
+}

@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.local
+qa/tmp/
+data/.geocode-cache.json
+public/img/places/*.tmp.*
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+npm-debug.log*

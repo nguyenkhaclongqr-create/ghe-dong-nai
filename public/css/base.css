@@ -1,0 +1,250 @@
+/* ==========================================================================
+   base.css — reset nhẹ, mặc định chữ, focus, tiện ích, chế độ giảm chuyển động,
+   chế độ tương phản cao. Mobile-first, dùng 100dvh.
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--voi);
+  color: var(--cham);
+  font-family: var(--font-noi-dung);
+  font-size: var(--fs-base);
+  line-height: var(--lh-noi-dung);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Họa tiết vân chỉ ngang mờ, gợi giấy tem; không gradient màu */
+  background-image: repeating-linear-gradient(0deg, rgba(27, 37, 89, 0.022) 0 1px, transparent 1px 7px);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-tieu-de);
+  font-weight: 700;
+  line-height: var(--lh-tieu-de);
+  letter-spacing: var(--tracking-tieu-de);
+  color: var(--cham);
+  margin: 0 0 var(--sp-3);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  font-weight: 800;
+}
+h2 {
+  font-size: var(--fs-lg);
+}
+h3 {
+  font-size: var(--fs-md);
+}
+h4 {
+  font-size: var(--fs-base);
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0 0 var(--sp-4);
+  max-width: var(--do-dai-dong);
+}
+
+ul,
+ol {
+  margin: 0 0 var(--sp-4);
+  padding-left: 1.25em;
+}
+
+li {
+  margin-bottom: var(--sp-2);
+}
+
+a {
+  color: var(--men-dong-dam);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+@media (hover: hover) {
+  a:hover {
+    color: var(--cham);
+    text-decoration-thickness: 2px;
+  }
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img[width][height] {
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+figcaption {
+  font-size: var(--fs-xs);
+  color: var(--da-xanh-dam);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+button:disabled,
+[aria-disabled='true'] {
+  cursor: not-allowed;
+}
+
+::placeholder {
+  color: var(--da-xanh);
+  opacity: 1;
+}
+
+hr {
+  border: 0;
+  border-top: var(--vien-1);
+  margin: var(--sp-8) 0;
+}
+
+/* Focus nhìn thấy rõ — 3px tương phản + khoảng đệm */
+:focus-visible {
+  outline: var(--focus-w) solid var(--cham);
+  outline-offset: 3px;
+  border-radius: var(--r-nho);
+}
+/* Trên nền tối/điều: viền trắng để vẫn thấy */
+.nen-toi :focus-visible,
+.dang-bam :focus-visible {
+  outline-color: var(--vang-dieu);
+}
+
+/* Tiện ích */
+.chi-cho-doc-xanh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--sp-4);
+  top: -100px;
+  z-index: 1000;
+  background: var(--cham);
+  color: var(--trang);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--r-nho);
+  font-weight: 600;
+  transition: top var(--thoi-gian) var(--ease-ra);
+}
+.skip-link:focus {
+  top: var(--sp-3);
+  color: var(--trang);
+}
+
+.icon {
+  width: 1.25em;
+  height: 1.25em;
+  flex: none;
+  stroke-width: 1.75;
+}
+.icon-sm {
+  width: 1em;
+  height: 1em;
+}
+.icon-lg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.noi-dung-chu {
+  max-width: var(--do-dai-dong);
+}
+
+h1:focus,
+h2:focus {
+  outline: none;
+}
+h1:focus-visible,
+h2:focus-visible {
+  outline: var(--focus-w) solid var(--cham);
+  outline-offset: 4px;
+}
+
+/* Chọn phông chữ kiểm tra dấu tiếng Việt: dòng dưới đây hiển thị đúng ở mọi cỡ */
+.thu-nghiem-dau {
+  font-family: var(--font-tieu-de);
+}
+
+/* Bản động được thêm khi JS khởi động — tránh nháy trước khi ổn định */
+html.js [data-noi-dung] {
+  min-height: 60vh;
+}
+
+/* Tôn trọng prefers-contrast */
+@media (prefers-contrast: more) {
+  :root {
+    --vien: var(--cham);
+    --vien-dam: var(--cham);
+    --da-xanh: var(--da-xanh-dam);
+  }
+  a {
+    text-decoration-thickness: 2px;
+  }
+}
+
+/* In ấn cơ bản — chi tiết lịch trình ở pages.css */
+@media print {
+  body {
+    background: #fff;
+    background-image: none;
+    color: #000;
+  }
+  .khong-in {
+    display: none !important;
+  }
+  a {
+    color: #000;
+  }
+}

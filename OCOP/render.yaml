@@ -1,0 +1,25 @@
+# render.yaml — triển khai Ghé Đồng Nai lên Render (Node Web Service).
+# Tài liệu: https://render.com/docs/blueprint-spec
+#
+# GROQ_API_KEY để sync: false → KHÔNG nằm trong repo; người vận hành nhập tay
+# trên dashboard Render (Environment → Secret File/Env Var). Thiếu khoá thì
+# trợ lý vẫn chạy ở chế độ dự phòng bằng quy tắc (server/fallback.js).
+services:
+  - type: web
+    name: ghe-dong-nai
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm ci --omit=dev || npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20.11.1"
+      - key: NODE_ENV
+        value: production
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: llama-3.3-70b-versatile

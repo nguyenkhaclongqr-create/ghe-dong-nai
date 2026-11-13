@@ -1,0 +1,15 @@
+        body: JSON.stringify({
+          systemInstruction: { parts: [{ text: heThong }] },
+            contents,
+            generationConfig: {
+              temperature: 0.3,
+              // Dòng 3.x tiêu tốn token suy luận (thoughts) trước khi trả lời;
+              // không cấp đủ thì phần text bị cắt giữa chừng và JSON hỏng.
+              maxOutputTokens: 8192,
+              responseMimeType: 'application/json',
+              // Câu trả lời ngắn (≤180 từ) nên không cần suy luận sâu — giảm độ trễ.
+              thinkingConfig: { thinkingLevel: 'LOW' }
+            }
+          })
+        });
+  

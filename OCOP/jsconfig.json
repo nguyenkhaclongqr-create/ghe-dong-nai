@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "/vendor/*": ["public/vendor/*"],
+      "/js/*": ["public/js/*"]
+    }
+  },
+  "include": ["public/js/**/*.js", "server/**/*.js", "scripts/**/*.mjs"],
+  "exclude": ["node_modules", "**/node_modules/*", "public/vendor", "public/vendor/**/*"]
+}

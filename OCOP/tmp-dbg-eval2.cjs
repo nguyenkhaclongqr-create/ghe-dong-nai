@@ -1,0 +1,13 @@
+const fs = require('fs');
+const script = fs.readFileSync('scripts/chuyen-sang-gemini.mjs', 'utf8');
+const a = script.indexOf('// 7f2.');
+const m = script.indexOf('/* =====', a);
+let block = script.slice(a, m);
+block = block.split('fs.writeFileSync(path.join(goc, TEP_CHAT), ').join('fs.writeFileSync(DUONG, ');
+block = block.replace(/^\/\/ 7f2[\s\S]*?^\{/m, '{');
+const body = block.replace(/^\{/, '\nfs.writeFileSync("tmp-dbg-body.txt", block);\n').replace(/\}\s*$/, '');
+const dump = "fs.writeFileSync('tmp-dbg-vals.txt', JSON.stringify({ iDau: iDau, jBody: jBody, jCuoi: jCuoi, dau: dau, n: n, sLen: s.length, sHead: s.slice(0, 30) }));";
+const pre = 'const path = { join: (x) => x };\nconst doc = () => SRC;\n';
+const fx = new Function('fs', 'DUONG', 'TEP_CHAT', 'goc', 'soDoi', 'soBo', pre + dump + '\n' + body + '\nreturn { soDoi: soDoi, soBo: soBo };');
+globalThis.SRC = fs.readFileSync('tmp-chat-before.js', 'utf8');
+console.log(fx(fs, 'tmp-dbg-write.txt', 'server/chat.js', '.', 0, 0));

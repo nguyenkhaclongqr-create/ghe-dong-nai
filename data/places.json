@@ -1,0 +1,4387 @@
+{
+  "meta": {
+    "version": 1,
+    "updated": "2026-11-11",
+    "total": 42,
+    "region_label": "Đồng Nai",
+    "admin_note": {
+      "vi": "Từ 01/07/2025, Đồng Nai hợp nhất với Bình Phước và bỏ cấp huyện. Địa chỉ bên dưới ghi theo thông tin gốc; một số tên xã, phường đã thay đổi sau sắp xếp hành chính 2025.",
+      "en": "Since 1 July 2025, Đồng Nai merged with Bình Phước and district-level government was removed. Addresses below follow the original listings; some commune and ward names have changed after the 2025 reorganization."
+    }
+  },
+  "places": [
+    {
+      "id": "ocop-cacao-trong-duc",
+      "n": 1,
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Bột ca cao Trọng Đức",
+        "en": "Trọng Đức cacao powder"
+      },
+      "tagline": {
+        "vi": "Bột ca cao nguyên chất và hỗn hợp 3 trong 1 từ vùng trồng ca cao Định Quán.",
+        "en": "Pure cacao powder and a 3-in-1 blend from the cacao groves of Định Quán."
+      },
+      "description": {
+        "vi": "Công ty TNHH Ca cao Trọng Đức là một trong những doanh nghiệp chế biến ca cao lớn nhất tỉnh, đặt nhà máy tại xã Phú Hòa, huyện Định Quán cũ — vùng đất có nhiều vườn ca cao. Doanh nghiệp làm bột ca cao nguyên chất, ca cao 3 trong 1 và sô-cô-la, hướng vào thị trường trong nước và xuất khẩu. Các sản phẩm này có trong danh sách OCOP của địa phương.",
+        "en": "Trọng Đức Cacao Co., Ltd. runs one of the province's largest cacao-processing plants, based in Phú Hòa commune in the former Định Quán district, an area with many cacao groves. It produces pure cacao powder, a 3-in-1 drinking blend and chocolate for domestic and export markets. Its products appear in the local OCOP listing."
+      },
+      "highlights": {
+        "vi": [
+          "Bột ca cao nguyên chất và ca cao 3 trong 1",
+          "Nhà máy đặt tại vùng nguyên liệu ca cao Định Quán",
+          "Hướng tới cả thị trường xuất khẩu"
+        ],
+        "en": [
+          "Pure cacao powder and a 3-in-1 cacao blend",
+          "Plant located in the Định Quán cacao-growing area",
+          "Produces for both domestic and export markets"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Gọi trước để hỏi nơi mua lẻ gần nhất; đây là nhà máy, không phải cửa hàng trưng bày.",
+          "Bột ca cao nguyên chất cho vị đắng rõ, khác ca cao 3 trong 1 đã pha sữa."
+        ],
+        "en": [
+          "Call ahead to ask for the nearest retail point; this is a factory, not a showroom.",
+          "The pure powder is distinctly bitter, unlike the pre-mixed 3-in-1 blend."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "dinh-quan-tan-phu",
+      "address_legacy": "Số 12, Khu phố 5, xã Phú Hòa, huyện Định Quán",
+      "address_current": null,
+      "coords": {
+        "lat": 11.2015,
+        "lng": 107.3515,
+        "precision": "approx",
+        "radius_m": 1500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": 5,
+        "stars_source": "list",
+        "stars_status": "dat",
+        "maker": "Công ty TNHH Ca cao Trọng Đức",
+        "products": {
+          "vi": [
+            "Bột ca cao nguyên chất",
+            "Bột ca cao 3 trong 1"
+          ],
+          "en": [
+            "Pure cacao powder",
+            "3-in-1 cacao powder"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "ca cao",
+          "cacao",
+          "sô cô la",
+          "đặc sản",
+          "quà tặng"
+        ],
+        "en": [
+          "ca cao",
+          "cacao",
+          "chocolate",
+          "speciality",
+          "gift"
+        ]
+      },
+      "images": [
+        {
+          "file": "ocop-cacao-trong-duc",
+          "src": "/img/places/ocop-cacao-trong-duc.jpg",
+          "width": 599,
+          "height": 333,
+          "alt": {
+            "vi": "Ảnh minh họa: Bột ca cao Trọng Đức",
+            "en": "Illustrative photo: Trọng Đức cacao powder"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Hạng 5 sao theo danh sách nguồn; báo chí từng đưa tin sô-cô-la của công ty đạt 4 sao. Chưa có nguồn chính thức xác nhận bột ca cao 5 sao. Địa chỉ khác nhau giữa danh bạ và nguồn (Khu phố 5 và Khu dân cư 16, Ấp 4)."
+      }
+    },
+    {
+      "id": "ocop-vuon-cacao-suoi-cat",
+      "n": 2,
+      "category": "ocop",
+      "kind": "experience",
+      "name": {
+        "vi": "Vườn ca cao Suối Cát",
+        "en": "Suối Cát cacao farm"
+      },
+      "tagline": {
+        "vi": "Tham quan vườn ca cao và tìm hiểu quy trình từ hạt đến sản phẩm, ở Xuân Lộc.",
+        "en": "Walk through a cacao orchard and follow the bean-to-bar process in Xuân Lộc."
+      },
+      "description": {
+        "vi": "Suối Cát là vùng trồng ca cao ở huyện Xuân Lộc cũ, cách trung tâm Long Khánh khoảng chục cây số. Vườn ca cao tại đây được đưa vào danh sách sản phẩm du lịch OCOP, nghĩa là ngoài trồng và thu hoạch còn có hoạt động đón khách tham quan, giới thiệu cách lên men, phơi và chế biến hạt. Nếu muốn ghé, nên liên hệ trước để biết thời điểm mùa quả và lịch đón khách.",
+        "en": "Suối Cát is a cacao-growing area in the former Xuân Lộc district, around ten kilometres from Long Khánh town. The farm here is listed as an OCOP tourism product, which means visits and a walkthrough of fermenting, drying and processing the beans alongside growing and harvesting. Contact ahead to check the fruiting season and visiting times."
+      },
+      "highlights": {
+        "vi": [
+          "Sản phẩm du lịch OCOP tại Xuân Lộc",
+          "Xem quy trình lên men và phơi hạt ca cao",
+          "Khu vực nông nghiệp gần Long Khánh"
+        ],
+        "en": [
+          "Listed as an OCOP tourism product in Xuân Lộc",
+          "See cacao fermentation and drying in person",
+          "Farmland area close to Long Khánh"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Giày đế mềm vì đường trong vườn thường đất.",
+          "Hỏi trước mùa thu hoạch ca cao để xem quả tươi."
+        ],
+        "en": [
+          "Wear soft-soled shoes; orchard paths are usually dirt.",
+          "Ask about the harvest season to see fresh pods."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 90,
+      "zone": "long-khanh-xuan-loc",
+      "address_legacy": "Xã Suối Cát, huyện Xuân Lộc",
+      "address_current": null,
+      "coords": {
+        "lat": 10.8989,
+        "lng": 107.3102,
+        "precision": "approx",
+        "radius_m": 2000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [],
+          "en": []
+        }
+      },
+      "tags": {
+        "vi": [
+          "ca cao",
+          "nông trại",
+          "trải nghiệm",
+          "Xuân Lộc"
+        ],
+        "en": [
+          "cacao",
+          "farm",
+          "experience",
+          "Xuân Lộc"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Có trong danh sách; chưa xác minh được tên đơn vị vận hành, giờ mở cửa, giá vé."
+      }
+    },
+    {
+      "id": "ocop-lang-xuan-bac",
+      "n": 3,
+      "category": "ocop",
+      "kind": "experience",
+      "name": {
+        "vi": "Làng du lịch cộng đồng Xuân Bắc",
+        "en": "Xuân Bắc community tourism village"
+      },
+      "tagline": {
+        "vi": "Làng đồng bào dân tộc ở Xuân Lộc mở cửa cho khách ngủ homestay, ăn cơm nhà.",
+        "en": "An ethnic-community village in Xuân Lộc that welcomes guests for homestays and home-cooked meals."
+      },
+      "description": {
+        "vi": "Xã Xuân Bắc (huyện Xuân Lộc cũ) là nơi sinh sống của nhiều hộ đồng bào dân tộc như Chơ Ro, Mạ và Stiêng. Làng du lịch cộng đồng ở đây được giới thiệu như một sản phẩm du lịch OCOP: khách có thể ở homestay, dùng bữa cùng gia đình chủ nhà và nghe kể chuyện về đời sống văn hóa của bà con. Cách làm này giúp người dân bán được dịch vụ ngay tại làng thay vì phải vào trung tâm.",
+        "en": "Xuân Bắc commune in the former Xuân Lộc district is home to Chơ Ro, Mạ and Stiêng communities. The community tourism village is promoted as an OCOP tourism product: guests can stay with families, eat together and hear about local cultural life. It lets households sell hospitality in their own village instead of travelling to the town centre."
+      },
+      "highlights": {
+        "vi": [
+          "Sản phẩm du lịch OCOP của Đồng Nai",
+          "Homestay cùng gia đình bản địa",
+          "Gần khu vực Long Khánh, Xuân Lộc"
+        ],
+        "en": [
+          "An OCOP tourism product of Đồng Nai",
+          "Homestays with local families",
+          "Near Long Khánh and Xuân Lộc"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Liên hệ trước nhiều ngày để đặt phòng, đặc biệt cuối tuần.",
+          "Mang theo thuốc chống côn trùng nếu ngủ qua đêm."
+        ],
+        "en": [
+          "Book well ahead, especially at weekends.",
+          "Bring insect repellent for overnight stays."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 240,
+      "zone": "long-khanh-xuan-loc",
+      "address_legacy": "Xã Xuân Bắc, huyện Xuân Lộc",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9408,
+        "lng": 107.3504,
+        "precision": "approx",
+        "radius_m": 2500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [],
+          "en": []
+        }
+      },
+      "tags": {
+        "vi": [
+          "làng du lịch",
+          "homestay",
+          "dân tộc",
+          "văn hóa"
+        ],
+        "en": [
+          "community tourism",
+          "homestay",
+          "ethnic",
+          "culture"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Tên xã và dân tộc từ kiến thức chung; chưa kiểm chứng số homestay, giá dịch vụ."
+      }
+    },
+    {
+      "id": "ocop-dieu-nga-bien",
+      "n": 4,
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Hạt điều Nga Biên",
+        "en": "Nga Biên cashews"
+      },
+      "tagline": {
+        "vi": "Điều rang chay nguyên vị và điều tỏi ớt làm từ hạt điều vùng Xuân Lộc.",
+        "en": "Plain roasted cashews and chilli-garlic cashews made from Xuân Lộc nuts."
+      },
+      "description": {
+        "vi": "Nga Biên là cơ sở chế biến hạt điều ở vùng Xuân Hòa, huyện Xuân Lộc cũ — nơi có nhiều rẫy điều. Hai sản phẩm chính là điều rang chay nguyên vị và điều tỏi ớt, đóng gói để bán làm quà. Đồng Nai và Bình Phước là vùng trồng điều lớn, nên đây là món đặc sản dễ bắt gặp ở các điểm bán địa phương.",
+        "en": "Nga Biên is a cashew-processing business in Xuân Hòa, in the former Xuân Lộc district, an area of many cashew orchards. Its two main products are plain roasted cashews and cashews roasted with garlic and chilli, packed as gifts. Đồng Nai and Bình Phước are major cashew-growing regions, so these nuts are a common local souvenir."
+      },
+      "highlights": {
+        "vi": [
+          "Điều rang chay nguyên vị",
+          "Điều tỏi ớt cay vừa",
+          "Hạt điều từ rẫy Xuân Lộc"
+        ],
+        "en": [
+          "Plain roasted cashews",
+          "Garlic-chilli cashews",
+          "Nuts from Xuân Lộc orchards"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Hỏi ngày sản xuất trên gói; điều rang tốt nhất nên dùng trong vài tháng.",
+          "Gọi trước để hỏi điểm bán gần nhất."
+        ],
+        "en": [
+          "Check the packing date; roasted cashews are best within a few months.",
+          "Call ahead for the nearest sales point."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "long-khanh-xuan-loc",
+      "address_legacy": "Xã Xuân Hòa, huyện Xuân Lộc",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9004,
+        "lng": 107.4008,
+        "precision": "approx",
+        "radius_m": 2000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": "Cơ sở Nga Biên",
+        "products": {
+          "vi": [
+            "Hạt điều rang chay nguyên vị",
+            "Hạt điều tỏi ớt"
+          ],
+          "en": [
+            "Plain roasted cashews",
+            "Garlic-chilli cashews"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "hạt điều",
+          "đồ ăn vặt",
+          "đặc sản",
+          "quà tặng"
+        ],
+        "en": [
+          "cashew",
+          "snack",
+          "souvenir",
+          "gift"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Tên sản phẩm theo danh sách; chưa xác minh hạng sao và địa chỉ chi tiết."
+      }
+    },
+    {
+      "id": "ocop-dieu-gia-bao",
+      "n": 5,
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Hạt điều Gia Bảo",
+        "en": "Gia Bảo cashews"
+      },
+      "tagline": {
+        "vi": "Hạt điều vỏ lụa và điều muối hồng Himalaya của Tập đoàn Gia Bảo, Biên Hòa.",
+        "en": "Skin-on cashews and himalayan pink-salt cashews from Gia Bảo, Biên Hòa."
+      },
+      "description": {
+        "vi": "Tập đoàn Gia Bảo đặt nhà máy chế biến hạt điều tại phường Bình Đa, thành phố Biên Hòa. Doanh nghiệp làm hạt điều vỏ lụa và hạt điều rang với muối hồng Himalaya, đóng gói bán trong nước và xuất khẩu. Đây là một trong những cơ sở điều lớn của Đồng Nai, gắn với vùng nguyên liệu điều của Đồng Nai và Bình Phước.",
+        "en": "Gia Bảo Group runs a cashew-processing plant in Bình Đa ward, Biên Hòa city. It produces skin-on cashews and cashews roasted with himalayan pink salt for domestic sale and export. It is one of Đồng Nai's larger cashew businesses, rooted in the cashew-growing areas of Đồng Nai and Bình Phước."
+      },
+      "highlights": {
+        "vi": [
+          "Hạt điều còn vỏ lụa, giữ vị hạt",
+          "Điều rang muối hồng Himalaya",
+          "Sản phẩm được đề cử OCOP tiềm năng 5 sao"
+        ],
+        "en": [
+          "Skin-on cashews that keep the nut's flavour",
+          "Himalayan pink-salt roasted cashews",
+          "Nominated as a 'potential 5-star' OCOP product"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Điều vỏ lụa có lớp cám mịn nên bóc vỏ trước khi ăn nếu cần.",
+          "Liên hệ công ty để biết điểm bán và giao hàng."
+        ],
+        "en": [
+          "Skin-on nuts have a fine papery layer; peel it off if preferred.",
+          "Contact the company for sales points and delivery."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "bien-hoa",
+      "address_legacy": "Phường Bình Đa, thành phố Biên Hòa",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9417,
+        "lng": 106.8229,
+        "precision": "approx",
+        "radius_m": 1500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": 5,
+        "stars_source": "list",
+        "stars_status": "tiem-nang",
+        "maker": "Tập đoàn Gia Bảo",
+        "products": {
+          "vi": [
+            "Hạt điều vỏ lụa",
+            "Hạt điều rang muối hồng Himalaya"
+          ],
+          "en": [
+            "Skin-on cashews",
+            "Himalayan pink-salt cashews"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "hạt điều",
+          "đặc sản",
+          "quà tặng",
+          "xuất khẩu"
+        ],
+        "en": [
+          "cashew",
+          "souvenir",
+          "gift",
+          "export"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "'OCOP tiềm năng 5 sao' nghĩa là sản phẩm đang được đề cử, chưa đạt — giao diện hiển thị 'Tiềm năng 5 sao'."
+      }
+    },
+    {
+      "id": "ocop-xoai-say-thuan-huong",
+      "n": 6,
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Xoài sấy dẻo Thuận Hương",
+        "en": "Thuận Hương dried mango"
+      },
+      "tagline": {
+        "vi": "Xoài sấy dẻo và muối ớt xoài làm ở Thống Nhất.",
+        "en": "Soft-dried mango and mango chilli salt made in Thống Nhất."
+      },
+      "description": {
+        "vi": "Thống Nhất và Trảng Bom là vùng trồng xoài của Đồng Nai, nơi có nhiều vườn xoài cát và xoài tứ quý. Cơ sở Thuận Hương chế biến xoài sấy dẻo giữ được vị chua ngọt của quả, cùng loại muối ớt chấm xoài. Sản phẩm được đóng gói bán làm quà, dễ mang theo khi đi về.",
+        "en": "Thống Nhất and Trảng Bom are Đồng Nai's mango-growing areas, home to many cát and tứ quý mango orchards. The Thuận Hương workshop makes soft-dried mango that keeps the fruit's sweet-and-sour taste, plus a mango dipping salt with chilli. Both are packed as easy-to-carry gifts."
+      },
+      "highlights": {
+        "vi": [
+          "Xoài sấy dẻo, không quá khô",
+          "Muối ớt chấm xoài",
+          "Nguyên liệu từ vùng xoài Thống Nhất"
+        ],
+        "en": [
+          "Soft-dried mango that is not over-dried",
+          "Chilli salt for dipping",
+          "Mangoes from the Thống Nhất growing area"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Mùa xoài chính thường cuối năm đến đầu năm, hỏi trước về lô mới.",
+          "Bịch muối ớt nên để riêng khỏi đồ vải trong vali."
+        ],
+        "en": [
+          "The main mango season runs from late to early in the year; ask about fresh batches.",
+          "Keep the chilli salt away from fabric in your bag."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "trang-bom-thong-nhat",
+      "address_legacy": "Huyện Thống Nhất",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9508,
+        "lng": 107.1372,
+        "precision": "approx",
+        "radius_m": 2500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": "Cơ sở Thuận Hương",
+        "products": {
+          "vi": [
+            "Xoài sấy dẻo",
+            "Muối ớt xoài"
+          ],
+          "en": [
+            "Soft-dried mango",
+            "Mango chilli salt"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "xoài",
+          "xoài sấy",
+          "đặc sản",
+          "quà tặng"
+        ],
+        "en": [
+          "mango",
+          "dried fruit",
+          "souvenir",
+          "gift"
+        ]
+      },
+      "images": [
+        {
+          "file": "ocop-xoai-say-thuan-huong",
+          "src": "/img/places/ocop-xoai-say-thuan-huong.jpg",
+          "width": 369,
+          "height": 542,
+          "alt": {
+            "vi": "Ảnh minh họa: Xoài sấy dẻo Thuận Hương",
+            "en": "Illustrative photo: Thuận Hương dried mango"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Tên sản phẩm theo danh sách; chưa xác minh hạng sao và địa chỉ."
+      }
+    },
+    {
+      "id": "ocop-ruou-buoi-tan-trieu",
+      "n": 7,
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Rượu bưởi và nước cốt bưởi Tân Triều",
+        "en": "Tân Triều pomelo wine and juice"
+      },
+      "tagline": {
+        "vi": "Bưởi Tân Triều chưng cất thành rượu, ép thành nước cốt.",
+        "en": "Tân Triều pomelo, distilled into wine and pressed into juice."
+      },
+      "description": {
+        "vi": "Tân Triều ở huyện Vĩnh Cửu là vùng bưởi nổi tiếng của Đồng Nai, nằm sát sông Đồng Nai và hồ Trị An. Từ quả bưởi đường lá cam, các cơ sở địa phương làm rượu bưởi và nước cốt bưởi — hai sản phẩm OCOP giúp bà con bán được trái cây khi mùa về nhiều. Đây cũng là mặt hàng được dùng nhiều làm quà ở khu vực Biên Hòa.",
+        "en": "Tân Triều in the former Vĩnh Cửu district is Đồng Nai's pomelo country, close to the Đồng Nai river and Trị An lake. Local workshops turn the sweet pomelo into pomelo wine and pomelo juice concentrate, two OCOP products that help growers sell fruit when the season peaks. Both are popular gifts around Biên Hòa."
+      },
+      "highlights": {
+        "vi": [
+          "Bưởi đường lá cam Tân Triều",
+          "Rượu bưởi và nước cốt bưởi",
+          "Cách trung tâm Biên Hòa không xa"
+        ],
+        "en": [
+          "Tân Triều sweet pomelo",
+          "Pomelo wine and juice concentrate",
+          "A short drive from central Biên Hòa"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Sản phẩm có cồn, nhớ kiểm tra quy định mang theo khi đi máy bay.",
+          "Hỏi nồng độ cồn của rượu nếu mua làm quà."
+        ],
+        "en": [
+          "Wine is alcoholic; check airline regulations before travelling.",
+          "Ask about alcohol strength if buying as a gift."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 45,
+      "zone": "vinh-cuu-tri-an",
+      "address_legacy": "Xã Tân Triều, huyện Vĩnh Cửu",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9785,
+        "lng": 106.8024,
+        "precision": "approx",
+        "radius_m": 2000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [
+            "Rượu bưởi",
+            "Nước cốt bưởi"
+          ],
+          "en": [
+            "Pomelo wine",
+            "Pomelo juice concentrate"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "bưởi",
+          "rượu",
+          "nước ép",
+          "Tân Triều",
+          "quà tặng"
+        ],
+        "en": [
+          "pomelo",
+          "wine",
+          "juice",
+          "Tân Triều",
+          "gift"
+        ]
+      },
+      "images": [
+        {
+          "file": "ocop-ruou-buoi-tan-trieu",
+          "src": "/img/places/ocop-ruou-buoi-tan-trieu.jpg",
+          "width": 700,
+          "height": 500,
+          "alt": {
+            "vi": "Ảnh minh họa: Rượu bưởi và nước cốt bưởi Tân Triều",
+            "en": "Illustrative photo: Tân Triều pomelo wine and juice"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Chưa xác minh tên đơn vị cụ thể và hạng sao."
+      }
+    },
+    {
+      "id": "ocop-tram-huong-tan-phu",
+      "n": 8,
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Trầm hương Tân Phú",
+        "en": "Tân Phú agarwood incense"
+      },
+      "tagline": {
+        "vi": "Nhang trầm và trầm hương đốt của các cơ sở ở huyện Tân Phú.",
+        "en": "Agarwood incense and burning chips from workshops in Tân Phú district."
+      },
+      "description": {
+        "vi": "Tân Phú là huyện nằm ở phía Đông Nam của Đồng Nai, giáp ranh với khu vực rừng Cát Tiên. Ở đây có nhiều cơ sở chế biến trầm hương: nhang trầm và trầm hương đốt được làm thủ công, bó tay, đóng gói bán làm quà và dùng trong thờ cúng. Vì là nghề của nhiều hộ rải nhiều xã, hệ thống đánh dấu vị trí theo vùng, không có một điểm duy nhất.",
+        "en": "Tân Phú district sits in the east of Đồng Nai, next to the Cát Tiên forest area. Many workshops here produce agarwood incense by hand — rolled, bundled and packed both for worship and as gifts. Because the craft spans many households across several communes, the map marks an area rather than a single point."
+      },
+      "highlights": {
+        "vi": [
+          "Nhang trầm bó tay",
+          "Trầm hương đốt",
+          "Nghề của nhiều cơ sở ở Tân Phú"
+        ],
+        "en": [
+          "Hand-rolled agarwood incense",
+          "Burning agarwood chips",
+          "Made by many workshops across Tân Phú"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Mùi trầm hương thường nằm ở mức trung bình của vùng — sản phẩm có mùi quá gắt cần hỏi thành phần.",
+          "Đây là vùng rộng: nên gọi hẹn cụ thể từng cơ sở."
+        ],
+        "en": [
+          "Agarwood has a mid-range price across the area; ask about ingredients for anything that smells unusually sharp.",
+          "This is a broad area: call each workshop to arrange a visit."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 45,
+      "zone": "dinh-quan-tan-phu",
+      "address_legacy": "Huyện Tân Phú",
+      "address_current": null,
+      "coords": {
+        "lat": 11.2715,
+        "lng": 107.4245,
+        "precision": "area",
+        "radius_m": 4000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [
+            "Nhang trầm",
+            "Trầm hương đốt"
+          ],
+          "en": [
+            "Agarwood incense",
+            "Burning agarwood chips"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "trầm hương",
+          "nhang",
+          "thủ công",
+          "Tân Phú",
+          "quà tặng"
+        ],
+        "en": [
+          "agarwood",
+          "incense",
+          "handmade",
+          "Tân Phú",
+          "gift"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Vị trí chỉ là tâm huyện Tân Phú; chưa xác minh cơ sở cụ thể."
+      }
+    },
+    {
+      "id": "ocop-mat-ong-thang-long",
+      "n": 9,
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Mật ong tách nước Thăng Long",
+        "en": "Thăng Long filtered honey"
+      },
+      "tagline": {
+        "vi": "Mật ong rừng tách sạch nước, đóng chai ở vùng Trảng Bom.",
+        "en": "Filtered forest honey bottled in the Trảng Bom area."
+      },
+      "description": {
+        "vi": "Thăng Long là thương hiệu mật ong ở vùng Trảng Bom, cách Biên Hòa hơn 20 km về phía Đông. Mật ong tách nước là mật đã lọc tách phần nước mật khỏi cặn và sáp, thường bảo quản được lâu hơn. Đây là một trong những sản phẩm OCOP mang lại thu nhập cho các hộ nuôi ong ở khu vực phía Đông Đồng Nai.",
+        "en": "Thăng Long is a honey brand around Trảng Bom, over 20 km east of Biên Hòa. Filtered honey has the liquid separated from wax and residue, which usually keeps better. It is one of the OCOP products that bring income to beekeepers in eastern Đồng Nai."
+      },
+      "highlights": {
+        "vi": [
+          "Mật ong rừng đã tách nước",
+          "Đóng chai sẵn để làm quà",
+          "Thương hiệu ở khu vực Trảng Bom"
+        ],
+        "en": [
+          "Filtered forest honey",
+          "Bottled ready as a gift",
+          "Brand from the Trảng Bom area"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Mật ong tự nhiên có thể kết tinh khi lạnh — cách chữa đơn giản là ngâm bình trong nước ấm.",
+          "Không cho trẻ dưới 1 tuổi dùng mật ong."
+        ],
+        "en": [
+          "Natural honey can crystallise in the cold; stand the jar in warm water to soften it.",
+          "Do not give honey to children under one year old."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "trang-bom-thong-nhat",
+      "address_legacy": "Huyện Trảng Bom",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9489,
+        "lng": 107.0064,
+        "precision": "area",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": "Cơ sở Thăng Long",
+        "products": {
+          "vi": [
+            "Mật ong tách nước"
+          ],
+          "en": [
+            "Filtered honey"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "mật ong",
+          "đặc sản",
+          "trại ong",
+          "quà tặng"
+        ],
+        "en": [
+          "honey",
+          "apiary",
+          "souvenir",
+          "gift"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Vị trí theo vùng Trảng Bom; chưa xác minh địa chỉ và hạng sao."
+      }
+    },
+    {
+      "id": "ocop-tra-phu-hoi",
+      "n": 10,
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Trà Phú Hội",
+        "en": "Phú Hội tea"
+      },
+      "tagline": {
+        "vi": "Trà của HTX Phú Hội, Nhơn Trạch — vùng đất phèn ven sông Đồng Nai.",
+        "en": "Tea from Phú Hội cooperative in Nhơn Trạch, by the Đồng Nai river."
+      },
+      "description": {
+        "vi": "Hợp tác xã Phú Hội ở huyện Nhơn Trạch làm các loại trà thảo mộc và trà túi lọc đóng gói. Nhơn Trạch là huyện phía Nam của Đồng Nai, nằm giữa sông Đồng Nai và sông Thị Vải, đất chua phèn nhưng lại phù hợp với nhiều loại cây thảo mộc. Trà của HTX được đưa vào danh sách OCOP của địa phương.",
+        "en": "Phú Hội cooperative in Nhơn Trạch district makes packaged herbal teas and tea bags. Nhơn Trạch lies in the south of Đồng Nai between the Đồng Nai and Thị Vải rivers; its acidic soil suits many herbs. The cooperative's tea is listed in the local OCOP programme."
+      },
+      "highlights": {
+        "vi": [
+          "Trà thảo mộc, trà túi lọc",
+          "Sản phẩm của HTX Phú Hội",
+          "Nhơn Trạch, phía Nam Đồng Nai"
+        ],
+        "en": [
+          "Herbal teas and tea bags",
+          "Made by the Phú Hội cooperative",
+          "Nhơn Trạch, in southern Đồng Nai"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Hỏi thành phần thảo mộc ghi trên gói nếu bạn dị ứng.",
+          "Trà nhẹ thường ngon hơn khi pha nước khoảng 90°C, không dùng nước đang sôi."
+        ],
+        "en": [
+          "Check the herb list on the pack if you have allergies.",
+          "Light teas usually taste better brewed at around 90°C rather than boiling water."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "nhon-trach",
+      "address_legacy": "Xã Phú Hội, huyện Nhơn Trạch",
+      "address_current": null,
+      "coords": {
+        "lat": 10.7023,
+        "lng": 106.8772,
+        "precision": "approx",
+        "radius_m": 2000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": "HTX Phú Hội",
+        "products": {
+          "vi": [
+            "Trà thảo mộc / trà túi lọc"
+          ],
+          "en": [
+            "Herbal tea / tea bags"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "trà",
+          "thảo mộc",
+          "Nhơn Trạch",
+          "quà tặng"
+        ],
+        "en": [
+          "tea",
+          "herbs",
+          "Nhơn Trạch",
+          "gift"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Chưa xác minh loại trà cụ thể và hạng sao."
+      }
+    },
+    {
+      "id": "shop-coopmart-bien-hoa",
+      "n": 11,
+      "category": "ocop",
+      "kind": "shop",
+      "name": {
+        "vi": "Quầy OCOP Co.opmart Biên Hòa",
+        "en": "OCOP counter at Co.opmart Biên Hòa"
+      },
+      "tagline": {
+        "vi": "Một điểm tập trung nhiều sản phẩm OCOP để mua nhanh trước khi về.",
+        "en": "One stop to buy a range of OCOP products before heading home."
+      },
+      "description": {
+        "vi": "Siêu thị Co.opmart Biên Hòa tại số 121 Quốc lộ 15, phường Tân Tiến có quầy trưng bày sản phẩm OCOP của Đồng Nai và khu vực lân cận. Đây là nơi thuận tiện nếu bạn không đến được từng cơ sở: các mặt hàng điều, ca cao, trà, mật ong được bày cùng chỗ, có nhãn nhận diện OCOP. Giờ mở cửa theo siêu thị, nên nên kiểm tra trước.",
+        "en": "Co.opmart Biên Hòa at 121 Quốc lộ 15, Tân Tiến ward, has a display counter for OCOP products from Đồng Nai and nearby provinces. It is convenient if you cannot visit individual producers: cashews, cacao, tea and honey are grouped together with OCOP labels. Opening hours follow the supermarket; check before going."
+      },
+      "highlights": {
+        "vi": [
+          "Nhiều sản phẩm OCOP ở một chỗ",
+          "Mua được đồ ăn vặt, trà, mật ong",
+          "Dễ ghé trên đường Quốc lộ 15"
+        ],
+        "en": [
+          "Many OCOP products in one place",
+          "Snacks, tea and honey under one roof",
+          "Easy to reach along Quốc lộ 15"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Kiểm tra hạn dùng trước khi mua nhiều gói.",
+          "Siêu thị có chỗ đỗ xe, thuận tiện khi đi ô tô."
+        ],
+        "en": [
+          "Check expiry dates if buying in bulk.",
+          "There is parking, which helps if you are driving."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 45,
+      "zone": "bien-hoa",
+      "address_legacy": "121 Quốc lộ 15, phường Tân Tiến, thành phố Biên Hòa",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9578,
+        "lng": 106.8428,
+        "precision": "approx",
+        "radius_m": 1500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [],
+          "en": []
+        }
+      },
+      "tags": {
+        "vi": [
+          "mua sắm",
+          "siêu thị",
+          "OCOP",
+          "quà tặng",
+          "Biên Hòa"
+        ],
+        "en": [
+          "shopping",
+          "supermarket",
+          "OCOP",
+          "gift",
+          "Biên Hòa"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Chưa xác minh danh sách sản phẩm đang bày tại quầy; địa chỉ theo nguồn."
+      }
+    },
+    {
+      "id": "shop-buu-long",
+      "n": 12,
+      "category": "ocop",
+      "kind": "shop",
+      "name": {
+        "vi": "Trạm bán OCOP tại KDL Bửu Long",
+        "en": "OCOP stall at Bửu Long park"
+      },
+      "tagline": {
+        "vi": "Ghé Bửu Long xong mua luôn đặc sản tại chỗ.",
+        "en": "Buy local specialties on the way out of Bửu Long park."
+      },
+      "description": {
+        "vi": "Khu du lịch Bửu Long có trạm bán sản phẩm OCOP cho khách tham quan. Vị trí nằm cạnh cổng khu du lịch, dễ tìm khi rời khỏi hồ. Tùy ngày, hàng bày có thể gồm các sản phẩm đặc sản của Đồng Nai như điều, ca cao, trà, mật ong. Nên gọi trước hoặc ghé trong giờ khu du lịch mở cửa.",
+        "en": "The Bửu Long tourist park has an OCOP product stall for visitors. It sits by the park entrance, easy to find as you leave the lake. What is stocked can vary by day — cashews, cacao, tea and honey are typical Đồng Nai products. Call ahead or visit while the park is open."
+      },
+      "highlights": {
+        "vi": [
+          "Điểm bán ngay trong KDL Bửu Long",
+          "Mua chung với chuyến tham quan",
+          "Phù hợp mua quà nhanh"
+        ],
+        "en": [
+          "Sales point inside Bửu Long park",
+          "Combine shopping with a visit",
+          "Good for quick gift shopping"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Nên ghé trước 16 giờ để chắc còn mở.",
+          "Quanh hồ có nhiều quán ăn, nơi nghỉ chân sau khi mua hàng."
+        ],
+        "en": [
+          "Try to arrive before 4 pm to be sure it is open.",
+          "There are plenty of places to eat and rest around the lake after shopping."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "bien-hoa",
+      "address_legacy": "Khu du lịch Bửu Long, TP. Biên Hòa",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9714,
+        "lng": 106.8076,
+        "precision": "approx",
+        "radius_m": 1500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [],
+          "en": []
+        }
+      },
+      "tags": {
+        "vi": [
+          "mua sắm",
+          "OCOP",
+          "Bửu Long",
+          "quà tặng"
+        ],
+        "en": [
+          "shopping",
+          "OCOP",
+          "Bửu Long",
+          "gift"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Vị trí lấy gần Bửu Long, lệch khoảng 150 m so với ghim khu du lịch để không chồng."
+      }
+    },
+    {
+      "id": "shop-thac-da-han",
+      "n": 13,
+      "category": "ocop",
+      "kind": "shop",
+      "name": {
+        "vi": "Trạm bán OCOP tại KDL Thác Đá Hàn",
+        "en": "OCOP stall at Thác Đá Hàn"
+      },
+      "tagline": {
+        "vi": "Điểm bán OCOP tại một khu du lịch thác nước phía Đông Đồng Nai.",
+        "en": "An OCOP sales stall at a waterfall park in eastern Đồng Nai."
+      },
+      "description": {
+        "vi": "Khu du lịch Thác Đá Hàn có trạm bán sản phẩm OCOP cho khách ghé thăm. Thác Đá Hàn là một khu du lịch sinh thái phía Đông Nam Đồng Nai; vị trí chính xác chưa được xác minh trong đợt cập nhật dữ liệu này, nên trang chưa ghim trên bản đồ.",
+        "en": "The Thác Đá Hàn park has an OCOP product stall for visitors. It is an eco-park in south-eastern Đồng Nai; its exact location has not been verified in this data pass, so it is not pinned on the map yet."
+      },
+      "highlights": {
+        "vi": [
+          "Điểm bán OCOP trong khu du lịch thác nước",
+          "Ghép mua hàng với chuyến tham quan thác"
+        ],
+        "en": [
+          "OCOP sales point inside a waterfall park",
+          "Combine shopping with a waterfall visit"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Gọi hỏi trước khi đi vì chưa xác định được vị trí chính xác."
+        ],
+        "en": [
+          "Call ahead; the exact location is not confirmed yet."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "long-khanh-xuan-loc",
+      "address_legacy": "Khu du lịch Thác Đá Hàn",
+      "address_current": null,
+      "visible": false,
+      "coords": null,
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [],
+          "en": []
+        }
+      },
+      "tags": {
+        "vi": [
+          "mua sắm",
+          "OCOP",
+          "thác"
+        ],
+        "en": [
+          "shopping",
+          "OCOP",
+          "waterfall"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "unverified",
+        "notes": "Chưa xác định được vị trí Thác Đá Hàn bằng nguồn chính thức trong thời gian cho phép → ẩn khỏi bản đồ (xem KNOWN_ISSUES.md)."
+      }
+    },
+    {
+      "id": "dd-buu-long",
+      "n": 14,
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Khu du lịch Bửu Long",
+        "en": "Bửu Long tourist park"
+      },
+      "tagline": {
+        "vi": "Hồ nước, núi đá và ngôi chùa giữa công viên, sát trung tâm Biên Hòa.",
+        "en": "A lake, limestone hills and a temple in one park, just outside central Biên Hòa."
+      },
+      "description": {
+        "vi": "Bửu Long là khu du lịch sinh thái lớn ở phía Tây Bắc Biên Hòa, cạnh hồ nước hình chữ U nhân tạo. Nơi đây có chùa Bửu Long nằm trên sườn núi Bình Điện, và cả khu vực gắn với nghề điêu khắc đá xanh — chính loại đá được khai thác quanh núi. Cảnh quan gồm hồ, đường dạo, nhiều cây xanh và các khối đá tự nhiên. Gần khu du lịch là làng gốm Tân Vạn.",
+        "en": "Bửu Long is a large eco-park in the north-west of Biên Hòa, beside a U-shaped artificial lake. The Bửu Long pagoda sits on the Bình Điện hill, and the area is tied to blue-stone carving — the stone quarried around the hill. The landscape mixes the lake, walking paths, shade trees and natural rock. The Tân Vạn pottery village is nearby."
+      },
+      "highlights": {
+        "vi": [
+          "Hồ nước rộng và các khối đá tự nhiên",
+          "Chùa Bửu Long trên sườn núi Bình Điện",
+          "Gần làng gốm Tân Vạn và làng đá Bửu Long"
+        ],
+        "en": [
+          "Wide lake and natural rock formations",
+          "Bửu Long pagoda on Bình Điện hill",
+          "Near Tân Vạn pottery and Bửu Long stone carving"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Đường trong khu có dốc, chọn giày thoải mái.",
+          "Nên ghé vào buổi sáng để tránh nắng và đông khách cuối tuần."
+        ],
+        "en": [
+          "Some paths have slopes; wear comfortable shoes.",
+          "Mornings are cooler and quieter than weekend afternoons."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 90,
+      "zone": "bien-hoa",
+      "address_legacy": "Phường Bửu Long, TP. Biên Hòa",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9711,
+        "lng": 106.8087,
+        "precision": "exact",
+        "radius_m": 0,
+        "source": "manual",
+        "verified": true
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "hồ",
+          "chùa",
+          "công viên",
+          "đá xanh",
+          "gần Biên Hòa"
+        ],
+        "en": [
+          "lake",
+          "temple",
+          "park",
+          "stone",
+          "near Biên Hòa"
+        ]
+      },
+      "images": [
+        {
+          "file": "dd-buu-long",
+          "src": "/img/places/dd-buu-long.jpg",
+          "width": 1280,
+          "height": 850,
+          "alt": {
+            "vi": "Ảnh minh họa: Khu du lịch Bửu Long",
+            "en": "Illustrative photo: Bửu Long tourist park"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách điểm đến (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Vị trí khớp mốc sanity check (≈10.97, 106.80); giờ mở cửa và giá vé chưa xác minh nên để trống."
+      }
+    },
+    {
+      "id": "dd-van-mieu-tran-bien",
+      "n": 15,
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Văn miếu Trấn Biên",
+        "en": "Văn miếu Trấn Biên (Trấn Biên Temple of Literature)"
+      },
+      "tagline": {
+        "vi": "Văn miếu đầu tiên ở đất Đồng Nai, dựng lại trên công viên ven sông.",
+        "en": "Đồng Nai's first temple of literature, rebuilt in a riverside park."
+      },
+      "description": {
+        "vi": "Văn miếu Trấn Biên tọa lạc trong công viên Văn miếu ở phường Trấn Biên, cạnh sông Đồng Nai. Văn miếu gốc được dựng từ thời Nguyễn để thờ Khổng Tử và những người đỗ đạt, được xem là văn miếu đầu tiên của vùng đất phía Nam. Ngôi hiện nay được tái tạo từ cuối thập niên 1990, sân rộng, có hồ nước phía trước và các gian thờ. Đây là điểm tham quan gắn với lịch sử khai phá Đồng Nai.",
+        "en": "Văn miếu Trấn Biên stands in an eponymous park right beside the Đồng Nai river, in Trấn Biên ward. The original academic temple was founded in the Nguyễn era to honour Confucius and successful scholars, and is regarded as the first temple of literature in southern Vietnam. The present building was rebuilt in the late 1990s with a broad courtyard, a pond in front and several halls. It is the place to start if you want the region's early history."
+      },
+      "highlights": {
+        "vi": [
+          "Văn miếu được coi là đầu tiên của Nam Bộ",
+          "Khuôn viên rộng ven sông Đồng Nai",
+          "Câu chuyện lịch sử khai hoang vùng đất Đồng Nai"
+        ],
+        "en": [
+          "Regarded as the first temple of literature in southern Vietnam",
+          "Spacious riverside grounds",
+          "The history of settling the Đồng Nai region"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Nên mặc lịch sự; đây vẫn là nơi thờ tự.",
+          "Nắng buổi chiều khá gắt ở sân trước, mang mũ khi đi bộ."
+        ],
+        "en": [
+          "Dress respectably; it is still a place of worship.",
+          "The front courtyard gets hot in the afternoon; bring a hat."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 60,
+      "zone": "bien-hoa",
+      "address_legacy": "Phường Trấn Biên, TP. Biên Hòa",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9538,
+        "lng": 106.8123,
+        "precision": "exact",
+        "radius_m": 0,
+        "source": "manual",
+        "verified": true
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "văn miếu",
+          "lịch sử",
+          "Khổng Tử",
+          "ven sông"
+        ],
+        "en": [
+          "temple of literature",
+          "history",
+          "Confucius",
+          "riverside"
+        ]
+      },
+      "images": [
+        {
+          "file": "dd-van-mieu-tran-bien",
+          "src": "/img/places/dd-van-mieu-tran-bien.jpg",
+          "width": 500,
+          "height": 375,
+          "alt": {
+            "vi": "Ảnh minh họa: Văn miếu Trấn Biên",
+            "en": "Illustrative photo: Văn miếu Trấn Biên (Trấn Biên Temple of Literature)"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách điểm đến (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Lịch sử theo kiến thức chung; chưa đối chiếu từng mốc thanh tra với nguồn chính thức."
+      }
+    },
+    {
+      "id": "dd-amazing-bay",
+      "n": 16,
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Công viên nước The Amazing Bay",
+        "en": "The Amazing Bay water park"
+      },
+      "tagline": {
+        "vi": "Công viên nước trong KDL Sơn Tiên, cách Biên Hòa khoảng 20 km về phía Nam.",
+        "en": "A water park inside Sơn Tiên resort, about 20 km south of Biên Hòa."
+      },
+      "description": {
+        "vi": "The Amazing Bay là công viên nước nằm trong quần thể giải trí Sơn Tiên, trên quốc lộ 51 ở phường An Hòa. Với hồ bơi nhân tạo, bãi cát và nhiều trò chơi đường trượt nước, đây là lựa chọn cho gia đình có trẻ nhỏ và các nhóm bạn trẻ vào mùa nắng. Giá vé và giờ mở cửa thay đổi theo mùa, nên nên xem trên trang chính thức trước khi đến.",
+        "en": "The Amazing Bay is the water park within the Sơn Tiên entertainment complex, on Highway 51 in An Hòa ward. With pool areas, a sandy beach zone and many water slides, it suits families with young children and groups in the dry season. Ticket prices and opening hours change by season; check the official website before visiting."
+      },
+      "highlights": {
+        "vi": [
+          "Công viên nước có nhiều đường trượt",
+          "Khu tắm cho trẻ nhỏ",
+          "Trong quần thể giải trí Sơn Tiên"
+        ],
+        "en": [
+          "Water park with many slides",
+          "Children's pool area",
+          "Part of the Sơn Tiên entertainment complex"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Mang kem chống nắng chống nước và túi chống thấm.",
+          "Đi ngày thường sẽ ít đông hơn cuối tuần."
+        ],
+        "en": [
+          "Bring water-resistant sunscreen and a dry bag.",
+          "Weekdays are less crowded than weekends."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 300,
+      "zone": "bien-hoa",
+      "address_legacy": "Quốc lộ 51, phường An Hòa, TP. Biên Hòa",
+      "address_current": null,
+      "coords": {
+        "lat": 10.8776,
+        "lng": 106.8573,
+        "precision": "exact",
+        "radius_m": 0,
+        "source": "manual",
+        "verified": true
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": {
+        "note": {
+          "vi": "Có bán vé riêng theo mùa, chưa xác minh giá hiện hành.",
+          "en": "Seasonal tickets sold separately; current prices not verified."
+        }
+      },
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "công viên nước",
+          "gia đình",
+          "trẻ nhỏ",
+          "Sơn Tiên"
+        ],
+        "en": [
+          "water park",
+          "family",
+          "children",
+          "Sơn Tiên"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách điểm đến (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Vị trí theo kiến thức chung, chưa đối chiếu nguồn chính thức; giá vé để trống."
+      }
+    },
+    {
+      "id": "dd-vqg-cat-tien",
+      "n": 17,
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Vườn quốc gia Cát Tiên",
+        "en": "Cát Tiên National Park"
+      },
+      "tagline": {
+        "vi": "Rừng nhiệt đới lớn, nơi có linh trưởng quý và bầu Đá Bàn.",
+        "en": "One of Vietnam's largest tropical forests, home to rare primates and the Đá Bàn pond."
+      },
+      "description": {
+        "vi": "Vườn quốc gia Cát Tiên là khu bảo tồn rừng nhiệt đới rộng nhất miền Nam, nằm ở Đồng Nai, Lâm Đồng và Bình Phước. Phần thuộc Đồng Nai có trung tâm ở Tà Lài, Tân Phú. VQG nổi tiếng với quần thể linh trưởng và vùng đất ngập nước Bàu Sấu — nơi có cá sấu Xiêm quý hiếm. Ngoài ra còn có bầu Đá Bàn, mô hình bán hoang dã với rất đông linh dương và trâu rừng. Tham quan có hướng dẫn viên, đi bộ hoặc đi xe theo tuyến.",
+        "en": "Cát Tiên National Park is the largest tropical forest reserve in southern Vietnam, spanning Đồng Nai, Lâm Đồng and Bình Phước. The Đồng Nai part is centred on Tà Lài in Tân Phú district. It is known for its primates and the Bàu Sấu wetland, where rare Siamese crocodiles survive. The Đá Bàn pond is a semi-wild enclosure with large herds of gaur and deer. Visits are led by guides, on foot or by park vehicle."
+      },
+      "highlights": {
+        "vi": [
+          "Rừng nhiệt đới được bảo tồn quy mô lớn",
+          "Bàu Sấu — vùng đất ngập nước có cá sấu Xiêm",
+          "Bầu Đá Bàn với đàn linh dương, trâu rừng"
+        ],
+        "en": [
+          "A large, well-protected tropical forest",
+          "Bàu Sấu wetland with Siamese crocodiles",
+          "Đá Bàn pond with gaur and deer herds"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Cát Tiên cách Biên Hòa khoảng 150 km — đường đi dài, nên tính cả chặng này.",
+          "Mang áo dài tay, thuốc chống vắt và côn trùng khi đi rừng.",
+          "Đặt tour trước; không tự đi sâu vào rừng."
+        ],
+        "en": [
+          "Cát Tiên is roughly 150 km from Biên Hòa — plan the long drive.",
+          "Bring long sleeves, leech and insect protection for forest walks.",
+          "Book a guided tour; do not wander deep into the forest alone."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 360,
+      "zone": "dinh-quan-tan-phu",
+      "address_legacy": "Xã Tà Lài, huyện Tân Phú (gần VQG Cát Tiên)",
+      "address_current": null,
+      "coords": {
+        "lat": 11.4386,
+        "lng": 107.3787,
+        "precision": "exact",
+        "radius_m": 0,
+        "source": "manual",
+        "verified": true
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "rừng",
+          "vườn quốc gia",
+          "linh trưởng",
+          "cá sấu",
+          "trekking"
+        ],
+        "en": [
+          "forest",
+          "national park",
+          "primates",
+          "crocodile",
+          "trekking"
+        ]
+      },
+      "images": [
+        {
+          "file": "dd-vqg-cat-tien",
+          "src": "/img/places/dd-vqg-cat-tien.jpg",
+          "width": 498,
+          "height": 401,
+          "alt": {
+            "vi": "Ảnh minh họa: Vườn quốc gia Cát Tiên",
+            "en": "Illustrative photo: Cát Tiên National Park"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách điểm đến (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Vị trí khớp mốc sanity check (≈11.43, 107.38); giờ mở cửa và vé để trống. Khoảng cách Cát Tiên–Biên Hòa do hệ thống tính, không do AI."
+      }
+    },
+    {
+      "id": "dd-ho-tri-an",
+      "n": 18,
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "KDL sinh thái Hồ Trị An",
+        "en": "Trị An Lake eco-tourism area"
+      },
+      "tagline": {
+        "vi": "Hồ nhân tạo lớn, nhiều đảo nhỏ và những chặng đi thuyền.",
+        "en": "A large reservoir with small islands and boat trips."
+      },
+      "description": {
+        "vi": "Hồ Trị An là hồ nhân tạo hình thành khi xây đập thủy điện Trị An trên sông Đồng Nai, nằm ở ranh giới huyện Vĩnh Cửu và Định Quán. Mặt hồ rộng, có nhiều đảo nhỏ như đảo Ó, đảo Phượng Hoàng, rất hợp cho chèo thuyền, cắm trại và picnic. Gần hồ có các cơ sở du lịch sinh thái và di tích lịch sử Bến Đò. Đây cũng là điểm dừng tự nhiên khi đi về Tà Lài từ Biên Hòa.",
+        "en": "Trị An Lake was formed when the Trị An hydropower dam was built on the Đồng Nai river, on the border of Vĩnh Cửu and Định Quán districts. The broad water and its many islands, such as Ó and Phượng Hoàng, are popular for boat trips, camping and picnics. Eco-tourism sites and the Bến Đò historic site are close by. It is a natural stop on the way from Biên Hòa to Tà Lài."
+      },
+      "highlights": {
+        "vi": [
+          "Hồ rộng, nhiều đảo nhỏ",
+          "Đi thuyền ra đảo Ó",
+          "Cắm trại, picnic ven hồ"
+        ],
+        "en": [
+          "Large lake with small islands",
+          "Boat trips to Ó island",
+          "Camping and lakeside picnics"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Thuê thuyền nên hỏi giá và thời gian đi lại trước.",
+          "Mùa mưa nước hồ dâng, đôi chỗ đường ven hồ trơn."
+        ],
+        "en": [
+          "Agree the price and return time before renting a boat.",
+          "Lake levels rise in the rainy season; some lakeside paths get slippery."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 180,
+      "zone": "vinh-cuu-tri-an",
+      "address_legacy": "Hồ Trị An, huyện Vĩnh Cửu / Định Quán",
+      "address_current": null,
+      "coords": {
+        "lat": 11.1003,
+        "lng": 107.0502,
+        "precision": "area",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": true
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "hồ",
+          "đi thuyền",
+          "cắm trại",
+          "đảo",
+          "Trị An"
+        ],
+        "en": [
+          "lake",
+          "boat",
+          "camping",
+          "island",
+          "Trị An"
+        ]
+      },
+      "images": [
+        {
+          "file": "dd-ho-tri-an",
+          "src": "/img/places/dd-ho-tri-an.jpg",
+          "width": 1920,
+          "height": 1440,
+          "alt": {
+            "vi": "Ảnh minh họa: KDL sinh thái Hồ Trị An",
+            "en": "Illustrative photo: Trị An Lake eco-tourism area"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách điểm đến (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Vị trí khớp mốc sanity check (≈11.10, 107.05); đây là hồ rộng nên ghim theo vùng."
+      }
+    },
+    {
+      "id": "dd-suoi-mo",
+      "n": 19,
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Công viên Suối Mơ",
+        "en": "Suối Mơ eco-park"
+      },
+      "tagline": {
+        "vi": "Suối trong ven rừng ở Tân Phú, dưới chân cao su và đồi núi.",
+        "en": "A clear forest stream in Tân Phú, with rubber and hills around it."
+      },
+      "description": {
+        "vi": "Công viên Suối Mơ là khu du lịch sinh thái ở xã Phú Lập, huyện Tân Phú, gần rìa vườn quốc gia Cát Tiên. Nơi đây có suối chảy qua thung lũng đá, tạo nhiều bậc thác nhỏ để tắm mát. Khu vực xung quanh là rừng và rẫy. Tham quan chủ yếu là đi bộ theo bậc thang, tắm suối và picnic. Giờ mở cửa và vé chưa được xác nhận chính thức, nên gọi trước.",
+        "en": "Suối Mơ eco-park is in Phú Lập commune, Tân Phú district, near the edge of Cát Tiên National Park. A stream runs through a rocky valley, forming small waterfalls and pools to wade in. Surroundings are forest and farmland. A visit means walking stepped paths, swimming and picnicking. Opening hours and ticket prices are not officially confirmed — call ahead."
+      },
+      "highlights": {
+        "vi": [
+          "Suối và thác nhỏ tự nhiên",
+          "Khu rừng và rẫy quanh suối",
+          "Gần VQG Cát Tiên, có thể kết hợp lịch trình"
+        ],
+        "en": [
+          "Natural stream and small waterfalls",
+          "Forest and farmland around the stream",
+          "Close enough to pair with Cát Tiên"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Đường vào có bậc, mang dép bám.",
+          "Do chưa xác nhận giờ mở cửa, nên gọi điện trước khi đi."
+        ],
+        "en": [
+          "There are steps on the way in; wear grippy sandals.",
+          "Call ahead — opening hours are not confirmed."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 180,
+      "zone": "dinh-quan-tan-phu",
+      "address_legacy": "Xã Phú Lập, huyện Tân Phú",
+      "address_current": null,
+      "coords": {
+        "lat": 11.2694,
+        "lng": 107.4312,
+        "precision": "approx",
+        "radius_m": 1500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "suối",
+          "thác",
+          "tắm mát",
+          "Tân Phú",
+          "sinh thái"
+        ],
+        "en": [
+          "stream",
+          "waterfall",
+          "swimming",
+          "Tân Phú",
+          "eco-tourism"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách điểm đến (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Giờ mở cửa, giá vé chưa xác minh → để trống theo quy tắc 3.1."
+      }
+    },
+    {
+      "id": "dd-nui-chua-chan",
+      "n": 20,
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Núi Chứa Chan",
+        "en": "Núi Chứa Chan (Gia Lào mountain)"
+      },
+      "tagline": {
+        "vi": "Ngọn núi cao thứ hai Nam Bộ, có chùa Gia Lào giữa lưng chừng núi.",
+        "en": "The second-highest mountain in southern Vietnam, with Gia Lào pagoda partway up."
+      },
+      "description": {
+        "vi": "Núi Chứa Chan hay còn gọi là núi Gia Lào, cao khoảng 837 m, nằm ở huyện Xuân Lộc cũ, gần thị xã Long Khánh cũ. Chùa Gia Lào — tên đầy đủ là chùa Xuân Lộc — nằm ở lưng chừng núi, là nơi nhiều khách hành hương và leo núi đến. Có thể leo bằng đường bộ khá dốc hoặc đi đường xe lên gần chùa. Từ trên cao nhìn được cả vùng đồng bằng và các rẫy cà phê, điều quanh núi.",
+        "en": "Núi Chứa Chan, also called Gia Lào mountain, rises about 837 m in the former Xuân Lộc district near Long Khánh town. Gia Lào pagoda (Xuân Lộc pagoda) sits partway up and draws both pilgrims and hikers. You can climb on a steep footpath or drive partway to the pagoda. From the top you can see the plains and the coffee and cashew orchards around the mountain."
+      },
+      "highlights": {
+        "vi": [
+          "Chùa Gia Lào ở lưng chừng núi",
+          "Đường leo núi được nhiều nhóm ưa thích",
+          "Nhìn toàn cảnh vùng Xuân Lộc – Long Khánh"
+        ],
+        "en": [
+          "Gia Lào pagoda partway up",
+          "A popular climb for hiking groups",
+          "Views over the Xuân Lộc – Long Khánh plain"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Đường leo dốc và nắng — nên xuất phát sớm, mang đủ nước.",
+          "Nếu đi cùng trẻ nhỏ, chọn đường xe lên chùa thay vì leo bộ."
+        ],
+        "en": [
+          "The climb is steep and sunny — start early and carry water.",
+          "With small children, take the road to the pagoda instead of the footpath."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 240,
+      "zone": "long-khanh-xuan-loc",
+      "address_legacy": "Xã Xuân Trường, huyện Xuân Lộc",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9716,
+        "lng": 107.4162,
+        "precision": "exact",
+        "radius_m": 0,
+        "source": "manual",
+        "verified": true
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "núi",
+          "chùa",
+          "leo núi",
+          "Chứa Chan",
+          "hành hương"
+        ],
+        "en": [
+          "mountain",
+          "pagoda",
+          "hiking",
+          "Chứa Chan",
+          "pilgrimage"
+        ]
+      },
+      "images": [
+        {
+          "file": "dd-nui-chua-chan",
+          "src": "/img/places/dd-nui-chua-chan.jpg",
+          "width": 1024,
+          "height": 482,
+          "alt": {
+            "vi": "Ảnh minh họa: Núi Chứa Chan",
+            "en": "Illustrative photo: Núi Chứa Chan (Gia Lào mountain)"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách điểm đến (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Vị trí khớp mốc sanity check (≈10.97, 107.42); đường lên chùa (bộ/xe) chưa xác minh tình trạng hiện tại."
+      }
+    },
+    {
+      "id": "dd-da-ba-chong",
+      "n": 21,
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Đá Ba Chồng",
+        "en": "Đá Ba Chồng"
+      },
+      "tagline": {
+        "vi": "Ba khối đá lớn chồng lên nhau ven Quốc lộ 20, ở Định Quán.",
+        "en": "Three stacked boulders beside Highway 20 in Định Quán."
+      },
+      "description": {
+        "vi": "Đá Ba Chồng là tên gọi của ba khối đá hồng lớn chồng lên nhau, nằm ngay ven Quốc lộ 20 ở huyện Định Quán. Người dân xem đây là một thắng cảnh tự nhiên gắn với truyền thuyết dân gian của vùng. Du khách thường dừng xe chụp ảnh vì đây là điểm trên đường đi Đà Lạt. Khu vực quanh đó có nhà hàng và quầy bán đặc sản địa phương.",
+        "en": "Đá Ba Chồng is the name of three large pink boulders stacked one on another, right beside Highway 20 in Định Quán district. Locals see it as a natural landmark tied to a legend about patience and family. Visitors often stop for photos on the way to Đà Lạt. There are restaurants and local-specialty stalls around it."
+      },
+      "highlights": {
+        "vi": [
+          "Ba khối đá hồng tự nhiên",
+          "Ngay trên Quốc lộ 20",
+          "Gắn với truyền thuyết địa phương"
+        ],
+        "en": [
+          "Three natural pink boulders",
+          "Right beside Highway 20",
+          "Tied to a local legend"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Chỗ dừng ngay đường lớn, cẩn thận khi qua đường.",
+          "Ghép với Suối Mơ hoặc Cát Tiên trong cùng một ngày."
+        ],
+        "en": [
+          "It sits on a busy road; cross carefully.",
+          "Easily combined with Suối Mơ or Cát Tiên on the same day."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "dinh-quan-tan-phu",
+      "address_legacy": "Quốc lộ 20, huyện Định Quán",
+      "address_current": null,
+      "coords": {
+        "lat": 11.2039,
+        "lng": 107.3474,
+        "precision": "exact",
+        "radius_m": 0,
+        "source": "manual",
+        "verified": true
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "đá",
+          "thắng cảnh",
+          "chụp ảnh",
+          "Quốc lộ 20",
+          "Định Quán"
+        ],
+        "en": [
+          "rock",
+          "landmark",
+          "photo stop",
+          "Highway 20",
+          "Định Quán"
+        ]
+      },
+      "images": [
+        {
+          "file": "dd-da-ba-chong",
+          "src": "/img/places/dd-da-ba-chong.jpg",
+          "width": 1024,
+          "height": 682,
+          "alt": {
+            "vi": "Ảnh minh họa: Đá Ba Chồng",
+            "en": "Illustrative photo: Đá Ba Chồng"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách điểm đến (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Truyền thuyết chỉ nêu chung, không kể chi tiết chưa xác minh."
+      }
+    },
+    {
+      "id": "dd-thac-giang-dien",
+      "n": 22,
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "KDL sinh thái Thác Giang Điền",
+        "en": "Giang Điền waterfall eco-park"
+      },
+      "tagline": {
+        "vi": "Thác nước và suối nhân tạo hợp khung cảnh thật, gần sát Biên Hòa.",
+        "en": "A waterfall and stream built into a real landscape, close to Biên Hòa."
+      },
+      "description": {
+        "vi": "Thác Giang Điền là khu du lịch sinh thái ở xã Giang Điền, huyện Trảng Bom, cách trung tâm Biên Hòa khoảng 20 km. Khu du lịch được xây dựng quanh một thác nước và dòng suối, có cầu treo, vườn hoa và khu cắm trại. Đây là điểm dã ngoại trong ngày dành cho gia đình và nhóm bạn. Giờ mở cửa và giá vé chưa được xác nhận chính thức, nên nên kiểm tra trước khi đi.",
+        "en": "Giang Điền waterfall eco-park is in Giang Điền commune, Trảng Bom district, about 20 km from central Biên Hòa. It is built around a waterfall and stream, with a suspension bridge, flower gardens and camping areas. It is a popular day out for families and groups. Opening hours and ticket prices are not officially confirmed; check before going."
+      },
+      "highlights": {
+        "vi": [
+          "Thác và suối trong khung cảnh rừng cây",
+          "Cầu treo và vườn hoa",
+          "Đi trong ngày từ Biên Hòa"
+        ],
+        "en": [
+          "Waterfall and stream amid trees",
+          "Suspension bridge and flower gardens",
+          "A day trip from Biên Hòa"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Mang quần áo dễ thay nếu định xuống nước.",
+          "Cuối tuần khá đông, đi sớm sẽ dễ chịu hơn."
+        ],
+        "en": [
+          "Bring a change of clothes if you plan to wade.",
+          "Weekends are busy; earlier visits are calmer."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 240,
+      "zone": "trang-bom-thong-nhat",
+      "address_legacy": "Xã Giang Điền, huyện Trảng Bom",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9561,
+        "lng": 106.9921,
+        "precision": "exact",
+        "radius_m": 0,
+        "source": "manual",
+        "verified": true
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "thác",
+          "suối",
+          "dã ngoại",
+          "gia đình",
+          "Trảng Bom"
+        ],
+        "en": [
+          "waterfall",
+          "stream",
+          "day out",
+          "family",
+          "Trảng Bom"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách điểm đến (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Có nguồn nói thác có phần nhân tạo — ghi trong mô tả. Giờ mở cửa/vé chưa xác minh."
+      }
+    },
+    {
+      "id": "ln-gom-bien-hoa",
+      "n": 23,
+      "category": "lang-nghe",
+      "kind": "craft-village",
+      "name": {
+        "vi": "Làng gốm Biên Hòa (Tân Vạn)",
+        "en": "Biên Hòa pottery village (Tân Vạn)"
+      },
+      "tagline": {
+        "vi": "Nghề gốm lâu đời nhất còn lại của Biên Hòa, ở khu Tân Vạn.",
+        "en": "Biên Hòa's oldest surviving pottery craft, in Tân Vạn."
+      },
+      "description": {
+        "vi": "Biên Hòa từng là trung tâm gốm nổi tiếng của Nam Bộ, với dòng men đặc trưng và nhiều lò nung. Làng gốm Tân Vạn hiện là nơi còn giữ được phường nghề với các lò sản xuất nồi, lu, chậu cảnh bằng đất nung. Nhiều lò vẫn làm theo cách truyền thống, do các gia đình trong xóm cùng làm. Khách có thể đến xem nung, xem chuốt tay nếu được các lò đồng ý; nên hỏi trước.",
+        "en": "Biên Hòa was once southern Vietnam's best-known pottery centre, known for its distinctive glazes and many kilns. The Tân Vạn pottery village still keeps a working craft quarter producing clay pots, jars and planters. Many kilns still work the traditional way, with families across the neighbourhood taking part. You may be able to watch a firing or hand-throwing if the kiln owners agree — ask first."
+      },
+      "highlights": {
+        "vi": [
+          "Lò nung truyền thống của Tân Vạn",
+          "Nồi, lu, chậu cảnh đất nung",
+          "Gần khu du lịch Bửu Long"
+        ],
+        "en": [
+          "Traditional Tân Vạn kilns",
+          "Clay pots, jars and planters",
+          "Close to Bửu Long park"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Đây là xưởng đang làm công, ở nơi làm việc — xin phép trước khi chụp ảnh.",
+          "Đi kèm Bửu Long để có một buổi sáng đủ chuyện."
+        ],
+        "en": [
+          "These are working workshops — ask before taking photos.",
+          "Pair it with Bửu Long for a full morning."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 60,
+      "zone": "bien-hoa",
+      "address_legacy": "Phường Tân Vạn, TP. Biên Hòa",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9522,
+        "lng": 106.8318,
+        "precision": "approx",
+        "radius_m": 2000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "gốm",
+          "men",
+          "lò nung",
+          "thủ công",
+          "Tân Vạn"
+        ],
+        "en": [
+          "pottery",
+          "glaze",
+          "kiln",
+          "craft",
+          "Tân Vạn"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách làng nghề (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Vị trí theo tâm phường Tân Vạn; các lò cụ thể chưa xác minh."
+      }
+    },
+    {
+      "id": "ln-da-xanh-buu-long",
+      "n": 24,
+      "category": "lang-nghe",
+      "kind": "craft-village",
+      "name": {
+        "vi": "Làng điêu khắc đá xanh Bửu Long",
+        "en": "Bửu Long blue-stone carving village"
+      },
+      "tagline": {
+        "vi": "Những hộ điêu khắc đá quanh núi Bửu Long, gần khu du lịch.",
+        "en": "Stone-carving families around Bửu Long hill, near the park."
+      },
+      "description": {
+        "vi": "Vùng quanh núi Bửu Long có đá xanh được khai thác từ lâu và trở thành nguyên liệu cho các hộ điêu khắc. Làng nghề hiện nay chủ yếu tập trung ở phường Bửu Long và khu vực lân cận, sản xuất tượng, bệ đá, biểu tượng cho các công trình và nhà dân. Nhiều sản phẩm là đá nguyên khối, đục tay rồi đánh bóng. Đi bộ quanh các đường nội bộ sẽ thấy sân trưng bày ngay trước các xưởng.",
+        "en": "For a long time, blue stone quarried around Bửu Long hill has been the raw material for local stone carvers. The craft today is mostly in Bửu Long ward and nearby areas, producing statues, stone plinths and motifs for buildings and homes. Many pieces are carved by hand from solid stone and then polished. Walking the side streets, you can see the yards in front of each workshop."
+      },
+      "highlights": {
+        "vi": [
+          "Đá xanh khai thác quanh Bửu Long",
+          "Tượng và khối đá đục tay",
+          "Sát khu du lịch Bửu Long"
+        ],
+        "en": [
+          "Blue stone quarried around Bửu Long",
+          "Hand-carved statues and blocks",
+          "Right next to Bửu Long park"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Nhà xưởng đục đá ồn — có thể đeo nút tai.",
+          "Mua đồ đá nặng, cần tính chuyện vận chuyển."
+        ],
+        "en": [
+          "Workshops are noisy — earplugs can help.",
+          "Stone pieces are heavy; plan how to transport them."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 60,
+      "zone": "bien-hoa",
+      "address_legacy": "Phường Bửu Long, TP. Biên Hòa",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9631,
+        "lng": 106.8053,
+        "precision": "approx",
+        "radius_m": 1500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "đá",
+          "điêu khắc",
+          "đá xanh",
+          "Bửu Long",
+          "thủ công"
+        ],
+        "en": [
+          "stone",
+          "carving",
+          "blue stone",
+          "Bửu Long",
+          "craft"
+        ]
+      },
+      "images": [
+        {
+          "file": "ln-da-xanh-buu-long",
+          "src": "/img/places/ln-da-xanh-buu-long.jpg",
+          "width": 547,
+          "height": 365,
+          "alt": {
+            "vi": "Ảnh minh họa: Làng điêu khắc đá xanh Bửu Long",
+            "en": "Illustrative photo: Bửu Long blue-stone carving village"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách làng nghề (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Lệch khoảng 200 m so với ghim Bửu Long để không chồng; chưa xác minh các xưởng cụ thể."
+      }
+    },
+    {
+      "id": "ln-moc-ho-nai",
+      "n": 25,
+      "category": "lang-nghe",
+      "kind": "craft-village",
+      "name": {
+        "vi": "Làng mộc Hố Nai",
+        "en": "Hố Nai furniture and woodcraft village"
+      },
+      "tagline": {
+        "vi": "Khu mộc nội thất lâu đời, trải dọc nhiều con đường ở Biên Hòa.",
+        "en": "A long-standing furniture and woodcraft quarter spread along Biên Hòa streets."
+      },
+      "description": {
+        "vi": "Hố Nai ở phía Bắc Biên Hòa là khu vực có nhiều xưởng mộc từ nhiều thập niên. Các xưởng làm nội thất gia đình, đồ gỗ mỹ nghệ, cửa và các sản phẩm gỗ khác, phối hợp với các xưởng mộc ở Đồng Nai và các tỉnh lân cận. Đây là khu thương mại và sản xuất trải dài chứ không phải một ngôi làng nhỏ, nên phạm vi tương đối rộng. Nhiều xưởng nhận làm theo bản vẽ.",
+        "en": "Hố Nai in northern Biên Hòa has had many woodworking workshops for decades. They make home furniture, decorative wooden items, doors and other wood products, linked with workshops across Đồng Nai and neighbouring provinces. It is a long commercial and manufacturing strip rather than a small village, so it covers a broad area. Many workshops take custom designs."
+      },
+      "highlights": {
+        "vi": [
+          "Xưởng nội thất và đồ gỗ",
+          "Nhận làm theo bản vẽ",
+          "Khu vực rộng nhiều xưởng"
+        ],
+        "en": [
+          "Furniture and woodwork workshops",
+          "Custom work from drawings",
+          "A broad area of many workshops"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Khu vực rộng: nên xác định xưởng trước rồi mới đến.",
+          "Hỏi thời gian làm và vận chuyển cho đồ đặt."
+        ],
+        "en": [
+          "The area is large; pick a workshop before you go.",
+          "Ask about production times and delivery for custom pieces."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 60,
+      "zone": "bien-hoa",
+      "address_legacy": "Phường Hố Nai, TP. Biên Hòa",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9773,
+        "lng": 106.8773,
+        "precision": "area",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "mộc",
+          "nội thất",
+          "đồ gỗ",
+          "Hố Nai",
+          "thủ công"
+        ],
+        "en": [
+          "woodwork",
+          "furniture",
+          "wood",
+          "Hố Nai",
+          "craft"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách làng nghề (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Khu vực rộng; tên phường cụ thể (Hố Nai/Tân Hòa/Tân Biên) chưa xác minh."
+      }
+    },
+    {
+      "id": "ln-tho-cam-ta-lai",
+      "n": 26,
+      "category": "lang-nghe",
+      "kind": "craft-village",
+      "name": {
+        "vi": "Làng dệt thổ cẩm Tà Lài",
+        "en": "Tà Lài brocade-weaving village"
+      },
+      "tagline": {
+        "vi": "Nghề dệt thổ cẩm của người Mạ và Stiêng ở cửa ngõ rừng Cát Tiên.",
+        "en": "Brocade weaving by Mạ and Stiêng families at the edge of Cát Tiên forest."
+      },
+      "description": {
+        "vi": "Tà Lài là xã ở huyện Tân Phú, nơi các cộng đồng người Mạ và Stiêng sinh sống từ lâu. Phụ nữ ở đây dệt thổ cẩm bằng khung dệt tay, thường dùng sợi bông nhuộm màu từ vỏ cây, củ nâu và các nguyên liệu tự nhiên. Hoa văn là những đường hình học dày, chặt, thể hiện cách nhìn về rừng và cuộc sống. Thổ cẩm thường được dùng để may váy, túi vải và khăn, và trở thành một sản phẩm du lịch gắn với VQG Cát Tiên.",
+        "en": "Tà Lài is a commune in Tân Phú district, long home to Mạ and Stiêng communities. Women here weave brocade on hand looms, often dyeing cotton with tree bark and other natural materials. The patterns are dense geometric lines that reflect the forest and everyday life. The brocade is used for skirts, cloth bags and scarves, and has become a tourism product tied to Cát Tiên National Park."
+      },
+      "highlights": {
+        "vi": [
+          "Dệt khung tay của đồng bào Mạ và Stiêng",
+          "Hoa văn hình học truyền thống",
+          "Cửa ngõ vào VQG Cát Tiên"
+        ],
+        "en": [
+          "Hand loom weaving by Mạ and Stiêng families",
+          "Traditional geometric patterns",
+          "Gateway to Cát Tiên National Park"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Mua trực tiếp từ thợ dệt sẽ giúp đồng tiền về đúng người làm.",
+          "Hỏi về ý nghĩa hoa văn — mỗi hộ có cách kể riêng."
+        ],
+        "en": [
+          "Buying from the weavers themselves sends the money to the right people.",
+          "Ask what the patterns mean — each family tells it differently."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 90,
+      "zone": "dinh-quan-tan-phu",
+      "address_legacy": "Xã Tà Lài, huyện Tân Phú",
+      "address_current": null,
+      "coords": {
+        "lat": 11.3572,
+        "lng": 107.3465,
+        "precision": "approx",
+        "radius_m": 2000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "thổ cẩm",
+          "dệt",
+          "dân tộc Mạ",
+          "Stiêng",
+          "Tà Lài"
+        ],
+        "en": [
+          "brocade",
+          "weaving",
+          "Mạ people",
+          "Stiêng people",
+          "Tà Lài"
+        ]
+      },
+      "images": [
+        {
+          "file": "ln-tho-cam-ta-lai",
+          "src": "/img/places/ln-tho-cam-ta-lai.jpg",
+          "width": 597,
+          "height": 335,
+          "alt": {
+            "vi": "Ảnh minh họa: Làng dệt thổ cẩm Tà Lài",
+            "en": "Illustrative photo: Tà Lài brocade-weaving village"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách làng nghề (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Nghề và nhóm dân tộc theo kiến thức chung; chưa xác minh điểm đón khách cụ thể."
+      }
+    },
+    {
+      "id": "ln-moc-binh-minh",
+      "n": 27,
+      "category": "lang-nghe",
+      "kind": "craft-village",
+      "name": {
+        "vi": "Làng mộc mỹ nghệ Bình Minh",
+        "en": "Bình Minh craft furniture village"
+      },
+      "tagline": {
+        "vi": "Làng mộc mỹ nghệ ở Trảng Bom, làm đồ gỗ xuất khẩu.",
+        "en": "A craft furniture village in Trảng Bom, producing for export."
+      },
+      "description": {
+        "vi": "Làng mộc Bình Minh ở huyện Trảng Bom là một trong những cụm mộc lớn của Đồng Nai. Các xưởng làm đồ gỗ mỹ nghệ, nội thất xuất khẩu như bàn, ghế, tủ và các sản phẩm trang trí, thường sử dụng gỗ cao su và gỗ trồng. Hàng được kiểm tra chất lượng rồi đóng thùng trước khi đi cảng. Nhiều hộ trong xóm cùng làm các công đoạn, từ cưa, bào đến sơn hoàn thiện.",
+        "en": "Bình Minh woodcraft village in Trảng Bom district is one of Đồng Nai's larger furniture clusters. Workshops make decorative furniture and export pieces — tables, chairs, cabinets and ornaments — often from rubberwood and plantation timber. Pieces are quality-checked and crated before reaching the port. Many households share the stages, from sawing and planing to final finishing."
+      },
+      "highlights": {
+        "vi": [
+          "Đồ gỗ mỹ nghệ xuất khẩu",
+          "Nhiều hộ cùng làm các công đoạn",
+          "Trảng Bom, phía Đông Biên Hòa"
+        ],
+        "en": [
+          "Export craft furniture",
+          "Many households sharing the work",
+          "Trảng Bom, east of Biên Hòa"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Đây là xưởng sản xuất: liên hệ để hỏi có nhận khách xem xưởng không.",
+          "Không mua gỗ từ nguồn không rõ nguồn gốc."
+        ],
+        "en": [
+          "These are working factories; ask if they welcome visitors.",
+          "Only buy timber from clearly stated sources."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 60,
+      "zone": "trang-bom-thong-nhat",
+      "address_legacy": "Xã Bình Minh, huyện Trảng Bom",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9511,
+        "lng": 107.0594,
+        "precision": "approx",
+        "radius_m": 2000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "mộc",
+          "mỹ nghệ",
+          "xuất khẩu",
+          "Bình Minh",
+          "Trảng Bom"
+        ],
+        "en": [
+          "woodwork",
+          "craft",
+          "export",
+          "Bình Minh",
+          "Trảng Bom"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách làng nghề (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Chưa xác minh tên xã chính xác (Bình Minh có thể trùng tên ở địa phương khác)."
+      }
+    },
+    {
+      "id": "ln-duc-gang-thanh-phu",
+      "n": 28,
+      "category": "lang-nghe",
+      "kind": "craft-village",
+      "name": {
+        "vi": "Làng nghề đúc gang Thạnh Phú",
+        "en": "Thạnh Phú cast-iron village"
+      },
+      "tagline": {
+        "vi": "Lò đúc gang lâu đời của xã Thạnh Phú, Vĩnh Cửu.",
+        "en": "A long-established cast-iron foundry craft in Thạnh Phú, Vĩnh Cửu."
+      },
+      "description": {
+        "vi": "Xã Thạnh Phú, huyện Vĩnh Cửu có nghề đúc gang từ nhiều chục năm, gắn với các sản phẩm gang đúc truyền thống như nồi, chảo, khuôn và phụ tùng cho máy móc. Công đoạn chính là nấu gang trong lò rồi rót vào khuôn cát. Hiện nghề này đang ít dần vì hàng nhôm và inox thay thế, nhưng vài lò vẫn còn giữ nghề và thỉnh thoảng nhận thêm công trình đúc tùy chỉnh, có thể là tượng hoặc đồ trang trí chùa.",
+        "en": "Thạnh Phú commune in Vĩnh Cửu district has had cast-iron craft for decades, tied to traditional products such as pots, pans, moulds and machine parts. Iron is melted in a furnace and poured into sand moulds. The trade has been shrinking as aluminium and stainless steel replaced ironware, but a few foundries still keep the craft and occasionally take custom jobs, from statues to temple ornaments."
+      },
+      "highlights": {
+        "vi": [
+          "Lò nung và khuôn cát truyền thống",
+          "Đồ gang đúc phổ thông",
+          "Nghề đang ít dần, nên hỏi trước khi đến"
+        ],
+        "en": [
+          "Traditional furnace and sand moulds",
+          "Common cast-iron goods",
+          "A shrinking trade — check before visiting"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Nghề đang thu hẹp, nên gọi trước để biết còn lò nào mở.",
+          "Ghép với Hồ Trị An vì cùng huyện Vĩnh Cửu."
+        ],
+        "en": [
+          "The trade is shrinking; call ahead to confirm a working foundry.",
+          "Easily paired with Trị An Lake in the same district."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 60,
+      "zone": "vinh-cuu-tri-an",
+      "address_legacy": "Xã Thạnh Phú, huyện Vĩnh Cửu",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9941,
+        "lng": 106.9427,
+        "precision": "approx",
+        "radius_m": 2500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "gang",
+          "đúc",
+          "nồi chảo",
+          "Thạnh Phú",
+          "Vĩnh Cửu"
+        ],
+        "en": [
+          "iron",
+          "casting",
+          "pots",
+          "Thạnh Phú",
+          "Vĩnh Cửu"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách làng nghề (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Mô tả nghề theo kiến thức chung; chưa xác minh số lò còn hoạt động."
+      }
+    },
+    {
+      "id": "ln-gio-cha-gia-kiem",
+      "n": 29,
+      "category": "lang-nghe",
+      "kind": "craft-village",
+      "name": {
+        "vi": "Làng giò chả Gia Kiệm",
+        "en": "Gia Kiệm giò chả village"
+      },
+      "tagline": {
+        "vi": "Làng làm giò, chả và chà bông ở Thống Nhất, bán cả ngày thường lẫn lễ Tết.",
+        "en": "Gia Kiệm's sausage and dried-meat-floss makers, busy every day and at festival time."
+      },
+      "description": {
+        "vi": "Xã Gia Kiệm ở huyện Thống Nhất được biết đến với nghề làm giò lụa, giò bò, chả và chà bông. Thịt được giã nhuyễn với nước mắm và tiêu, gói trong lá chuối rồi luộc hoặc hấp chín; giò bò và chả theo cách làm truyền thống của vùng Nam Bộ. Hàng bán quanh năm ở chợ và các lò trong xóm, chiều đi về Biên Hòa hoặc Sài Gòn thường ghé mua mang về. Nghề này thuộc diện làng nghề được công nhận của địa phương.",
+        "en": "Gia Kiệm commune in Thống Nhất district is known for giò lụa and giò bò (steamed and grilled pork/beef sausages), chả and chà bông (dried meat floss). Meat is pounded with fish sauce and pepper, wrapped in banana leaf and boiled or steamed; beef sausage and chả follow the traditional southern Vietnamese method. Products are sold year-round at the market and local workshops, and are a common stop for people heading back to Biên Hòa or Saigon. The craft is a recognised local village trade."
+      },
+      "highlights": {
+        "vi": [
+          "Giò lụa, giò bò, chả, chà bông",
+          "Mua trực tiếp tại lò trong xóm",
+          "Nghề được công nhận làng nghề địa phương"
+        ],
+        "en": [
+          "Steamed and grilled sausages, chả, meat floss",
+          "Buy directly from workshops",
+          "A recognised local village trade"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Giò không chất bảo quản, đi xa nên mang túi giữ lạnh.",
+          "Hỏi xem lò có ship đông lạnh nếu mua nhiều."
+        ],
+        "en": [
+          "Sausages have no preservatives; use a cooler bag on long trips.",
+          "Ask about frozen delivery if buying a lot."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 45,
+      "zone": "trang-bom-thong-nhat",
+      "address_legacy": "Xã Gia Kiệm, huyện Thống Nhất",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9454,
+        "lng": 107.1642,
+        "precision": "approx",
+        "radius_m": 2500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "giò chả",
+          "chà bông",
+          "đặc sản",
+          "Gia Kiệm",
+          "quà tặng"
+        ],
+        "en": [
+          "sausage",
+          "meat floss",
+          "souvenir",
+          "Gia Kiệm",
+          "food"
+        ]
+      },
+      "images": [],
+      "sources": [
+        {
+          "title": "Danh sách làng nghề (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Mô tả quy trình theo kiến thức chung; chưa xác minh các lò và quyết định công nhận làng nghề."
+      }
+    },
+    {
+      "id": "dd-chien-khu-d",
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Chiến khu Đ",
+        "en": "Chiến khu Đ (War Zone D)"
+      },
+      "tagline": {
+        "vi": "Rừng núi từng là căn cứ kháng chiến, nay là vùng sinh thái của Vĩnh Cửu.",
+        "en": "Forested hills that once hosted a wartime base, now an ecological belt of Vĩnh Cửu."
+      },
+      "description": {
+        "vi": "Chiến khu Đ là vùng rừng rộng ở phía bắc huyện Vĩnh Cửu, từng là căn cứ quan trọng của quân và dân miền Đông Nam Bộ trong hai cuộc kháng chiến. Hôm nay vùng này phủ rừng cao su, rừng tự nhiên và các suối nhỏ, tạo nên cảnh quan xanh mát liền với sông Đồng Nai. Du khách thường kết hợp tìm hiểu lịch sử với đạp xe, cắm trại và tham quan các di tích ghi dấu sự kiện kháng chiến nằm rải rác trong vùng.",
+        "en": "Chiến khu Đ is a large forested area north of the former Vĩnh Cửu district, once an important base for fighters and locals of south-eastern Vietnam in two wars of resistance. Today the area is covered with rubber plantations, natural forest and small streams, forming a cool green landscape linked to the Đồng Nai River. Visitors often combine historical learning with cycling, camping and visits to the war-period relics scattered across the area."
+      },
+      "highlights": {
+        "vi": [
+          "Vùng rừng lịch sử của miền Đông Nam Bộ",
+          "Rừng cao su, rừng tự nhiên và suối nhỏ",
+          "Phù hợp kết hợp học lịch sử và tham quan sinh thái"
+        ],
+        "en": [
+          "A historic forest zone of south-eastern Vietnam",
+          "Rubber plantations, natural forest and small streams",
+          "Good for combining history with an ecological trip"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Đi sớm vì đường rừng thoáng nhưng ít bóng đèn ban đêm.",
+          "Mang theo thuốc chống muỗi nếu đi vào mùa mưa."
+        ],
+        "en": [
+          "Start early; forest roads are open but unlit after dark.",
+          "Bring mosquito repellent in the rainy season."
+        ]
+      },
+      "best_time": {
+        "vi": "Mùa khô, từ tháng 11 đến tháng 4",
+        "en": "Dry season, November to April"
+      },
+      "visit_minutes": 120,
+      "zone": "vinh-cuu-tri-an",
+      "address_legacy": "Vùng Chiến khu Đ, huyện Vĩnh Cửu",
+      "address_current": null,
+      "coords": {
+        "lat": 11.165,
+        "lng": 107.02,
+        "precision": "area",
+        "radius_m": 8000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "lịch sử",
+          "rừng",
+          "cắm trại",
+          "Vĩnh Cửu"
+        ],
+        "en": [
+          "history",
+          "forest",
+          "camping",
+          "Vĩnh Cửu"
+        ]
+      },
+      "images": [
+        {
+          "file": "dd-chien-khu-d",
+          "src": "/img/places/dd-chien-khu-d.jpg",
+          "width": 2560,
+          "height": 1706,
+          "alt": {
+            "vi": "Ảnh minh họa: Chiến khu Đ",
+            "en": "Illustrative photo: Chiến khu Đ (War Zone D)"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách điểm du lịch Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Tọa độ là tâm vùng rừng; cần đối chiếu điểm tham quan cụ thể (di tích, bến thuyền) trước khi đi."
+      },
+      "n": 30
+    },
+    {
+      "id": "dd-thac-mai",
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Thác Mai – Bàu Nước Sôi",
+        "en": "Mai Waterfall – Bàu Nước Sôi"
+      },
+      "tagline": {
+        "vi": "Thác nước và hồ khoáng nước nóng giữa rừng Định Quán.",
+        "en": "A waterfall and a warm mineral pool deep in the Định Quán forest."
+      },
+      "description": {
+        "vi": "Thác Mai nằm trong vùng rừng ở huyện Định Quán, được biết đến với dòng nước đổ xuống từng bậc rồi chảy qua bàu nước khoáng ấm quanh năm là Bàu Nước Sôi. Cảnh quan gồm rừng, suối, tảng đá phủ rêu và những bãi cát nhỏ, thuận cho tắm mát, picnic và cắm trại qua đêm. Vì nằm xa trung tâm, nơi đây giữ được vẻ hoang sơ, thích hợp cho người muốn tránh chỗ đông đúc vào cuối tuần.",
+        "en": "Mai Waterfall lies in the forest of the former Định Quán district and is known for water tumbling over tiered ledges before flowing past Bàu Nước Sôi, a warm mineral pool that steams year round. The setting mixes forest, a stream, mossy boulders and small sandy banks, good for swimming, picnics and overnight camping. Being far from town it keeps a wild character, a good option on a weekend away from crowds."
+      },
+      "highlights": {
+        "vi": [
+          "Thác nhiều bậc và bàu nước khoáng ấm",
+          "Cắm trại trong rừng, bãi cát ven suối",
+          "Cảnh quan còn khá hoang sơ"
+        ],
+        "en": [
+          "Tiered waterfall and a warm mineral pool",
+          "Forest camping by sandy stream banks",
+          "Still a fairly wild landscape"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Đường vào có đoạn đất đỏ, nên hỏi tình trạng đường trước khi đi.",
+          "Mang theo nước uống và túi đựng rác vì dịch vụ trong rừng còn ít."
+        ],
+        "en": [
+          "Access roads include red-earth sections; ask about road conditions first.",
+          "Bring drinking water and rubbish bags; services in the forest are limited."
+        ]
+      },
+      "best_time": {
+        "vi": "Mùa khô; tránh mùa mưa vì đường trơn",
+        "en": "Dry season; avoid the rains when tracks turn slick"
+      },
+      "visit_minutes": 180,
+      "zone": "dinh-quan-tan-phu",
+      "address_legacy": "Xã Thanh Sơn, huyện Định Quán",
+      "address_current": null,
+      "coords": {
+        "lat": 11.17,
+        "lng": 107.33,
+        "precision": "approx",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "thác",
+          "suối nước nóng",
+          "cắm trại",
+          "Định Quán"
+        ],
+        "en": [
+          "waterfall",
+          "hot spring",
+          "camping",
+          "Định Quán"
+        ]
+      },
+      "images": [
+        {
+          "file": "dd-thac-mai",
+          "src": "/img/places/dd-thac-mai.jpg",
+          "width": 700,
+          "height": 525,
+          "alt": {
+            "vi": "Ảnh minh họa: Thác Mai – Bàu Nước Sôi",
+            "en": "Illustrative photo: Mai Waterfall – Bàu Nước Sôi"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách điểm du lịch Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Tọa độ đặt tay theo xã; cần xác nhận lại bằng bản đồ trước khi đi."
+      },
+      "n": 31
+    },
+    {
+      "id": "dd-tre-viet",
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Làng Du lịch Sinh thái Tre Việt",
+        "en": "Tre Việt Eco-tourism Village"
+      },
+      "tagline": {
+        "vi": "Khu sinh thái với nhà tre, vườn cây và hồ nước gần Biên Hòa.",
+        "en": "An eco-resort of bamboo houses, gardens and water close to Biên Hòa."
+      },
+      "description": {
+        "vi": "Làng Du lịch Sinh thái Tre Việt là khu nghỉ dưỡng – tham quan xây dựng quanh chủ đề tre ở khu vực Tân Vạn, sát TP. Biên Hòa. Không gian gồm nhà tre mái lá, vườn cây ăn trái, hồ nước và các khu vui chơi dã ngoại, thích hợp cho gia đình có trẻ nhỏ và các nhóm muốn một buổi nghỉ ngắn gần thành phố. Nơi đây cũng thường được chọn làm điểm ăn uống, hội họp nhỏ và chụp ảnh.",
+        "en": "Tre Việt Eco-tourism Village is a bamboo-themed resort and visitor site in the Tân Vạn area next to Biên Hòa city. Its grounds include bamboo-and-thatch houses, fruit gardens, ponds and outdoor play areas, well suited to families with children and groups wanting a short break near town. It is also a popular spot for meals, small gatherings and photography."
+      },
+      "highlights": {
+        "vi": [
+          "Kiến trúc tre, mái lá và hồ nước",
+          "Vườn cây ăn trái và khu vui chơi ngoài trời",
+          "Gần Biên Hòa, thuận cho một buổi dã ngoại"
+        ],
+        "en": [
+          "Bamboo architecture, thatch roofs and ponds",
+          "Fruit gardens and outdoor play areas",
+          "Close to Biên Hòa for a half-day outing"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Đặt chỗ trước vào cuối tuần vì khu dễ kín.",
+          "Hỏi giá vé và suất ăn theo nhóm trước khi tới."
+        ],
+        "en": [
+          "Book ahead on weekends when it fills up.",
+          "Ask about group tickets and meals in advance."
+        ]
+      },
+      "best_time": {
+        "vi": "Quanh năm; đẹp nhất vào mùa khô",
+        "en": "Year round; best in the dry season"
+      },
+      "visit_minutes": 120,
+      "zone": "bien-hoa",
+      "address_legacy": "Tân Vạn, TP. Biên Hòa",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9355,
+        "lng": 106.8265,
+        "precision": "approx",
+        "radius_m": 2000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "sinh thái",
+          "gia đình",
+          "nhà tre",
+          "ven Biên Hòa"
+        ],
+        "en": [
+          "eco",
+          "family",
+          "bamboo",
+          "near Biên Hòa"
+        ]
+      },
+      "images": [
+        {
+          "file": "dd-tre-viet",
+          "src": "/img/places/dd-tre-viet.jpg",
+          "width": 800,
+          "height": 450,
+          "alt": {
+            "vi": "Ảnh minh họa: Làng Du lịch Sinh thái Tre Việt",
+            "en": "Illustrative photo: Tre Việt Eco-tourism Village"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách điểm du lịch Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Tọa độ đặt tay tại khu Tân Vạn; chưa xác minh cổng vào cụ thể."
+      },
+      "n": 32
+    },
+    {
+      "id": "dd-duc-me-nui-cui",
+      "category": "diem-den",
+      "kind": "attraction",
+      "name": {
+        "vi": "Trung tâm Hành hương Đức Mẹ Núi Cúi",
+        "en": "Our Lady of Núi Cúi Pilgrimage Centre"
+      },
+      "tagline": {
+        "vi": "Khu hành hương trên đồi, nổi tiếng với đường Thánh giá và lễ hội đông người.",
+        "en": "A hilltop pilgrimage site known for its Way of the Cross and crowded feast days."
+      },
+      "description": {
+        "vi": "Trung tâm Hành hương Đức Mẹ Núi Cúi nằm trên đồi ở xã Hiệp Hòa, huyện Vĩnh Cửu, là một trong những điểm hành hương Công giáo lớn của miền Đông Nam Bộ. Khuôn viên gồm tượng đài Đức Mẹ, các chặng Thánh giá men theo sườn đồi, nhà nguyện và sân rộng cho đoàn hành hương. Vào tháng Năm và tháng Mười, hàng chục nghìn người đổ về dự lễ, tạo nên không khí tôn giáo và lễ hội đặc biệt, còn ngày thường nơi đây yên tĩnh để ngắm cảnh.",
+        "en": "The Our Lady of Núi Cúi Pilgrimage Centre stands on a hill in Hiệp Hòa commune in the former Vĩnh Cửu district and is one of the largest Catholic pilgrimage sites in south-eastern Vietnam. The grounds hold a shrine to Our Lady, Stations of the Cross winding up the hillside, chapels and broad squares for processions. In May and October tens of thousands of pilgrims arrive for feast days, creating a special religious and festive atmosphere, while on ordinary days the site is quiet and good for views."
+      },
+      "highlights": {
+        "vi": [
+          "Tượng đài Đức Mẹ trên đồi",
+          "Đường Thánh giá men theo sườn núi",
+          "Lễ tháng Năm và tháng Mười rất đông"
+        ],
+        "en": [
+          "Hillside shrine to Our Lady",
+          "Stations of the Cross up the slope",
+          "Busy feast days in May and October"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Ăn mặc lịch sự, giữ yên lặng trong khuôn viên các nhà thờ.",
+          "Trời lễ rất đông, nên tới bằng xe nhỏ và đi bộ đoạn cuối."
+        ],
+        "en": [
+          "Dress respectfully and keep quiet around the chapels.",
+          "Feast days are packed; come by small car and walk the last stretch."
+        ]
+      },
+      "best_time": {
+        "vi": "Mùa hành hương tháng 5 và tháng 10",
+        "en": "Pilgrimage season in May and October"
+      },
+      "visit_minutes": 90,
+      "zone": "vinh-cuu-tri-an",
+      "address_legacy": "Xã Hiệp Hòa, huyện Vĩnh Cửu",
+      "address_current": null,
+      "coords": {
+        "lat": 11.0197,
+        "lng": 106.8746,
+        "precision": "approx",
+        "radius_m": 2000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "hành hương",
+          "Công giáo",
+          "lễ hội",
+          "Vĩnh Cửu"
+        ],
+        "en": [
+          "pilgrimage",
+          "Catholic",
+          "festival",
+          "Vĩnh Cửu"
+        ]
+      },
+      "images": [
+        {
+          "file": "dd-duc-me-nui-cui",
+          "src": "/img/places/dd-duc-me-nui-cui.jpg",
+          "width": 1822,
+          "height": 1280,
+          "alt": {
+            "vi": "Ảnh minh họa: Trung tâm Hành hương Đức Mẹ Núi Cúi",
+            "en": "Illustrative photo: Our Lady of Núi Cúi Pilgrimage Centre"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách điểm du lịch Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Tọa độ đặt tay theo xã Hiệp Hòa; cần đối chiếu vị trí đồi Núi Cúi cụ thể."
+      },
+      "n": 33
+    },
+    {
+      "id": "ocop-buoi-duong-la-cam",
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Bưởi đường lá cam Tân Triều",
+        "en": "Tân Triều sweet pomelo"
+      },
+      "tagline": {
+        "vi": "Quả bưởi ruột đỏ, vị ngọt thanh của vùng đất Tân Triều.",
+        "en": "Red-fleshed pomelo with a mellow sweetness from Tân Triều."
+      },
+      "description": {
+        "vi": "Bưởi đường lá cam là giống bưởi có tán lá mang vết loang vàng đặc trưng, quả ruột hồng đỏ, múi mọng nước và vị ngọt thanh ít chua. Tân Triều ở Vĩnh Cửu là vùng trồng nổi tiếng, nằm giữa sông Đồng Nai và hồ Trị An nên đất phù sa mềm, nước tưới dồi dào. Mùa bưởi thường rộ vào các tháng cuối năm; người dân bán cả quả tươi lẫn chế biến thành rượu, nước cốt và mứt, đưa thương hiệu bưởi Tân Triều đến gần hơn với người mua phía Biên Hòa.",
+        "en": "The bưởi đường lá cam is a pomelo variety whose leaves carry characteristic yellow streaks, with red-pink flesh, juicy segments and a gentle sweetness. Tân Triều in Vĩnh Cửu is a well-known growing area between the Đồng Nai River and Trị An lake, where soft alluvial soil and abundant water suit the trees. The fruit peaks in the last months of the year; growers sell fresh pomelo and also make wine, juice concentrate and marmalade, bringing the Tân Triều name closer to buyers around Biên Hòa."
+      },
+      "highlights": {
+        "vi": [
+          "Ruột đỏ, múi mọng nước, vị ngọt thanh",
+          "Vùng trồng Tân Triều giữa sông Đồng Nai và hồ Trị An",
+          "Bán tươi và chế biến thành nước cốt, rượu, mứt"
+        ],
+        "en": [
+          "Red flesh, juicy segments and mild sweetness",
+          "Grown in Tân Triều between the river and Trị An lake",
+          "Sold fresh and as juice, wine and marmalade"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Chọn quả nặng tay, vỏ mỏng và đế bằng để bưởi ngọt hơn.",
+          "Hỏi vựa về thời điểm thu hoạch vì vị bưởi khác nhau theo vụ."
+        ],
+        "en": [
+          "Pick fruit that feels heavy with thin skin and a flat base.",
+          "Ask the orchard about harvest dates; flavour varies by crop."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 45,
+      "zone": "vinh-cuu-tri-an",
+      "address_legacy": "Xã Tân Triều, huyện Vĩnh Cửu",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9758,
+        "lng": 106.8005,
+        "precision": "approx",
+        "radius_m": 2500,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [
+            "Bưởi tươi",
+            "Nước cốt bưởi",
+            "Mứt vỏ bưởi"
+          ],
+          "en": [
+            "Fresh pomelo",
+            "Pomelo juice concentrate",
+            "Candied pomelo peel"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "bưởi",
+          "trái cây",
+          "Tân Triều",
+          "quà tặng"
+        ],
+        "en": [
+          "pomelo",
+          "fruit",
+          "Tân Triều",
+          "gift"
+        ]
+      },
+      "images": [
+        {
+          "file": "ocop-buoi-duong-la-cam",
+          "src": "/img/places/ocop-buoi-duong-la-cam.jpg",
+          "width": 480,
+          "height": 640,
+          "alt": {
+            "vi": "Ảnh minh họa: Bưởi đường lá cam Tân Triều",
+            "en": "Illustrative photo: Tân Triều sweet pomelo"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Chưa xác minh hộ trồng hoặc cơ sở cụ thể đạt chứng nhận OCOP cho giống này."
+      },
+      "n": 34
+    },
+    {
+      "id": "ocop-sau-rieng-long-khanh",
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Sầu riêng Long Khánh",
+        "en": "Long Khánh durian"
+      },
+      "tagline": {
+        "vi": "Sầu riêng cơm vàng, béo ngậy của thủ phủ trái cây miền Đông.",
+        "en": "Golden, creamy durian from the fruit capital of the south-east."
+      },
+      "description": {
+        "vi": "Long Khánh được gọi là thủ phủ trái cây của Đồng Nai, nơi đất đỏ bazan và khí hậu nóng ẩm cho sầu riêng hương vị đậm, cơm vàng dày và hạt lép. Các giống phổ biến gồm Monthong và Ri6, thu hoạch từ tháng Năm đến tháng Tám hằng năm. Ngoài bán tươi, sầu riêng còn thành sầu riêng sấy, kem và bánh, giúp sản phẩm đi xa hơn mùa chính vụ; đây là mặt hàng tiêu biểu của vùng chuyên canh cây ăn trái Long Khánh.",
+        "en": "Long Khánh is called the fruit capital of Đồng Nai, where red basalt soil and heat give durian deep flavour, thick golden flesh and small seeds. Common varieties include Monthong and Ri6, harvested from May to August each year. Besides fresh fruit, durian also becomes dried durian, ice cream and pastries, carrying the product beyond the main season; it is a signature item of the Long Khánh fruit belt."
+      },
+      "highlights": {
+        "vi": [
+          "Giống Monthong và Ri6 cơm vàng, hạt lép",
+          "Mùa chính vụ tháng 5 – 8 hằng năm",
+          "Chế biến thành sấy, kem, bánh"
+        ],
+        "en": [
+          "Monthong and Ri6 with golden flesh, small seeds",
+          "Main season May to August",
+          "Processed into dried fruit, ice cream and pastry"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Chọn trái có cuống tươi và chạm vào vỏ thấy mềm vừa.",
+          "Sầu riêng tươi giữ mùi mạnh, nên gói kín khi mang lên xe, máy bay."
+        ],
+        "en": [
+          "Look for a fresh stalk and a shell that yields slightly to the touch.",
+          "Fresh durian smells strong; wrap it well on buses and flights."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 45,
+      "zone": "long-khanh-xuan-loc",
+      "address_legacy": "TP. Long Khánh",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9366,
+        "lng": 107.2445,
+        "precision": "approx",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [
+            "Sầu riêng tươi",
+            "Sầu riêng sấy",
+            "Kem sầu riêng"
+          ],
+          "en": [
+            "Fresh durian",
+            "Dried durian",
+            "Durian ice cream"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "sầu riêng",
+          "trái cây",
+          "Long Khánh",
+          "đặc sản"
+        ],
+        "en": [
+          "durian",
+          "fruit",
+          "Long Khánh",
+          "speciality"
+        ]
+      },
+      "images": [
+        {
+          "file": "ocop-sau-rieng-long-khanh",
+          "src": "/img/places/ocop-sau-rieng-long-khanh.jpg",
+          "width": 600,
+          "height": 349,
+          "alt": {
+            "vi": "Ảnh minh họa: Sầu riêng Long Khánh",
+            "en": "Illustrative photo: Long Khánh durian"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Chưa xác minh cơ sở hoặc hợp tác xã cụ thể được công nhận OCOP."
+      },
+      "n": 35
+    },
+    {
+      "id": "ocop-chom-chom-long-khanh",
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Chôm chôm Long Khánh",
+        "en": "Long Khánh rambutan"
+      },
+      "tagline": {
+        "vi": "Chôm chôm đỏ tươi, cơm dày giòn ngọt của vùng Xuân Lộc – Long Khánh.",
+        "en": "Bright red rambutan with thick, crisp, sweet flesh from the Long Khánh – Xuân Lộc belt."
+      },
+      "description": {
+        "vi": "Chôm chôm Long Khánh là một trong những cây ăn trái đặc trưng của vùng Xuân Lộc – Long Khánh, chín vào đầu mùa mưa, khoảng tháng Năm đến tháng Bảy. Quả có vỏ đỏ rực phủ gai mềm, cơm dày, giòn và ngọt, hạt nhỏ. Người trồng thường bán tươi tại vườn, tại chợ trái cây Long Khánh và chuyển đi các tỉnh thành; theo mùa, chôm chôm cũng được làm mứt hoặc sấy để bán quanh năm.",
+        "en": "Long Khánh rambutan is one of the signature fruit trees of the Long Khánh – Xuân Lộc belt, ripening at the start of the rainy season from about May to July. The fruit has a vivid red skin with soft spines, thick crisp sweet flesh and a small stone. Growers sell at the orchard, at Long Khánh fruit markets and to other provinces; in season, rambutan is also made into jam or dried for year-round sale."
+      },
+      "highlights": {
+        "vi": [
+          "Quả đỏ tươi, cơm dày giòn ngọt",
+          "Chín đầu mùa mưa, tháng 5 – 7",
+          "Bán tươi tại vườn và chợ trái cây Long Khánh"
+        ],
+        "en": [
+          "Bright red fruit with thick crisp flesh",
+          "Ripens early in the rains, May to July",
+          "Sold fresh at orchards and Long Khánh markets"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Chọn chùm quả đỏ đều, gai mềm và cuống còn xanh.",
+          "Bảo quản trong ngăn mát và ăn trong vài ngày vì chôm chôm chóng hỏng."
+        ],
+        "en": [
+          "Pick bunches with even colour, soft spines and green stalks.",
+          "Refrigerate and eat within days; rambutan spoils quickly."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 45,
+      "zone": "long-khanh-xuan-loc",
+      "address_legacy": "TP. Long Khánh và vùng Xuân Lộc",
+      "address_current": null,
+      "coords": {
+        "lat": 10.925,
+        "lng": 107.3,
+        "precision": "approx",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [
+            "Chôm chôm tươi",
+            "Mứt chôm chôm"
+          ],
+          "en": [
+            "Fresh rambutan",
+            "Rambutan jam"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "chôm chôm",
+          "trái cây",
+          "Long Khánh",
+          "mùa hè"
+        ],
+        "en": [
+          "rambutan",
+          "fruit",
+          "Long Khánh",
+          "summer"
+        ]
+      },
+      "images": [
+        {
+          "file": "ocop-chom-chom-long-khanh",
+          "src": "/img/places/ocop-chom-chom-long-khanh.jpg",
+          "width": 453,
+          "height": 302,
+          "alt": {
+            "vi": "Ảnh minh họa: Chôm chôm Long Khánh",
+            "en": "Illustrative photo: Long Khánh rambutan"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Chưa xác minh cơ sở hoặc hợp tác xã cụ thể được công nhận OCOP."
+      },
+      "n": 36
+    },
+    {
+      "id": "ocop-trung-ga-xuan-loc",
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Trứng gà thả vườn Xuân Lộc",
+        "en": "Xuân Lộc free-range eggs"
+      },
+      "tagline": {
+        "vi": "Trứng gà nuôi thả vườn với lòng đỏ đậm màu của vùng Xuân Lộc.",
+        "en": "Free-range farm eggs with deep-coloured yolks from the Xuân Lộc area."
+      },
+      "description": {
+        "vi": "Xuân Lộc là vùng nông nghiệp rộng của Đồng Nai với nhiều trang trại chăn nuôi gà thả vườn, cho trứng và thịt cung cấp quanh năm. Trứng gà thả vườn thường có vỏ hơi dày, lòng đỏ đậm màu và vị béo rõ hơn trứng công nghiệp. Các trang trại thường bán sỉ cho thương lái và bán lẻ theo hộp cho người dân; du khách qua vùng này có thể ghé mua trứng tươi như một đặc sản mang về.",
+        "en": "Xuân Lộc is a broad farming area of Đồng Nai with many free-range poultry farms supplying eggs and meat all year. Free-range eggs usually have slightly thicker shells, deeper-coloured yolks and a richer taste than battery-farmed eggs. Farms sell in bulk to traders and in boxes to local households; travellers passing through can buy fresh eggs as a simple speciality to take home."
+      },
+      "highlights": {
+        "vi": [
+          "Gà thả vườn, lòng đỏ đậm màu",
+          "Vùng chăn nuôi rộng của Đồng Nai",
+          "Mua trực tiếp tại trang trại"
+        ],
+        "en": [
+          "Free-range hens with deep-coloured yolks",
+          "A wide farming area of Đồng Nai",
+          "Buy direct from the farm"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Hỏi ngày đẻ ghi trên hộp để chọn trứng mới nhất.",
+          "Giữ trứng ở nơi thoáng mát khi mang về xa."
+        ],
+        "en": [
+          "Ask for the laying date on the box to choose the freshest eggs.",
+          "Keep eggs shaded when travelling a long way home."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "long-khanh-xuan-loc",
+      "address_legacy": "Huyện Xuân Lộc",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9335,
+        "lng": 107.4,
+        "precision": "approx",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [
+            "Trứng gà thả vườn",
+            "Thịt gà thả vườn"
+          ],
+          "en": [
+            "Free-range eggs",
+            "Free-range chicken meat"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "trứng gà",
+          "nông sản",
+          "Xuân Lộc",
+          "thực phẩm"
+        ],
+        "en": [
+          "eggs",
+          "farm produce",
+          "Xuân Lộc",
+          "food"
+        ]
+      },
+      "images": [
+        {
+          "file": "ocop-trung-ga-xuan-loc",
+          "src": "/img/places/ocop-trung-ga-xuan-loc.jpg",
+          "width": 454,
+          "height": 272,
+          "alt": {
+            "vi": "Ảnh minh họa: Trứng gà thả vườn Xuân Lộc",
+            "en": "Illustrative photo: Xuân Lộc free-range eggs"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Chưa xác minh trang trại cụ thể được công nhận OCOP."
+      },
+      "n": 37
+    },
+    {
+      "id": "ocop-ho-tieu-lam-san",
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Hồ tiêu Lâm San",
+        "en": "Lâm San pepper"
+      },
+      "tagline": {
+        "vi": "Tiêu hạt căng mẩy, thơm nồng của vùng chuyên canh Lâm San.",
+        "en": "Plump, aromatic peppercorns from the Lâm San growing belt."
+      },
+      "description": {
+        "vi": "Lâm San là xã trồng tiêu lớn ở huyện Cẩm Mỹ, nơi đất đỏ và khí hậu nóng ẩm cho cây tiêu phát triển nhanh và hạt căng đầy. Tiêu được thu hoạch vào khoảng tháng Hai đến tháng Tư, phơi nắng thành tiêu đen hoặc ngâm – xát vỏ thành tiêu sọ trắng. Sản phẩm có mùi thơm nồng, vị cay thanh, được bán trong nước và xuất khẩu; bà con vùng Lâm San cũng làm tiêu tươi, tiêu ngâm mật ong để đa dạng mặt hàng.",
+        "en": "Lâm San is a large pepper-growing commune in the former Cẩm Mỹ district, where red soil and humid heat make vines grow vigorously and berries fill well. Pepper is harvested roughly from February to April, sun-dried into black pepper or soaked and hulled into white pepper. The spice is strongly aromatic with a clean bite, sold domestically and exported; Lâm San growers also prepare fresh pepper and peppercorns in honey to broaden their range."
+      },
+      "highlights": {
+        "vi": [
+          "Vùng chuyên canh tiêu của Cẩm Mỹ",
+          "Thu hoạch tháng 2 – 4, phơi nắng tự nhiên",
+          "Có tiêu đen, tiêu sọ và tiêu ngâm mật ong"
+        ],
+        "en": [
+          "A dedicated pepper belt in Cẩm Mỹ",
+          "Harvested February to April and sun-dried",
+          "Black, white and honey-soaked pepper on offer"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Ngửi thử để cảm nhận hương nồng; tránh loại hạt váng hoặc có mùi ẩm.",
+          "Giữ tiêu trong lọ kín, tránh ánh sáng để giữ hương."
+        ],
+        "en": [
+          "Smell before buying; avoid dull or musty berries.",
+          "Store in a sealed jar away from light to keep the aroma."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "long-khanh-xuan-loc",
+      "address_legacy": "Xã Lâm San, huyện Cẩm Mỹ",
+      "address_current": null,
+      "coords": {
+        "lat": 10.78,
+        "lng": 107.28,
+        "precision": "approx",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [
+            "Tiêu đen",
+            "Tiêu sọ trắng",
+            "Tiêu ngâm mật ong"
+          ],
+          "en": [
+            "Black pepper",
+            "White pepper",
+            "Pepper in honey"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "hồ tiêu",
+          "gia vị",
+          "Cẩm Mỹ",
+          "nông sản"
+        ],
+        "en": [
+          "pepper",
+          "spice",
+          "Cẩm Mỹ",
+          "farm produce"
+        ]
+      },
+      "images": [
+        {
+          "file": "ocop-ho-tieu-lam-san",
+          "src": "/img/places/ocop-ho-tieu-lam-san.jpg",
+          "width": 596,
+          "height": 335,
+          "alt": {
+            "vi": "Ảnh minh họa: Hồ tiêu Lâm San",
+            "en": "Illustrative photo: Lâm San pepper"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Chưa xác minh hợp tác xã hoặc hộ sản xuất cụ thể được công nhận OCOP."
+      },
+      "n": 38
+    },
+    {
+      "id": "ocop-sua-tuoi-long-thanh",
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Sữa tươi Long Thành",
+        "en": "Long Thành fresh milk"
+      },
+      "tagline": {
+        "vi": "Sữa tươi từ trang trại bò sữa trong vùng Long Thành.",
+        "en": "Fresh milk from dairy farms in the Long Thành area."
+      },
+      "description": {
+        "vi": "Long Thành có truyền thống chăn nuôi bò sữa, nằm trên vùng đất thấp phía nam Đồng Nai, khá gần với nguồn nước và đồng cỏ. Sữa tươi từ các trang trại trong vùng được thu mua, thanh trùng và đóng chai hoặc hộp, bán tại cửa hàng địa phương và các chuỗi trong tỉnh. Ngoài sữa tươi, các cơ sở còn làm sữa chua, phô mai tươi và sữa trái cây, tạo nên chuỗi sản phẩm từ chăn nuôi bò sữa Long Thành.",
+        "en": "Long Thành has a long dairy-farming tradition on the low southern plain of Đồng Nai, close to water and pasture. Fresh milk from local farms is collected, pasteurised and bottled or cartoned, then sold in local shops and provincial chains. Beyond plain milk, producers also make yogurt, fresh cheese and fruit milk, forming a family of products from Long Thành dairy farming."
+      },
+      "highlights": {
+        "vi": [
+          "Chăn nuôi bò sữa lâu đời ở Long Thành",
+          "Sữa tươi thanh trùng, sữa chua, phô mai tươi",
+          "Bán tại cửa hàng và chuỗi siêu thị trong tỉnh"
+        ],
+        "en": [
+          "Long-standing dairy farming in Long Thành",
+          "Pasteurised milk, yogurt and fresh cheese",
+          "Sold in shops and supermarkets province-wide"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Chọn sản phẩm có ngày sản xuất mới và bảo quản lạnh khi mang về.",
+          "Sữa tươi thanh trùng nên uống trong vài ngày sau khi mở."
+        ],
+        "en": [
+          "Choose recent batches and keep them cold on the way home.",
+          "Drink pasteurised milk within a few days of opening."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 30,
+      "zone": "bien-hoa",
+      "address_legacy": "Huyện Long Thành",
+      "address_current": null,
+      "coords": {
+        "lat": 10.7914,
+        "lng": 107.0759,
+        "precision": "approx",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [
+            "Sữa tươi",
+            "Sữa chua",
+            "Phô mai tươi"
+          ],
+          "en": [
+            "Fresh milk",
+            "Yogurt",
+            "Fresh cheese"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "sữa",
+          "bò sữa",
+          "Long Thành",
+          "thực phẩm"
+        ],
+        "en": [
+          "milk",
+          "dairy",
+          "Long Thành",
+          "food"
+        ]
+      },
+      "images": [
+        {
+          "file": "ocop-sua-tuoi-long-thanh",
+          "src": "/img/places/ocop-sua-tuoi-long-thanh.jpg",
+          "width": 416,
+          "height": 480,
+          "alt": {
+            "vi": "Ảnh minh họa: Sữa tươi Long Thành",
+            "en": "Illustrative photo: Long Thành fresh milk"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Long Thành không có zone riêng nên tạm gán zone bien-hoa; cần xác minh trang trại cụ thể."
+      },
+      "n": 39
+    },
+    {
+      "id": "ocop-kho-ca-kim-tri-an",
+      "category": "ocop",
+      "kind": "product",
+      "name": {
+        "vi": "Cá trắng và khô cá Kìm hồ Trị An",
+        "en": "Trị An lake silver fish and dried cá kìm"
+      },
+      "tagline": {
+        "vi": "Cá trắng và khô cá Kìm đánh bắt trên hồ Trị An.",
+        "en": "Silver fish and dried cá kìm caught in Trị An lake."
+      },
+      "description": {
+        "vi": "Hồ Trị An, hồ thủy điện lớn trên sông Đồng Nai, nuôi dưỡng nhiều hộ đánh bắt và nuôi cá trên lòng hồ. Cá trắng hồ Trị An được biết đến với thịt chắc, ít xương dăm và vị ngọt, thường chế biến thành cá trắng khô một nắng hoặc chiên giòn. Cá Kìm – loài cá có hình dáng dẹt đặc biệt – được làm khô giòn, thơm và có thể để lâu ngày. Đây là những đặc sản miền sông nước được bán tại các bến cá quanh hồ và chợ trong vùng.",
+        "en": "Trị An lake, a large hydroelectric reservoir on the Đồng Nai River, supports many fishing and fish-farming households on the water. Trị An silver fish is known for firm, relatively boneless flesh and a sweet taste, usually made into one-day-dried fish or fried crisp. The cá kìm, a fish with a very distinctive flat shape, is dried crunchy and keeps for a long time. These are river-and-lake specialities sold at jetties around the lake and in local markets."
+      },
+      "highlights": {
+        "vi": [
+          "Cá trắng hồ Trị An thịt chắc, ngọt",
+          "Khô cá Kìm giòn, để được lâu",
+          "Bán tại bến cá quanh hồ và chợ trong vùng"
+        ],
+        "en": [
+          "Trị An silver fish with firm sweet flesh",
+          "Crunchy dried cá kìm that keeps well",
+          "Sold at lake jetties and local markets"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Mua khô ở bến cá buổi sáng sẽ tươi mới hơn.",
+          "Hỏi cách bảo quản nếu mua nhiều để mang đi xa."
+        ],
+        "en": [
+          "Buy dried fish in the morning to get the freshest batches.",
+          "Ask how to store bulk purchases for long trips."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 45,
+      "zone": "vinh-cuu-tri-an",
+      "address_legacy": "Vùng hồ Trị An, huyện Vĩnh Cửu",
+      "address_current": null,
+      "coords": {
+        "lat": 11.095,
+        "lng": 107.055,
+        "precision": "approx",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": {
+        "stars": null,
+        "stars_source": null,
+        "stars_status": null,
+        "maker": null,
+        "products": {
+          "vi": [
+            "Cá trắng hồ Trị An",
+            "Khô cá Kìm"
+          ],
+          "en": [
+            "Trị An silver fish",
+            "Dried cá kìm"
+          ]
+        }
+      },
+      "tags": {
+        "vi": [
+          "cá",
+          "khô cá",
+          "hồ Trị An",
+          "đặc sản"
+        ],
+        "en": [
+          "fish",
+          "dried fish",
+          "Trị An lake",
+          "speciality"
+        ]
+      },
+      "images": [
+        {
+          "file": "ocop-kho-ca-kim-tri-an",
+          "src": "/img/places/ocop-kho-ca-kim-tri-an.jpg",
+          "width": 554,
+          "height": 554,
+          "alt": {
+            "vi": "Ảnh minh họa: Cá trắng và khô cá Kìm hồ Trị An",
+            "en": "Illustrative photo: Trị An lake silver fish and dried cá kìm"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách sản phẩm OCOP Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Chưa xác minh cơ sở đánh bắt hoặc chế biến cụ thể được công nhận OCOP."
+      },
+      "n": 40
+    },
+    {
+      "id": "ln-moc-trang-bom",
+      "category": "lang-nghe",
+      "kind": "craft-village",
+      "name": {
+        "vi": "Làng nghề Gỗ Trảng Bom",
+        "en": "Trảng Bom woodcraft village"
+      },
+      "tagline": {
+        "vi": "Làng thợ mộc làm đồ gỗ gia dụng và nội thất quanh Trảng Bom.",
+        "en": "A woodworkers' village making furniture and household woodware around Trảng Bom."
+      },
+      "description": {
+        "vi": "Quanh thị trấn Trảng Bom và các xã lân cận có nhiều xưởng mộc làm đồ gia dụng, giường tủ, đồ thờ và đồ nội thất đóng theo yêu cầu từ gỗ cao su, gỗ tràm và gỗ nhập khẩu. Nghề mộc phát triển nhờ vùng nguyên liệu cao su lớn và đường giao thông thuận tiện nối Biên Hòa với các tỉnh miền Trung. Khách có thể ghé xưởng xem thợ đục chạm, ghép mộng và hoàn thiện gỗ, rồi đặt đóng món đồ theo kích thước mong muốn.",
+        "en": "Around Trảng Bom town and neighbouring communes many carpentry workshops make household pieces, beds, cupboards, altar sets and made-to-order furniture from rubberwood, eucalyptus and imported timber. The trade grew on the large rubber timber supply and convenient roads linking Biên Hòa with the central provinces. Visitors can drop into a workshop to watch carving, joinery and finishing, then commission a piece to their own size."
+      },
+      "highlights": {
+        "vi": [
+          "Xưởng mộc làm đồ gia dụng và nội thất",
+          "Nguyên liệu gỗ cao su, gỗ tràm của vùng",
+          "Xem thợ chạm khắc và ghép mộng"
+        ],
+        "en": [
+          "Workshops making furniture and household goods",
+          "Rubberwood and eucalyptus from the area",
+          "Watch carving and joinery in progress"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Hỏi trước về loại gỗ và thời gian hoàn thiện khi đặt đóng.",
+          "Gỗ cao su khô xử lý kỹ để tránh cong vênh sau này."
+        ],
+        "en": [
+          "Ask about timber type and lead time before ordering.",
+          "Make sure rubberwood is well kiln-dried to avoid warping."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 60,
+      "zone": "trang-bom-thong-nhat",
+      "address_legacy": "Thị trấn Trảng Bom, huyện Trảng Bom",
+      "address_current": null,
+      "coords": {
+        "lat": 10.9515,
+        "lng": 107.0075,
+        "precision": "area",
+        "radius_m": 4000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "gỗ",
+          "thợ mộc",
+          "nội thất",
+          "Trảng Bom"
+        ],
+        "en": [
+          "wood",
+          "carpentry",
+          "furniture",
+          "Trảng Bom"
+        ]
+      },
+      "images": [
+        {
+          "file": "ln-moc-trang-bom",
+          "src": "/img/places/ln-moc-trang-bom.jpg",
+          "width": 547,
+          "height": 365,
+          "alt": {
+            "vi": "Ảnh minh họa: Làng nghề Gỗ Trảng Bom",
+            "en": "Illustrative photo: Trảng Bom woodcraft village"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách làng nghề Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Tọa độ là tâm thị trấn Trảng Bom; các xưởng rải rác quanh thị trấn và các xã kề."
+      },
+      "n": 41
+    },
+    {
+      "id": "ln-banh-trang-phu-my",
+      "category": "lang-nghe",
+      "kind": "craft-village",
+      "name": {
+        "vi": "Làng nghề làm bánh tráng Phú Mỹ",
+        "en": "Phú Mỹ rice-paper village"
+      },
+      "tagline": {
+        "vi": "Bánh tráng phơi nắng, giòn thơm của vùng Phú Mỹ, Tân Phú.",
+        "en": "Sun-dried rice paper from Phú Mỹ in Tân Phú."
+      },
+      "description": {
+        "vi": "Làng Phú Mỹ ở huyện Tân Phú có nghề làm bánh tráng bằng gạo từ nhiều đời. Gạo ngâm, xay thành bột loãng, tráng mỏng trên khuôn và hấp chín, sau đó bánh được phơi trên giàn tre dọc đường suốt mấy ngày nắng. Bánh tráng Phú Mỹ thường được bán theo chục hoặc theo nhóm, ăn với nước chấm, cuốn rau hoặc nướng giòn. Đến làng vào buổi sáng, du khách sẽ thấy những dãy bánh trắng trải dài trên giàn — một hình ảnh rất riêng của vùng đất Tân Phú.",
+        "en": "Phú Mỹ village in the former Tân Phú district has made rice paper for generations. Rice is soaked, ground into a thin batter, spread on a frame and steamed, then the sheets are dried on bamboo racks along the road for several sunny days. Phú Mỹ rice paper is sold in packs of ten or more, served with dipping sauce, used for wrapping herbs or grilled crisp. A morning visit shows row upon row of white sheets laid out on the racks, an image very particular to Tân Phú."
+      },
+      "highlights": {
+        "vi": [
+          "Tráng bánh trên khuôn hấp rồi phơi nắng",
+          "Giàn bánh trắng trải dọc đường làng",
+          "Bán theo chục, nướng hay cuốn rau đều ngon"
+        ],
+        "en": [
+          "Batter steamed on frames then sun-dried",
+          "White sheets stretched along village lanes",
+          "Sold in packs; good grilled or rolled with herbs"
+        ]
+      },
+      "tips": {
+        "vi": [
+          "Tới vào buổi sáng để xem tráng và phơi bánh.",
+          "Bánh phải giòn, không có đốm mốc; giữ khô ráo khi mang về."
+        ],
+        "en": [
+          "Visit in the morning to watch spreading and drying.",
+          "Choose crisp sheets without mould spots and keep them dry."
+        ]
+      },
+      "best_time": null,
+      "visit_minutes": 60,
+      "zone": "dinh-quan-tan-phu",
+      "address_legacy": "Xã Phú Mỹ, huyện Tân Phú",
+      "address_current": null,
+      "coords": {
+        "lat": 11.2805,
+        "lng": 107.4325,
+        "precision": "area",
+        "radius_m": 3000,
+        "source": "manual",
+        "verified": false
+      },
+      "contact": {
+        "phone": null,
+        "website": null,
+        "facebook": null,
+        "zalo": null
+      },
+      "hours": null,
+      "ticket": null,
+      "ocop": null,
+      "tags": {
+        "vi": [
+          "bánh tráng",
+          "làng nghề",
+          "Tân Phú",
+          "đặc sản"
+        ],
+        "en": [
+          "rice paper",
+          "craft village",
+          "Tân Phú",
+          "speciality"
+        ]
+      },
+      "images": [
+        {
+          "file": "ln-banh-trang-phu-my",
+          "src": "/img/places/ln-banh-trang-phu-my.jpg",
+          "width": 514,
+          "height": 389,
+          "alt": {
+            "vi": "Ảnh minh họa: Làng nghề làm bánh tráng Phú Mỹ",
+            "en": "Illustrative photo: Phú Mỹ rice-paper village"
+          },
+          "credit": "Ảnh do người dùng cung cấp cho dự án Ghé Đồng Nai",
+          "license": "Ảnh tư liệu địa phương · Người dùng cung cấp cho Ghé Đồng Nai · Phục vụ quảng bá phi thương mại",
+          "source": "nguoi-dung",
+          "ingested_at": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Danh sách làng nghề Đồng Nai (nguồn đặc tả dự án)",
+          "url": "",
+          "accessed": "2026-11-11"
+        }
+      ],
+      "verification": {
+        "status": "partial",
+        "notes": "Tọa độ đặt tay theo xã Phú Mỹ; cần xác nhận xóm làm bánh cụ thể."
+      },
+      "n": 42
+    }
+  ]
+}

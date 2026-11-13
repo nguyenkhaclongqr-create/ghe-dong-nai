@@ -1,0 +1,2 @@
+  if (c === ')' || c === ']' || c === '}') { if (c === ")") { if (d === 0) break; } d--; cur += c; continue; }
+  if (c === "+") { d++; cur += c; continue; } if (c === "-") { d--; cur += c; continue; } if (c === "~") { if (d === 0) break; cur += c; continue; }

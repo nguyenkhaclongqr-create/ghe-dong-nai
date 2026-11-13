@@ -1,0 +1,37 @@
+{
+  "name": "ghe-dong-nai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ghé Đồng Nai — website song ngữ khám phá điểm đến, làng nghề và sản phẩm OCOP của Đồng Nai, có bản đồ tương tác và chatbot AI.",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "validate": "node scripts/validate-data.mjs",
+    "geocode": "node scripts/geocode.mjs",
+    "images": "node scripts/optimize-images.mjs",
+    "photos": "node scripts/auto-ingest-photos.mjs",
+    "photos:verify": "node scripts/auto-ingest-photos.mjs --verify",
+    "test:chat": "node scripts/chat-tests.mjs"
+  },
+  "dependencies": {
+    "@fontsource/baloo-2": "^5.3.0",
+    "@fontsource/be-vietnam-pro": "^5.3.0",
+    "@fontsource/bricolage-grotesque": "^5.3.0",
+    "compression": "^1.8.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.10",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.4",
+    "gsap": "^3.15.1",
+    "helmet": "^8.3.0",
+    "leaflet": "1.9.4",
+    "leaflet.markercluster": "^1.5.3",
+    "lucide-static": "^1.72.0",
+    "sharp": "^0.35.5",
+    "three": "^0.187.0"
+  }
+}

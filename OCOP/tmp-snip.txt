@@ -1,0 +1,29 @@
+  try {
+    let res;
+    // 503 (quá tải) thỉnh thoảng xảy ra và hết ngay → thử lại một lần.
+    for (let lan = 1; ; lan += 1) {
+      res = await fetch(GOC_GEMINI + encodeURIComponent(MODEL) + ':generateContent', {
+            method: 'POST',
+            signal: ctrl.signal,
+            headers: {
+              'Content-Type': 'application/json',
+              // Khoá đi trong header, không trong URL — tránh lọt vào log máy chủ.
+              'x-goog-api-key': khoa
+            },
+          body: JSON.stringify({
+            systemInstruction: { parts: [{ text: heThong }] },
+            contents,
+            generationConfig: {
+              temperature: 0.3,
+              // Dòng 3.x tiêu tốn token suy luận (thoughts) trước khi trả lời;
+              // không cấp đủ thì phần text bị cắt giữa chừng và JSON hỏng.
+              maxOutputTokens: 8192,
+              responseMimeType: 'application/json',
+              // Câu trả lời ngắn (≤180 từ) nên không cần suy luận sâu — giảm độ trễ.
+              thinkingConfig: { thinkingLevel: 'LOW' }
+            }
+          })
+        });
+      if (res.status !== 503 || lan >= 2) break;
+      await new Promise((r) => setTimeout(r, 700));
+    }

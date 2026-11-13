@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-11-11",
+  "note": "Tâm và bán kính tính từ tọa độ các mục thuộc khu (xem scripts/validate-data.mjs — báo lệch nếu chỉnh tay quá 25 km). Keyword: từ khóa không dấu dùng cho tìm kiếm/bộ đọc dự phòng.",
+  "zones": [
+    {
+      "id": "bien-hoa",
+      "name": { "vi": "Biên Hòa và lân cận", "en": "Biên Hòa area" },
+      "includes": { "vi": "Bửu Long, Tân Vạn, Hố Nai, Sơn Tiên, Bình Đa", "en": "Bửu Long, Tân Vạn, Hố Nai, Sơn Tiên, Bình Đa" },
+      "center": { "lat": 10.96, "lng": 106.84 },
+      "radius_km": 9,
+      "keyword": "bien hoa binh duong son tien tan van buu long ho nai",
+      "neighbors": ["vinh-cuu-tri-an", "trang-bom-thong-nhat"]
+    },
+    {
+      "id": "trang-bom-thong-nhat",
+      "name": { "vi": "Trảng Bom – Thống Nhất", "en": "Trảng Bom – Thống Nhất" },
+      "includes": { "vi": "Giang Điền, Bình Minh, Gia Kiệm", "en": "Giang Điền, Bình Minh, Gia Kiệm" },
+      "center": { "lat": 10.96, "lng": 107.07 },
+      "radius_km": 14,
+      "keyword": "trang bom thong nhat giang dien binh minh gia kiem",
+      "neighbors": ["bien-hoa", "dinh-quan-tan-phu", "long-khanh-xuan-loc"]
+    },
+    {
+      "id": "long-khanh-xuan-loc",
+      "name": { "vi": "Xuân Lộc – Long Khánh", "en": "Xuân Lộc – Long Khánh" },
+      "includes": { "vi": "Chứa Chan, Suối Cát, Xuân Bắc", "en": "Chứa Chan, Suối Cát, Xuân Bắc" },
+      "center": { "lat": 10.93, "lng": 107.33 },
+      "radius_km": 20,
+      "keyword": "long khanh xuan loc chua chan sua cat xuan bac",
+      "neighbors": ["trang-bom-thong-nhat", "nhon-trach"]
+    },
+    {
+      "id": "vinh-cuu-tri-an",
+      "name": { "vi": "Vĩnh Cửu – Trị An", "en": "Vĩnh Cửu – Trị An" },
+      "includes": { "vi": "Hồ Trị An, Thạnh Phú, Tân Triều", "en": "Hồ Trị An, Thạnh Phú, Tân Triều" },
+      "center": { "lat": 11.06, "lng": 107.02 },
+      "radius_km": 16,
+      "keyword": "vinh cuu tri an thanh phu tan trieu",
+      "neighbors": ["bien-hoa", "dinh-quan-tan-phu"]
+    },
+    {
+      "id": "dinh-quan-tan-phu",
+      "name": { "vi": "Định Quán – Tân Phú – Cát Tiên", "en": "Định Quán – Tân Phú – Cát Tiên" },
+      "includes": { "vi": "Đá Ba Chồng, Suối Mơ, Tà Lài, Cát Tiên", "en": "Đá Ba Chồng, Suối Mơ, Tà Lài, Cát Tiên" },
+      "center": { "lat": 11.3, "lng": 107.36 },
+      "radius_km": 38,
+      "keyword": "dinh quan tan phu cat tien da ba chong suoi mo ta lai",
+      "neighbors": ["vinh-cuu-tri-an", "trang-bom-thong-nhat"]
+    },
+    {
+      "id": "nhon-trach",
+      "name": { "vi": "Nhơn Trạch", "en": "Nhơn Trạch" },
+      "includes": { "vi": "Phú Hội", "en": "Phú Hội" },
+      "center": { "lat": 10.67, "lng": 106.91 },
+      "radius_km": 12,
+      "keyword": "nhon trach phu hoi",
+      "neighbors": ["bien-hoa", "long-khanh-xuan-loc"]
+    }
+  ]
+}

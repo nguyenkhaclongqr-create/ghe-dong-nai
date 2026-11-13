@@ -1,0 +1,14 @@
+{
+  "qr": {
+    "title": "Quét QR Check-in",
+    "instructions": "Quét mã QR tại địa điểm để tự động đóng dấu vào Hộ chiếu của bạn.",
+    "scanCamera": "Quét từ Camera",
+    "uploadImage": "Tải ảnh QR lên",
+    "invalidCode": "Mã QR không hợp lệ",
+    "placeNotFound": "Không tìm thấy địa điểm này",
+    "checkedIn": "Đã đóng dấu tại {name}",
+    "cameraNotImplemented": "Tính năng quét camera đang được phát triển. Vui lòng dùng nút Upload ảnh QR.",
+    "uploadNotImplemented": "Tính năng đọc QR từ ảnh đang được phát triển.",
+    "cameraError": "Không thể truy cập camera. Hãy kiểm tra quyền truy cập."
+  }
+}

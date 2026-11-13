@@ -1,0 +1,135 @@
+/* ==========================================================================
+   tokens.css — nguồn sự thật duy nhất cho màu, chữ, khoảng cách, bán kính.
+   Khái niệm: "Tem và dấu bưu điện". Tên token theo vật liệu địa phương.
+   Chỉ giao diện sáng. Không gradient trang trí.
+   ========================================================================== */
+
+/* Phông chữ: xem public/css/fonts.css (tệp tự lưu trữ, nạp trước tokens.css). */
+
+:root {
+  /* Bảng màu vật liệu địa phương (4.2) */
+  --cham: #1b2559;          /* chàm — chữ, nền tối, viền */
+  --men-dong: #0f7a69;      /* men xanh đồng — chủ đạo, điểm đến */
+  --dieu: #d63a22;          /* quả điều — nhấn, OCOP */
+  --vang-dieu: #ffc23d;     /* cùi điều — nền nhấn, làng nghề */
+  --voi: #f1f4ef;           /* vôi, đá — nền trang */
+  --da-xanh: #5b6b78;       /* đá xanh — chữ phụ, viền nhẹ */
+
+  /* Suy ra (đã đo tương phản) */
+  --men-dong-dam: #0b5c50;      /* men trên nền sáng: 6.1:1 */
+  --dieu-dam: #b8290f;          /* điều chữ trên nền sáng: 6.4:1 */
+  --dieu-toi: #8f1f0b;          /* nền điều đậm, chữ trắng 7.9:1 */
+  --vang-dieu-sang: #ffe9b0;    /* nền nhãn vàng nhạt */
+  --da-xanh-dam: #47545f;       /* chữ phụ đậm: 7.1:1 trên --voi */
+  --giay: #fbfcf9;              /* giấy trắng ấm nhẹ cho tem */
+  --giay-cu: #f6f2e7;           /* giấy ngả vàng nhẹ làm nền hero tem */
+  --trang: #ffffff;
+  --nen-noi: #ffffff;
+  --vien: #d6dcd4;              /* viền thường trên nền vôi */
+  --vien-dam: #9aa6a0;          /* viền khi cần ≥3:1 cho phía điều khiển */
+  --den-trong: rgba(27, 37, 89, 0.06);
+
+  /* Màu theo loại */
+  --mau-ocop: var(--dieu);
+  --mau-diem-den: var(--men-dong);
+  --mau-lang-nghe: var(--vang-dieu);
+  --chu-tren-lang-nghe: var(--cham);
+
+  /* Màu trạng thái */
+  --trang-thai-thanh-cong: #0b6b3a;
+  --trang-thai-canh-bao: #7a4a00;
+  --trang-thai-loi: #a1220c;
+  --nen-canh-bao: #fff4d6;
+  --nen-loi: #fdecea;
+  --nen-thanh-cong: #e7f4ec;
+
+  /* Chữ */
+  --font-tieu-de: 'Bricolage Grotesque', 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-noi-dung: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --fs-2xs: 0.75rem;   /* 12px — nhãn nhỏ, chú thích phụ (luôn ≥12px) */
+  --fs-xs: 0.8125rem;  /* 13px — nhãn, meta */
+  --fs-sm: 0.875rem;   /* 14px — nội dung phụ */
+  --fs-base: 1rem;     /* 16px — nội dung */
+  --fs-md: clamp(1.125rem, 1.6vw, 1.25rem);    /* 18–20 */
+  --fs-lg: clamp(1.25rem, 2.2vw, 1.75rem);     /* 20–28 */
+  --fs-xl: clamp(1.75rem, 4vw, 2.5rem);        /* 28–40 */
+  --fs-2xl: clamp(2.25rem, 6vw, 4.5rem);       /* 36–72 */
+  --fs-hero: clamp(2.5rem, 7.2vw, 6rem);       /* 40–96 */
+
+  --lh-tight: 1.08;
+  --lh-tieu-de: 1.12;
+  --lh-noi-dung: 1.58;
+  --tracking-tieu-de: -0.022em;
+  --do-dai-dong: 66ch;
+
+  /* Khoảng cách — thang 4/8/12/16/24/32/48/64/96 */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-24: 96px;
+
+  /* Bán kính có thứ bậc (4.4) */
+  --r-chip: 999px;
+  --r-the: 14px;
+  --r-tam: 20px;
+  --r-nho: 6px;
+
+  /* Bóng — chỉ phần nổi */
+  --bong-noi: 0 10px 30px -12px rgba(27, 37, 89, 0.28), 0 2px 6px rgba(27, 37, 89, 0.08);
+  --bong-nhe: 0 2px 8px rgba(27, 37, 89, 0.1);
+
+  /* Đường nét */
+  --vien-1: 1px solid var(--vien);
+  --vien-2: 2px solid var(--cham);
+  --focus-w: 3px;
+
+  /* Lưới */
+  --rong-toi-da: 1280px;
+  --cot-dien-thoai: 4;
+  --cot-may-tinh-bang: 8;
+  --cot-may-tinh: 12;
+  --le-ngang: clamp(16px, 4vw, 32px);
+
+  /* Lớp — z-index theo thứ bậc */
+  --z-header: 40;
+  --z-nav-duoi: 45;
+  --z-dieu-khien-ban-do: 500;
+  --z-sheet: 650;
+  --z-drawer: 700;
+  --z-toast: 900;
+
+  /* Kích thước khóa bố cục */
+  --cao-header: 60px;
+  --cao-nav-duoi: 64px;
+  --rong-panel-ban-do: 380px;
+  --rong-drawer: 420px;
+
+  /* Răng cưa tem — cơ chế mask riêng cho con tem */
+  --tem-rang: 10px;          /* bán kính lỗ răng cưa */
+  --tem-vien: 8px;           /* khung tem bên trong */
+  --tem-rong: 240px;         /* kích thước tem thường */
+  --tem-rong-lon: 380px;     /* tem lớn trên trang chủ */
+
+  /* Chuyển động */
+  --thoi-gian-nhanh: 120ms;
+  --thoi-gian: 200ms;
+  --thoi-gian-cham: 320ms;
+  --ease-ra: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-vao-ra: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Ngân sách chuyển động: tắt toàn bộ khi người dùng yêu cầu giảm chuyển động */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --thoi-gian-nhanh: 0ms;
+    --thoi-gian: 0ms;
+    --thoi-gian-cham: 0ms;
+  }
+}

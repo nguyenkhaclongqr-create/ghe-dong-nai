@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="vi" data-ngon-ngu="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Ghé Đồng Nai — điểm đến, làng nghề và sản phẩm OCOP</title>
+    <meta
+      name="description"
+      content="Bản đồ và bộ sưu tập tem về điểm đến, làng nghề, sản phẩm OCOP ở Đồng Nai, kèm bạn đồng hành AI để hỏi đường và lên lịch trình."
+    />
+    <meta name="theme-color" content="#1B2559" />
+    <meta name="color-scheme" content="light" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://ghe-dong-nai.onrender.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ghé Đồng Nai" />
+    <meta property="og:title" content="Ghé Đồng Nai — điểm đến, làng nghề và sản phẩm OCOP" />
+    <meta
+      property="og:description"
+      content="Từ vườn ca cao đến lò gốm: bản đồ, bộ sưu tập tem và bạn đồng hành để lên lịch trình quanh Đồng Nai."
+    />
+    <meta property="og:url" content="https://ghe-dong-nai.onrender.com/" />
+    <meta property="og:image" content="https://ghe-dong-nai.onrender.com/img/placeholders/pot.svg" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/img/placeholders/logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/img/placeholders/logo.svg" />
+
+    <link
+      rel="preload"
+      href="/vendor/@fontsource/be-vietnam-pro/files/be-vietnam-pro-vietnamese-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/vendor/@fontsource/bricolage-grotesque/files/bricolage-grotesque-latin-800-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" href="/css/chat.css" />
+    <link rel="stylesheet" href="/css/map.css" />
+    <link rel="stylesheet" href="/css/map-gis.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Ghé Đồng Nai",
+        "inLanguage": ["vi", "en"],
+        "description": "Bản đồ và bộ sưu tập tem về điểm đến, làng nghề, sản phẩm OCOP ở Đồng Nai.",
+        "about": {
+          "@type": "TouristDestination",
+          "name": "Đồng Nai",
+          "description": "Điểm đến sinh thái, văn hóa, làng nghề và sản phẩm OCOP của Đồng Nai."
+        }
+      }
+    </script>
+
+    <!-- Mapbox GL JS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.js"></script>
+
+  </head>
+  <body>
+    <a class="skip-link" href="#noi-dung" data-tinh="nav:skip">Bỏ qua đến nội dung</a>
+
+    <header class="header" id="header" data-cuon="false">
+      <div class="khung header__trong">
+        <a class="logo" href="#/" aria-label="Ghé Đồng Nai" data-tinh-aria-label="nav:homeAria">
+          <img src="/img/placeholders/logo.svg" width="36" height="36" alt="" decoding="async" />
+          <span class="logo__ten">
+            <span>Ghé Đồng Nai</span>
+            <span class="logo__vung">Đồng Nai</span>
+          </span>
+        </a>
+
+        <nav class="nav-tren" data-tinh-aria-label="nav:main">
+          <ul class="nav-tren__ds">
+            <li>
+              <a class="nav-tren__lien-ket" href="#/ban-do" data-nav="ban-do" data-tinh="nav:map">Bản đồ</a>
+            </li>
+            <li>
+              <a class="nav-tren__lien-ket" href="#/kham-pha" data-nav="kham-pha" data-tinh="nav:explore">Khám phá</a>
+            </li>
+            <li>
+              <a class="nav-tren__lien-ket" href="#/hoi-duong" data-nav="hoi-duong" data-tinh="nav:chat">Hỏi đường</a>
+            </li>
+            <li>
+              <a class="nav-tren__lien-ket" href="#/gioi-thieu" data-nav="gioi-thieu" data-tinh="nav:about">Giới thiệu</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__cong-cu">
+          <div class="cong-tac-ngon-ngu" role="group" aria-label="Ngôn ngữ" data-tinh-aria-label="nav:language">
+            <button
+              type="button"
+              lang="vi"
+              data-ngon-ngu-nut="vi"
+              aria-pressed="true"
+              aria-label="Chuyển sang tiếng Việt"
+              data-tinh-aria-label="nav:switchToVi"
+            >
+              VI
+            </button>
+            <button
+              type="button"
+              lang="en"
+              data-ngon-ngu-nut="en"
+              aria-pressed="false"
+              aria-label="Switch to English"
+              data-tinh-aria-label="nav:switchToEn"
+            >
+              EN
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="thong-bao-trang" class="chi-cho-doc-xanh" role="status" aria-live="polite"></div>
+
+    <main id="noi-dung" class="main" tabindex="-1" data-trang="chuong">
+      <div class="khung trang" aria-busy="true">
+        <p class="chi-cho-doc-xanh">Đang tải</p>
+        <div class="skeleton skeleton--tem" aria-hidden="true" style="max-width: 720px"></div>
+      </div>
+    </main>
+
+    <footer class="footer khong-in">
+      <div class="khung footer__luoi">
+        <div>
+          <a class="logo" href="#/">
+            <img src="/img/placeholders/logo.svg" width="36" height="36" alt="" decoding="async" />
+            <span class="logo__ten"><span>Ghé Đồng Nai</span></span>
+          </a>
+          <p data-tinh="footer:about">
+            Ghé Đồng Nai gom điểm đến, làng nghề và sản phẩm OCOP của Đồng Nai thành một bộ sưu tập tem, kèm bản đồ
+            và bạn đồng hành AI.
+          </p>
+        </div>
+        <nav aria-labelledby="chan-trang-dieu-huong">
+          <h2 id="chan-trang-dieu-huong" data-tinh="footer:nav">Điều hướng</h2>
+          <ul>
+            <li><a href="#/" data-tinh="nav:home">Trang chủ</a></li>
+            <li><a href="#/ban-do" data-tinh="nav:map">Bản đồ</a></li>
+            <li><a href="#/kham-pha" data-tinh="nav:explore">Khám phá</a></li>
+            <li><a href="#/hoi-duong" data-tinh="nav:chat">Hỏi đường</a></li>
+            <li><a href="#/ho-chieu" data-tinh="nav:passport">Hộ chiếu</a></li>
+            <li><a href="#/gioi-thieu" data-tinh="nav:about">Giới thiệu</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 data-tinh="footer:data">Dữ liệu và giấy phép</h2>
+          <details class="footer__nguon-anh" id="chan-trang-anh">
+            <summary data-tinh="footer:photos">Ảnh và giấy phép</summary>
+            <div id="chan-trang-danh-sach-anh">
+              <p data-tinh="footer:photosEmpty">Hình minh họa do dự án vẽ, không dùng ảnh bên ngoài.</p>
+            </div>
+          </details>
+          <p data-tinh="footer:sources">Nguồn dữ liệu: danh mục dự án, có nguồn trong từng trang chi tiết.</p>
+          <p data-tinh="footer:mapTiles">Nền bản đồ: © Mapbox, © OpenStreetMap contributors.</p>
+          <p>© <span id="chan-trang-nam">2026</span> Ghé Đồng Nai</p>
+        </div>
+      </div>
+      <div class="khung footer__duoi">
+        <p data-tinh="footer:rights">Thông tin tham khảo, xác nhận trước khi đi.</p>
+        <p id="chan-trang-cap-nhat"></p>
+      </div>
+    </footer>
+
+    <nav class="nav-duoi khong-in" data-tinh-aria-label="nav:main">
+      <a class="nav-duoi__muc" href="#/" data-nav="chuong">
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <path d="M9 22V12h6v10" />
+        </svg>
+        <span data-tinh="nav:home">Trang chủ</span>
+      </a>
+      <a class="nav-duoi__muc" href="#/ban-do" data-nav="ban-do">
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path
+            d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"
+          />
+          <path d="M15 5.764v15" />
+          <path d="M9 3.236v15" />
+        </svg>
+        <span data-tinh="nav:map">Bản đồ</span>
+      </a>
+      <a class="nav-duoi__muc" href="#/kham-pha" data-nav="kham-pha">
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36z" />
+        </svg>
+        <span data-tinh="nav:explore">Khám phá</span>
+      </a>
+      <a class="nav-duoi__muc" href="#/hoi-duong" data-nav="hoi-duong">
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.75"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+        <span data-tinh="nav:chat">Hỏi đường</span>
+      </a>
+    </nav>
+
+    <div class="vung-toast" role="status" aria-live="polite" aria-atomic="false"></div>
+
+    <noscript>
+      <div class="khung">
+        <p>Trang cần JavaScript để hiển thị bản đồ và bộ sưu tập tem.</p>
+      </div>
+    </noscript>
+
+    <script src="/js/config.js"></script>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
