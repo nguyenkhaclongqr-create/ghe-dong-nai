@@ -15,7 +15,8 @@ Chỉ ghi các vấn đề **chưa sửa xong** và việc người vận hành 
    nhưng nên cập nhật khi có bảng ánh xạ.
 5. **Chạy với khoá Gemini thật** trên mạng ở hội trường (không có máy chủ thử). Nếu model mặc định bị
    Google gỡ, đổi `GEMINI_MODEL` sang mô hình đang được hỗ trợ (các dòng 1.5/2.0/2.5-flash trả 404 với khoá
-   mới — dùng `gemini-3.6-flash`).
+   mới — đang dùng `gemini-3.5-flash-lite`). `server/chat.js` cũng tự thử `gemini-flash-lite-latest` rồi
+   `gemini-3.5-flash` khi model chính trả 404 hoặc không nhận `thinkingConfig`.
 
 ## Hạn chế chức năng (đã biết, không chặn)
 
@@ -57,7 +58,7 @@ Chỉ ghi các vấn đề **chưa sửa xong** và việc người vận hành 
     desktop/Android thường có; một số Firefox/thiết bị thiếu gói giọng sẽ báo "không hỗ trợ" thay vì đọc. Không gửi văn bản
     ra dịch vụ ngoài.
 20. **"Hỏi AI tự nhiên" hoạt động không cần khoá** nhờ bộ quy tắc cục bộ; khi có `GEMINI_API_KEY` phần giải thích sẽ do mô hình
-    viết tự nhiên hơn. Nếu Google đổi tên mô hình, chỉnh `GEMINI_MODEL` trong `.env` (mặc định `gemini-3.6-flash`,
+    viết tự nhiên hơn. Nếu Google đổi tên mô hình, chỉnh `GEMINI_MODEL` trong `.env` (mặc định `gemini-3.5-flash-lite`,
     dùng ở `server/chat.js`); nếu nhánh Gemini lỗi, hệ thống tự rơi về fallback và giao diện không hỏng.
 21. **Lập lịch trình tự động** dùng thứ tự tham lam theo Haversine (chim bay) chứ không định tuyến đường thật — thời gian
     lái xe là ước tính đã nhân hệ số đường bộ; lối ra Google Maps mới là tuyến thật. Không tự vẽ tuyến trên bản đồ trừ khi

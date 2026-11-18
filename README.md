@@ -52,8 +52,8 @@ curl http://localhost:3000/api/places | head -c 300
 | Biến | Bắt buộc | Mặc định | Ý nghĩa |
 |---|---|---|---|
 | `GEMINI_API_KEY` | Không | — | Khoá API Google Gemini. Có khoá → trợ lý dùng mô hình; không có → chế độ dự phòng |
-| `GEMINI_MODEL` | Không | `gemini-3.6-flash` | Tên mô hình. Các dòng 1.5-flash/2.0-flash/2.5-flash trả 404 với khoá mới — dùng `gemini-3.6-flash` |
-| `GEMINI_TIMEOUT_MS` | Không | `30000` | Chờ tối đa mỗi lần gọi (ms) |
+| `GEMINI_MODEL` | Không | `gemini-3.5-flash-lite` | Tên mô hình. Các dòng 1.5-flash/2.0-flash/2.5-flash trả 404 với khoá mới; `gemini-3.6-flash` hợp lệ nhưng chậm 20–30 giây với system prompt dài của trang → dùng `gemini-3.5-flash-lite` (2–3 giây) |
+| `GEMINI_TIMEOUT_MS` | Không | `9000` | Chờ tối đa cho cả lượt gọi Gemini (ms), gồm cả lượt thử lại và model dự phòng. Phải nhỏ hơn hạn chờ fetch của trang Hỏi đường (25 giây, `public/js/api.js`) |
 | `CHAT_MODE` | Không | — | Đặt `fallback` để **ép** chế độ cơ bản dù có khoá (dự phòng khi thuyết trình mạng yếu) |
 | `PORT` | Không | `3000` | Cổng HTTP (Render tự đặt) |
 | `NODE_ENV` | Không | — | `production` khi deploy: bật cache dài hạn cho `/vendor`, `public/` |

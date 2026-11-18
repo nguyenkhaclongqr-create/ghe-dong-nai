@@ -5,7 +5,9 @@
  *   1. Áp chữ tĩnh trong index.html (data-tinh, data-tinh-aria-label) từ noi-dung-tinh.js.
  *   2. Dựng chuyển động (fx/motion.js) — chỉ khi người dùng không bật giảm chuyển động.
  *   3. Nạp từ điển VI/EN (initI18n), rồi áp lại chữ tĩnh bằng i18n.js.
- *   4. Bật nút đổi ngôn ngữ, theo dõi cuộn header, gắn lớp nhận biết tuyến.
+ *   4. Bật nút đổi ngôn ngữ, theo dõi cuộn header, gắn lớp nhận biết tuyến,
+ *      dựng nút đăng nhập/hộ chiếu trên header, nối hook đồng bộ dấu và khôi
+ *      phục phiên hộ chiếu (đồng bộ lại khi mạng có lại).
  *   5. Nạp trước khi xong bộ biểu tượng rồi bật router — để trang đầu tiên
  *      dựng ra đã có SVG, không nháy hình.
  *   6. Bật service worker (chỉ khi phục vụ qua https hoặc localhost).
@@ -16,6 +18,9 @@ import { NOI_DUNG_TINH } from './noi-dung-tinh.js';
 import { initI18n, setLang, lang, capNhatTinh, t } from './i18n.js';
 import { preloadIcons } from './ui/icons.js';
 import { khoiDongRouter } from './router.js';
+import { datHookDongBo } from './store.js';
+import { dangXuat, dongBoCheckin, dongBoKhiMoApp, khoiPhucPhien, layPhien } from './auth-client.js';
+import { khoiDongHeaderAuth } from './ui/header-auth.js';
 
 document.documentElement.classList.add('js');
 
@@ -82,6 +87,44 @@ function ganNutNgonNgu() {
     capNhatTinh(document);
     dongBoNutNgonNgu();
     capNhatChanTrang();
+  });
+}
+
+let dangDongBoPhien = false;
+
+/**
+ * Khôi phục phiên (nếu chưa có) rồi đồng bộ hộ chiếu với server.
+ * Gọi lúc mở app và mỗi khi mạng có lại — dấu đóng lúc offline sẽ được đẩy lên.
+ *
+ * - Chưa đăng nhập và không có token → không làm gì.
+ * - `khoiPhucPhien` chỉ dựng phiên, chưa ghi đè dấu trên máy; `dongBoKhiMoApp`
+ *   gộp dấu đóng lúc offline lên server (nếu có) rồi mới kéo danh sách về.
+ * - Phiên đã hết hạn ở server → đăng xuất luôn để header và hộ chiếu trở về
+ *   trạng thái của máy, thay vì hiện "đã đăng nhập" mà không đồng bộ được.
+ * @returns {Promise<object|null>} kết quả đồng bộ, hoặc null nếu không có phiên
+ */
+async function dongBoPhien() {
+  if (dangDongBoPhien) return null; // sự kiện online bắn dồn dập: chỉ chạy một lượt
+  dangDongBoPhien = true;
+  try {
+    if (!layPhien() && !(await khoiPhucPhien())) return null;
+    const kq = await dongBoKhiMoApp();
+    if (kq && !kq.ok && (kq.error === 'session_expired' || kq.error === 'unauthenticated')) {
+      await dangXuat();
+      return null;
+    }
+    return kq;
+  } finally {
+    dangDongBoPhien = false;
+  }
+}
+
+/** Đồng bộ lại khi mạng có lại (lúc mở app đã gọi dongBoPhien — xem khoiDong). */
+function ganDongBoKhiCoMang() {
+  window.addEventListener('online', () => {
+    dongBoPhien().catch((e) => {
+      console.info('[Ghé Đồng Nai] Không đồng bộ được hộ chiếu:', e && e.message);
+    });
   });
 }
 
@@ -253,11 +296,17 @@ async function khoiDong() {
   ganNutNgonNgu();
   capNhatChanTrang();
 
-  // 4. Khung giao diện.
+  // 4. Khung giao diện và phiên hộ chiếu.
   theoDoiCuonHeader();
   ganDanhDauNav();
   ganPhimTat();
   theoDoiBanPhim();
+  khoiDongHeaderAuth();
+  datHookDongBo(dongBoCheckin);
+  ganDongBoKhiCoMang();
+  dongBoPhien().catch((e) => {
+    console.info('[Ghé Đồng Nai] Không đồng bộ được hộ chiếu:', e && e.message);
+  });
 
   // 5. Router sau khi có biểu tượng (chờ tối đa 600 ms để trang không bị treo
   //    khi mạng chậm hoặc file icon lỗi).

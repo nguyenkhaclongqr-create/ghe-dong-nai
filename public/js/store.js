@@ -272,14 +272,23 @@ export function xoaHoChieu() {
 }
 
 /**
+ * Ghi đè danh sách dấu trên máy bằng một mảng id rồi kích sự kiện UI.
+ * Dùng khi khôi phục dấu riêng của máy lúc đăng xuất.
+ * @param {string[]} ids
+ */
+export function datHoChieu(ids) {
+  const sach = (ids || []).filter((x) => typeof x === 'string');
+  ghiHoChieu(sach);
+  document.dispatchEvent(new CustomEvent('hochieu:doi', { detail: { daDong: sach.slice() } }));
+}
+
+/**
  * Ghi đè danh sách checkins từ server vào localStorage và kích sự kiện UI.
  * Dùng sau khi đăng nhập / đồng bộ batch.
  * @param {Array<{placeId: string, timestamp: string, method: string}>} checkins
  */
 export function capNhatTuServer(checkins) {
-  const ids = (checkins || []).map((c) => c.placeId).filter(Boolean);
-  ghiHoChieu(ids);
-  document.dispatchEvent(new CustomEvent('hochieu:doi', { detail: { daDong: ids.slice() } }));
+  datHoChieu((checkins || []).map((c) => c.placeId).filter(Boolean));
 }
 
 // Hook để auth-client kích sync sau khi đóng dấu.

@@ -415,6 +415,38 @@
     "resetConfirm": "Remove every stamp in the passport?",
     "storageOff": "Storage is blocked in this browser; stamps will be lost when the tab closes."
   },
+  "auth": {
+    "headerLogin": "Sign in / Passport",
+    "openPassport": "Open stamp passport",
+    "logout": "Sign out",
+    "loginTitle": "Sign in to your stamp passport",
+    "registerTitle": "Create a stamp passport account",
+    "login": "Sign in",
+    "register": "Register",
+    "username": "Username",
+    "usernameHint": "3–30 characters: letters, numbers, underscores or hyphens.",
+    "displayName": "Display name",
+    "displayNamePlaceholder": "The name you want others to see",
+    "password": "Password",
+    "passwordHint": "Use at least 6 characters.",
+    "loginBtn": "Sign in",
+    "registerBtn": "Create account",
+    "loginNote": "Sign in to view and sync your passport stamps on this device.",
+    "registerNote": "Existing stamps on this device will be merged into your account after registration.",
+    "synced": "Synced {n} new stamps to your passport.",
+    "signedInToast": "Signed in and passport synced.",
+    "signedOutToast": "You have signed out.",
+    "err": {
+      "validation_error": "Some details are invalid. Please check the fields.",
+      "duplicate_username": "That username is already in use.",
+      "invalid_credentials": "The username or password is incorrect.",
+      "too_many_requests": "Too many attempts. Wait a minute, then try again.",
+      "network_error": "Could not connect to the server. Check your connection and try again.",
+      "server_error": "The server could not process the request. Please try again.",
+      "unauthenticated": "Sign in to continue.",
+      "session_expired": "Your session has expired. Please sign in again."
+    }
+  },
   "about": {
     "title": "About",
     "h1": "About Ghé Đồng Nai",

@@ -50,6 +50,13 @@ export async function getPlaces() {
 
 /**
  * Gửi tin nhắn cho trợ lý.
+ *
+ * Hạn chờ phải LỚN HƠN tổng thời gian xử lý bên server, nếu không trình duyệt
+ * bỏ cuộc trước khi server kịp trả câu trả lời dự phòng và người dùng thấy
+ * "Không gửi được câu hỏi" thay vì câu trả lời. Ngân sách bên server
+ * (server/chat.js + server/thoi-tiet.js):
+ *   thời tiết theo điểm ≤ 2,5s + thời tiết chung ≤ 2,5s + Gemini ≤ 9s ≈ 14s.
+ * 25 giây là mức dư an toàn cho mạng chậm, vẫn đủ ngắn để không treo cảm giác.
  * @param {{messages: {role: string, content: string}[], lang: 'vi'|'en', session?: object}} payload
  * @returns {Promise<object>} phản hồi theo hợp đồng 7.3
  */
@@ -58,7 +65,7 @@ export async function guiChat(payload) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload),
-    timeout: 30000
+    timeout: 25000
   });
   let json = null;
   try {

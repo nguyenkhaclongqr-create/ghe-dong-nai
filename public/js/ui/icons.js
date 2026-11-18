@@ -28,7 +28,9 @@ export const ICON_NAMES = [
   // Bộ nâng cấp PEAK (bản đồ GIS toàn màn hình + trợ lý AI)
   'volume-2', 'volume-x', 'panel-left', 'panel-right', 'panel-left-close', 'mic', 'play', 'square',
   'circle-stop', 'audio-lines', 'headphones', 'list-filter', 'navigation-2', 'wand-sparkles',
-  'timer', 'sunset', 'circle-question-mark'
+  'timer', 'sunset', 'circle-question-mark',
+  // Tài khoản hộ chiếu (đăng nhập / đăng xuất / đồng bộ)
+  'user-round', 'user-check', 'log-out', 'cloud-check'
 ];
 
 /** Hình dự phòng tối thiểu nếu file node tải lỗi (vẫn là SVG, không emoji) */

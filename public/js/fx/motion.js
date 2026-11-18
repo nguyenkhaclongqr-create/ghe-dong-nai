@@ -112,17 +112,43 @@ function ganCuon() {
 }
 
 /**
+ * Nạp một tệp .js cổ điển (UMD) bằng thẻ <script> và đợi tải xong.
+ *
+ * GSAP bản `/vendor/gsap/*.min.js` là UMD: đoạn mở đầu chạy
+ * `e((t = t || self).window = t.window || {})` — nó gán lên `window.window`.
+ * Chạy trong module (`import()`) thì `this` là `undefined`, `self` là `Window`
+ * thật, nên phép gán vào thuộc tính chỉ-có-getter đó ném
+ * "Cannot set property window of #<Window> which has only a getter".
+ * Thẻ <script> cổ điển chạy với `this === window` và `window.window` đã tồn tại,
+ * nên UMD hoạt động đúng như thiết kế và gắn `window.gsap` / `window.ScrollTrigger`.
+ * @param {string} url
+ * @returns {Promise<void>}
+ */
+function taiScript(url) {
+  return new Promise((ok, loi) => {
+    const s = document.createElement('script');
+    s.src = url;
+    s.async = false;
+    s.onload = () => ok();
+    s.onerror = () => loi(new Error('Không tải được ' + url));
+    document.head.appendChild(s);
+  });
+}
+
+/**
  * Khởi động chuyển động toàn cục. Trả về Promise<boolean> — true nếu bật được.
  */
 export async function khoiDongChuyenDong() {
   if (giamChuyenDong() || dangKhoiDong) return !!gsapRef;
   dangKhoiDong = true;
   try {
-    const mod = await import('/vendor/gsap/gsap.min.js');
-    gsapRef = mod.gsap || mod.default || window.gsap;
-    const st = await import('/vendor/gsap/ScrollTrigger.min.js').catch(() => null);
-    ScrollTriggerRef = (st && (st.ScrollTrigger || st.default)) || window.ScrollTrigger || null;
+    await taiScript('/vendor/gsap/gsap.min.js');
+    gsapRef = window.gsap || null;
     if (!gsapRef) throw new Error('Không tải được GSAP');
+
+    // ScrollTrigger là plugin phụ: thiếu cũng không sao, chỉ mất hiệu ứng header.
+    await taiScript('/vendor/gsap/ScrollTrigger.min.js').catch(() => {});
+    ScrollTriggerRef = window.ScrollTrigger || null;
     if (ScrollTriggerRef && gsapRef.registerPlugin) gsapRef.registerPlugin(ScrollTriggerRef);
 
     document.addEventListener('trang:doi', () => {

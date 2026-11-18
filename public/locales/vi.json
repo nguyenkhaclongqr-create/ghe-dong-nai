@@ -415,6 +415,38 @@
     "resetConfirm": "Xóa tất cả dấu trong hộ chiếu?",
     "storageOff": "Trình duyệt đang chặn lưu trữ, dấu sẽ mất khi đóng tab."
   },
+  "auth": {
+    "headerLogin": "Đăng nhập / Hộ chiếu",
+    "openPassport": "Mở Hộ chiếu tem",
+    "logout": "Đăng xuất",
+    "loginTitle": "Đăng nhập Hộ chiếu tem",
+    "registerTitle": "Tạo tài khoản Hộ chiếu tem",
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "username": "Tên đăng nhập",
+    "usernameHint": "3–30 ký tự: chữ không dấu, số, gạch dưới hoặc gạch ngang.",
+    "displayName": "Tên hiển thị",
+    "displayNamePlaceholder": "Tên bạn muốn mọi người nhìn thấy",
+    "password": "Mật khẩu",
+    "passwordHint": "Dùng ít nhất 6 ký tự.",
+    "loginBtn": "Đăng nhập",
+    "registerBtn": "Tạo tài khoản",
+    "loginNote": "Đăng nhập để xem và đồng bộ dấu tem của bạn trên thiết bị này.",
+    "registerNote": "Dấu tem hiện có trên thiết bị sẽ được gộp vào tài khoản sau khi đăng ký.",
+    "synced": "Đã đồng bộ {n} dấu tem mới vào Hộ chiếu.",
+    "signedInToast": "Đã đăng nhập và đồng bộ Hộ chiếu.",
+    "signedOutToast": "Đã đăng xuất.",
+    "err": {
+      "validation_error": "Thông tin chưa hợp lệ. Hãy kiểm tra lại các trường.",
+      "duplicate_username": "Tên đăng nhập này đã được sử dụng.",
+      "invalid_credentials": "Tên đăng nhập hoặc mật khẩu không đúng.",
+      "too_many_requests": "Bạn thử quá nhiều lần. Vui lòng đợi một phút rồi thử lại.",
+      "network_error": "Không kết nối được máy chủ. Hãy kiểm tra mạng rồi thử lại.",
+      "server_error": "Máy chủ chưa xử lý được yêu cầu. Vui lòng thử lại.",
+      "unauthenticated": "Hãy đăng nhập để tiếp tục.",
+      "session_expired": "Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại."
+    }
+  },
   "about": {
     "title": "Giới thiệu",
     "h1": "Về Ghé Đồng Nai",

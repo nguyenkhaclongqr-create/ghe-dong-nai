@@ -11,7 +11,7 @@
  * Tăng số CACHE_VERSION khi đổi vỏ ứng dụng để dọn bản cũ.
  */
 
-const CACHE_VERSION = 'ghe-dong-nai-v5';
+const CACHE_VERSION = 'ghe-dong-nai-v6';
 const VO_APP = [
   '/',
   '/index.html',

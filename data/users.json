@@ -1,0 +1,42 @@
+[
+  {
+    "id": "02e826af3969aab5b6982b5c",
+    "username": "syntaxcheck_1794976785",
+    "displayName": "Ki?m tra",
+    "passwordHash": "a3ac9a8ab47ae11e93d5ae551afbb8d2:b5d6564be4281f3085f783765c331321c8ab40fee4fa2cbe4515d216635ee3ca9c8ff132a31c80de7c35fc3402f74185ec49c8143f0f66f7047e3d75b1c79ef4",
+    "checkins": [],
+    "createdAt": "2026-11-18T04:39:45.610Z"
+  },
+  {
+    "id": "49e5a6488536ef063e8e46d9",
+    "username": "syntaxcheck_2_1794976914",
+    "displayName": "Ki?m tra",
+    "passwordHash": "081d0174711ee0123f3a1da0782bfcbf:4710c296fd98d88615326a4926e60c20e237aa1b55ffc74ad8f00c2f90cf847805c0d0a6af3654cc570f10ff8a70fa83f022b3851830673838f7b96b24050812",
+    "checkins": [
+      {
+        "placeId": "a",
+        "timestamp": "2026-11-18T04:41:54.453Z",
+        "method": "merge"
+      },
+      {
+        "placeId": "b",
+        "timestamp": "2026-11-18T04:41:54.453Z",
+        "method": "merge"
+      },
+      {
+        "placeId": "c",
+        "timestamp": "2026-11-18T04:41:54.533Z",
+        "method": "manual"
+      }
+    ],
+    "createdAt": "2026-11-18T04:41:54.212Z"
+  },
+  {
+    "id": "9c33b8facf4dc2e6297f45bd",
+    "username": "quangquacnek",
+    "displayName": "quangquac",
+    "passwordHash": "fb59cb2d7b8a13c5125b0d3e77256f09:98d0f3b8a0b9f682984a8e135d92fab24a2c1ad811495577605ad74c25275305c01cec901dbf4c2341a94c2aa52966d654c61503988be34f9cdf8724173f422c",
+    "checkins": [],
+    "createdAt": "2026-11-18T07:37:22.336Z"
+  }
+]

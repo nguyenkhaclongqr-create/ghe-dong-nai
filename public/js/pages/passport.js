@@ -266,14 +266,17 @@ export async function render(ctx) {
 
   function doiDau(place) {
     const dangCo = docHoChieu().daDong.includes(place.id);
-    const doi = dangCo ? boDau(place.id) : dongDau(place.id);
+    // Người dùng tự bấm trên trang hộ chiếu → cách đóng dấu là 'manual'.
+    const doi = dangCo ? boDau(place.id) : dongDau(place.id, 'manual');
     if (!doi) {
       toast(t('passport.storageOff'), { loai: 'loi', bieuTuong: 'circle-question-mark' });
       return;
     }
     if (dangCo) toast(t('toast.removed') + ' · ' + tt(place.name), { bieuTuong: 'stamp' });
     else toast(t('a11y.savedToast', { name: tt(place.name) }), { loai: 'thanh-cong', bieuTuong: 'stamp' });
-    veLai();
+    // Không gọi veLai() ở đây: cả dongDau lẫn boDau đều bắn 'hochieu:doi',
+    // và trình nghe bên dưới đã vẽ lại — nhờ vậy dữ liệu đổ về từ server
+    // (sau khi đăng nhập) cũng tự hiện ra mà không cần tải lại trang.
   }
 
   /* ------------------------- Vẽ lại danh sách ------------------------- */
@@ -354,6 +357,11 @@ export async function render(ctx) {
 
   /* --------------------------- Dữ liệu --------------------------- */
 
+  // Vẽ lại khi hộ chiếu đổi: do người dùng bấm, do đăng nhập (gộp dấu lên
+  // server rồi đổ danh sách đầy đủ về), hoặc do đăng xuất khôi phục dấu máy.
+  const ngheHoChieu = () => veLai();
+  document.addEventListener('hochieu:doi', ngheHoChieu);
+
   try {
     await taiDiaDiem();
     if (!hieuLuc || ctx.luot !== luotHienTai) return { el };
@@ -388,6 +396,7 @@ export async function render(ctx) {
     description: t('passport.lead'),
     destroy() {
       hieuLuc = false;
+      document.removeEventListener('hochieu:doi', ngheHoChieu);
     }
   };
 }

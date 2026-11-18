@@ -25,12 +25,26 @@ const { docDuLieu } = require('./du-lieu.js');
 const thoiTietNguCanh = require('./thoi-tiet.js');
 const { taoNgCanhHeThong } = require('./prompt.js');
 
-// Gemini qua REST generateContent. Mặc định gemini-3.6-flash: dòng 1.5, 2.0 và
-// 2.5-flash đều trả 404 với khoá mới ("no longer available to new users").
-// Đổi qua GEMINI_MODEL trong .env nếu cần.
-const MODEL = process.env.GEMINI_MODEL || 'gemini-3.6-flash';
+// Gemini qua REST generateContent.
+//
+// Mặc định gemini-3.5-flash-lite: dòng 1.5/2.0/2.5-flash đã trả 404 với khoá mới
+// ("no longer available to new users"), còn gemini-3.6-flash tuy hợp lệ nhưng đo
+// thực tế với đúng system prompt của trang (>10.000 ký tự, 42 địa điểm) mất
+// 20–30 giây cho một câu trả lời — chậm hơn cả hạn chờ, nên lần nào cũng rơi về
+// dự phòng. flash-lite trả JSON hợp lệ trong ~2–3 giây. Đổi qua GEMINI_MODEL.
+const MODEL = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
+
+// Google gỡ/đổi tên model khá nhanh: nếu model chính trả 404 (hoặc 400 vì không
+// nhận thinkingConfig) thì thử lần lượt các model dưới đây, vẫn trong cùng hạn chờ.
+const MODEL_DU_PHONG = ['gemini-flash-lite-latest', 'gemini-3.5-flash'];
+
 const GOC_GEMINI = 'https://generativelanguage.googleapis.com/v1beta/models/';
-const HAN_CHO_MS = Number(process.env.GEMINI_TIMEOUT_MS) || 30000;
+
+// Hạn chờ cho TOÀN BỘ phía Gemini (kể cả lượt thử lại khi 503), không phải cho
+// từng lần gọi — nhờ vậy tổng thời gian trả lời bị chặn trên, và phải nhỏ hơn
+// hạn chờ fetch của client (public/js/api.js: guiChat 25 giây) để client luôn
+// nhận được câu trả lời dự phòng thay vì báo lỗi mạng.
+const HAN_CHO_MS = Number(process.env.GEMINI_TIMEOUT_MS) || 9000;
 
 /** Số tin tối đa nhận từ client, số ký tự tối đa mỗi tin (brief 7.2) */
 const TOI_DA_TIN = 10;
@@ -122,11 +136,75 @@ function chuHoiCuoi(yeuCau) {
 }
 
 /**
+ * Một lần gọi generateContent cho một model.
+ * @returns {Promise<{ok: boolean, status: number, text?: string, loi?: string, doTinCay?: boolean}>}
+ *   ok = có văn bản dùng được; doTinCay = lỗi thuộc về model (404 / không nhận
+ *   thinkingConfig) nên đáng thử model kế tiếp.
+ */
+async function goiMotModel(model, khoa, heThong, contents, signal, dungThinking) {
+  const generationConfig = {
+    temperature: 0.3,
+    // Dòng 3.x tiêu tốn token suy luận (thoughts) trước khi trả lời;
+    // không cấp đủ thì phần text bị cắt giữa chừng và JSON hỏng.
+    maxOutputTokens: 8192,
+    responseMimeType: 'application/json'
+  };
+  // Câu trả lời ngắn (≤180 từ) nên không cần suy luận sâu — giảm độ trễ.
+  // Model cũ (gemma…) không nhận khoá này → gọi lại không kèm nó.
+  if (dungThinking) generationConfig.thinkingConfig = { thinkingLevel: 'LOW' };
+
+  const res = await fetch(GOC_GEMINI + encodeURIComponent(model) + ':generateContent', {
+    method: 'POST',
+    signal,
+    headers: {
+      'Content-Type': 'application/json',
+      // Khoá đi trong header, không trong URL — tránh lọt vào log máy chủ.
+      'x-goog-api-key': khoa
+    },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: heThong }] },
+      contents,
+      generationConfig
+    })
+  });
+
+  if (!res.ok) {
+    // Chỉ đọc thông điệp lỗi để phân loại; không in ra log (có thể kèm chi tiết khoá).
+    const chiTiet = await res.text().catch(() => '');
+    return {
+      ok: false,
+      status: res.status,
+      loi: 'gemini_http_' + res.status,
+      // 404 = model đã bị gỡ; 400 kèm "Thinking" = model không nhận thinkingConfig.
+      doTinCay: res.status === 404 || (res.status === 400 && /thinking/i.test(chiTiet))
+    };
+  }
+
+  const data = await res.json().catch(() => null);
+  let noiDung = '';
+  try {
+    const part = data.candidates[0].content.parts[0];
+    noiDung = part && typeof part.text === 'string' ? part.text : '';
+  } catch {
+    noiDung = '';
+  }
+  if (!noiDung.trim()) {
+    const ly = data && data.promptFeedback && data.promptFeedback.blockReason;
+    return { ok: false, status: 200, loi: ly ? 'gemini_blocked_' + ly : 'gemini_empty' };
+  }
+  return { ok: true, status: 200, text: noiDung };
+}
+
+/**
  * Gọi Gemini, trả về văn bản thô của mô hình.
  *
  * Cấu trúc gửi lên: systemInstruction = prompt hệ thống đã tiêm ngữ cảnh thời
  * tiết (taoNgCanhHeThong); contents = lịch sử hội thoại (user/model) rồi tới
  * câu hỏi hiện tại. responseMimeType json để khớp hợp đồng của validate.js.
+ *
+ * Thử lần lượt MODEL rồi MODEL_DU_PHONG trong CÙNG một hạn chờ HAN_CHO_MS: model
+ * chính bị Google gỡ (404) hay không nhận thinkingConfig (400) thì vẫn còn cửa
+ * trả lời bằng model khác thay vì rơi ngay về chế độ dự phòng.
  * @param {{messages: {role: string, content: string}[], lang: 'vi'|'en'}} yeuCau
  */
 async function goiGemini(yeuCau, duLieu) {
@@ -149,53 +227,39 @@ async function goiGemini(yeuCau, duLieu) {
   const ctrl = new AbortController();
   const hen = setTimeout(() => ctrl.abort(), HAN_CHO_MS);
   try {
-    let res;
-    // 503 (quá tải) thỉnh thoảng xảy ra và hết ngay → thử lại một lần.
-    for (let lan = 1; ; lan += 1) {
-      res = await fetch(GOC_GEMINI + encodeURIComponent(MODEL) + ':generateContent', {
-        method: 'POST',
-        signal: ctrl.signal,
-        headers: {
-          'Content-Type': 'application/json',
-          // Khoá đi trong header, không trong URL — tránh lọt vào log máy chủ.
-          'x-goog-api-key': khoa
-        },
-        body: JSON.stringify({
-            systemInstruction: { parts: [{ text: heThong }] },
-            contents,
-            generationConfig: {
-              temperature: 0.3,
-              // Dòng 3.x tiêu tốn token suy luận (thoughts) trước khi trả lời;
-              // không cấp đủ thì phần text bị cắt giữa chừng và JSON hỏng.
-              maxOutputTokens: 8192,
-              responseMimeType: 'application/json',
-              // Câu trả lời ngắn (≤180 từ) nên không cần suy luận sâu — giảm độ trễ.
-              thinkingConfig: { thinkingLevel: 'LOW' }
-            }
-        })
-      });
-      if (res.status !== 503 || lan >= 2) break;
-      await new Promise((r) => setTimeout(r, 700));
+    const danhSachModel = [...new Set([MODEL, ...MODEL_DU_PHONG])];
+    let loiCuoi = null;
+
+    for (const model of danhSachModel) {
+      let dungThinking = true;
+      // 503 (quá tải) thỉnh thoảng xảy ra và hết ngay → thử lại một lần,
+      // nhưng chỉ khi hạn chờ còn cho phép.
+      for (let lan = 1; lan <= 2; lan += 1) {
+        const kq = await goiMotModel(model, khoa, heThong, contents, ctrl.signal, dungThinking);
+        if (kq.ok) return kq.text;
+
+        loiCuoi = new Error(kq.loi);
+        loiCuoi.status = kq.status;
+
+        // Model không nhận thinkingConfig → gọi lại chính model đó, bỏ khoá này.
+        if (kq.status === 400 && dungThinking) {
+          dungThinking = false;
+          lan -= 1;
+          continue;
+        }
+        if (kq.status === 503 && lan === 1 && !ctrl.signal.aborted) {
+          await new Promise((r) => setTimeout(r, 400));
+          continue;
+        }
+        break;
+      }
+      // 429 (hết hạn mức) hay lỗi mạng thì đổi model cũng vô ích.
+      if (loiCuoi && (loiCuoi.status === 429 || ctrl.signal.aborted)) break;
+      // Lỗi khác (JSON rỗng, nội dung bị chặn) cũng không cải thiện khi đổi model.
+      if (loiCuoi && !/^gemini_http_(400|404)$/.test(loiCuoi.message)) break;
     }
-    if (!res.ok) {
-      // Không in khóa; chỉ mã trạng thái.
-      const err = new Error('gemini_http_' + res.status);
-      err.status = res.status;
-      throw err;
-    }
-    const data = await res.json();
-    let noiDung = '';
-    try {
-      const part = data.candidates[0].content.parts[0];
-      noiDung = part && typeof part.text === 'string' ? part.text : '';
-    } catch {
-      noiDung = '';
-    }
-    if (!noiDung.trim()) {
-      const ly = data && data.promptFeedback && data.promptFeedback.blockReason;
-      throw new Error(ly ? 'gemini_blocked_' + ly : 'gemini_empty');
-    }
-    return noiDung;
+
+    throw loiCuoi || new Error('gemini_empty');
   } finally {
     clearTimeout(hen);
   }

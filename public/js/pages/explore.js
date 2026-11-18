@@ -86,6 +86,10 @@ export async function render(ctx) {
   let loc = docLoc(ctx.thamSo);
   let places = [];
   let viTri = null;
+  // Lượt điều hướng đang vẽ: danh sách địa điểm về muộn (người dùng đã chuyển
+  // sang trang khác) thì bỏ qua. Phải khởi tạo từ ctx — không thì guard bên
+  // dưới luôn đúng và lưới tem không bao giờ được vẽ.
+  const luotHienTai = (ctx && ctx.luot) || 0;
 
   const dem = h('p', { class: 'kham-pha__dem', role: 'status', 'aria-live': 'polite' });
   const luoi = h('div', null, [khungChoTem(6)]);
@@ -284,5 +288,3 @@ export async function render(ctx) {
     description: t('explore.intro', { n: places.length || 29 })
   };
 }
-
-let luotHienTai = 0;

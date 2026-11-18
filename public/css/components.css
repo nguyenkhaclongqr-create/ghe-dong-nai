@@ -1011,3 +1011,263 @@
   font-size: var(--fs-2xs);
   font-weight: 700;
 }
+
+/* ==========================================================================
+   Đăng nhập hộ chiếu — nút trên header + hộp thoại đăng nhập/đăng ký
+   Bảng màu: --cham (chữ, viền), --men-dong (nhấn), --voi (nền phụ).
+   ========================================================================== */
+
+/* ---------- Nút trên header ---------- */
+.header-auth {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+.header-auth__nut,
+.header-auth__ten,
+.header-auth__thoat {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  height: 36px;
+  padding-inline: var(--sp-3);
+  border: 1.5px solid var(--cham);
+  border-radius: var(--r-chip);
+  background: transparent;
+  color: var(--cham);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color var(--thoi-gian-nhanh) var(--ease-ra),
+    border-color var(--thoi-gian-nhanh) var(--ease-ra);
+}
+.header-auth__nut .icon,
+.header-auth__ten .icon,
+.header-auth__thoat .icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+/* Vùng chạm 44px dọc mà không phình thanh header */
+.header-auth__nut,
+.header-auth__ten,
+.header-auth__thoat {
+  position: relative;
+}
+.header-auth__nut::before,
+.header-auth__ten::before,
+.header-auth__thoat::before {
+  content: '';
+  position: absolute;
+  inset: -4px 0;
+}
+.header-auth__nut:hover,
+.header-auth__ten:hover {
+  background: var(--voi);
+}
+.header-auth__thoat {
+  width: 36px;
+  padding-inline: 0;
+}
+.header-auth__thoat:hover {
+  background: var(--voi);
+}
+.header-auth__nut:focus-visible,
+.header-auth__ten:focus-visible,
+.header-auth__thoat:focus-visible {
+  outline: var(--focus-w) solid var(--cham);
+  outline-offset: 2px;
+}
+.header-auth__chu {
+  max-width: 14ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Đã đăng nhập: tên mang sắc men để khác nút "Đăng nhập" */
+.header-auth__ten {
+  border-color: var(--men-dong);
+  color: var(--men-dong-dam);
+}
+.header-auth__ten:hover {
+  background: rgba(15, 122, 105, 0.08);
+}
+
+/* ---------- Hộp thoại ---------- */
+.hop-thoai.auth-dialog {
+  width: min(400px, calc(100vw - 2 * var(--sp-4)));
+  margin: auto;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: var(--r-tam);
+  box-shadow: var(--bong-noi);
+}
+.auth {
+  display: grid;
+  gap: var(--sp-4);
+  max-height: min(88dvh, 720px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--sp-5);
+  background: var(--trang);
+  border-radius: var(--r-tam);
+  color: var(--cham);
+}
+.auth__dau {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+.auth__tieu-de {
+  margin: 0;
+  font-family: var(--font-tieu-de);
+  font-size: var(--fs-lg);
+  line-height: var(--lh-tieu-de);
+  letter-spacing: var(--tracking-tieu-de);
+  color: var(--cham);
+}
+.auth__dong {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  margin: calc(var(--sp-1) * -1);
+  border: 0;
+  border-radius: var(--r-nho);
+  background: transparent;
+  color: var(--cham);
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .auth__dong:hover {
+    background: var(--voi);
+  }
+}
+.auth__dong:focus-visible {
+  outline: var(--focus-w) solid var(--cham);
+  outline-offset: 2px;
+}
+
+/* Hai tab Đăng nhập / Đăng ký — dạng phân đoạn */
+.auth__tabs {
+  display: flex;
+  border: 1.5px solid var(--cham);
+  border-radius: var(--r-chip);
+  overflow: hidden;
+}
+.auth__tab {
+  flex: 1 1 0;
+  min-height: 38px;
+  padding-inline: var(--sp-3);
+  border: 0;
+  background: transparent;
+  color: var(--cham);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--thoi-gian-nhanh) var(--ease-ra);
+}
+.auth__tab + .auth__tab {
+  border-left: 1.5px solid var(--cham);
+}
+.auth__tab--active {
+  background: var(--cham);
+  color: var(--trang);
+}
+@media (hover: hover) {
+  .auth__tab:not(.auth__tab--active):hover {
+    background: var(--voi);
+  }
+}
+.auth__tab:focus-visible {
+  outline: var(--focus-w) solid var(--cham);
+  outline-offset: -3px;
+}
+
+/* Biểu mẫu */
+.auth__form {
+  display: grid;
+  gap: var(--sp-3);
+}
+.auth__nhan {
+  display: grid;
+  gap: var(--sp-1);
+}
+.auth__nhan > span:first-child {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--cham);
+}
+.auth__nhan input {
+  width: 100%;
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-3);
+  border: 1.5px solid var(--vien-dam);
+  border-radius: var(--r-nho);
+  background: var(--trang);
+  color: var(--cham);
+  font-family: inherit;
+  font-size: var(--fs-base);
+}
+.auth__nhan input::placeholder {
+  color: var(--da-xanh-dam);
+  opacity: 0.75;
+}
+.auth__nhan input:focus-visible {
+  outline: var(--focus-w) solid var(--cham);
+  outline-offset: 2px;
+  border-color: var(--cham);
+}
+.auth__goi-y {
+  font-size: var(--fs-2xs);
+  line-height: 1.4;
+  color: var(--da-xanh-dam);
+}
+.auth__gui {
+  width: 100%;
+  margin-top: var(--sp-1);
+}
+
+.auth__ghi-chu {
+  margin: 0;
+  font-size: var(--fs-xs);
+  line-height: 1.45;
+  color: var(--da-xanh-dam);
+}
+.auth__loi {
+  margin: 0;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--trang-thai-loi);
+}
+.auth__loi:empty {
+  display: none;
+}
+
+@media (max-width: 479px) {
+  /* Màn hẹp: chỉ giữ biểu tượng, nhãn vẫn có trong aria-label */
+  .header-auth__chu {
+    display: none;
+  }
+  .header-auth__nut,
+  .header-auth__ten {
+    width: 36px;
+    padding-inline: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-auth__nut,
+  .header-auth__ten,
+  .header-auth__thoat,
+  .auth__tab {
+    transition: none;
+  }
+}
