@@ -449,6 +449,9 @@ export async function render(ctx) {
   for (const gia of ['default', 'name', 'near']) chonSap.appendChild(h('option', { value: gia }, t('explore.sort.' + gia)));
 
   const dem = h('p', { class: 'ban-do__dem', role: 'status', 'aria-live': 'polite' });
+  // Bản sao cho thanh công cụ điện thoại và cho tay nắm sheet: một node chỉ nằm
+  // được ở một chỗ, nếu dùng chung thì append sau sẽ "kéo" nó khỏi chỗ trước.
+  const demCongCu = h('p', { class: 'ban-do__dem', role: 'status', 'aria-live': 'polite' });
   const nutLoc = h(
     'button',
     { type: 'button', class: 'ban-do__loc', 'aria-expanded': 'false', 'aria-controls': 'ban-do-loc', on: { click: () => batTatLoc() } },
@@ -480,15 +483,18 @@ export async function render(ctx) {
 
   const congCu = h('div', { class: 'ban-do__cong-cu' }, [
     h('div', { class: 'ban-do__hang' }, [oTimAI, nutLoc, nutLapLich]),
-    h('div', { class: 'ban-do__hang ban-do__hang--chip' }, [hangChip, dem]),
-    popLoc
+    h('div', { class: 'ban-do__hang ban-do__hang--chip' }, [hangChip, demCongCu]),
+    popLoc,
+    // Thẻ giải thích kết quả AI: phải nằm trong cây DOM thì `hienGiaiThich()` mới
+    // vẽ được (trước đây nó là nút mồ côi nên bấm tìm bằng AI không thấy phản hồi).
+    hopGiaiThich
   ]);
 
   /* ---------------------------- Bản đồ & thẻ ---------------------------- */
 
   const dsSheet = h('ul', { class: 'danh-sach-ban-do' });
   const dsPanel = h('ul', { class: 'danh-sach-ban-do' });
-  const demPanel = h('span', { class: 'sheet__dem' });
+  const demPanel = h('span', { class: 'sheet__dem', role: 'status', 'aria-live': 'polite' });
   const { el: sheetEl } = dungSheet(dsSheet, t('map.listTitle'), demPanel);
 
   const theNhanh = h('section', {
@@ -626,7 +632,9 @@ export async function render(ctx) {
     h('div', { class: 'ban-do__ds-cuon' }, [dsPanel])
   ]);
 
-  const el = h('div', { class: 'ban-do', 'data-panel-mo': 'true' }, [panel, khungBanDo, nutThuPanel]);
+  // Thanh công cụ đứng trước trên điện thoại/máy tính bảng (≥1024px bị ẩn bằng CSS).
+  // Phải nằm trong lưới: nếu thiếu, `.ban-do` chỉ còn bản đồ ở hàng `auto` → cao 0px.
+  const el = h('div', { class: 'ban-do', 'data-panel-mo': 'true' }, [congCu, panel, khungBanDo, nutThuPanel]);
   const gocChinh = el.closest('main') || document.querySelector('.main');
   if (gocChinh) gocChinh.setAttribute('data-trang', 'ban-do');
 
@@ -638,6 +646,30 @@ export async function render(ctx) {
   };
   huy.push(() => window.removeEventListener('trang:doi', capNhatKichThuoc));
   window.addEventListener('trang:doi', capNhatKichThuoc);
+  // Xoay máy / thanh địa chỉ trượt: bố cục đổi cao, Mapbox phải đo lại.
+  huy.push(() => window.removeEventListener('orientationchange', capNhatKichThuoc));
+  window.addEventListener('orientationchange', capNhatKichThuoc);
+  /**
+   * Đo lại sau khi bố cục mobile đã vẽ xong. Lúc `taoBanDo()` trả về, khung có thể
+   * chưa có chiều cao thật (ảnh hưởng thanh địa chỉ, bàn phím ảo, tab vừa chuyển),
+   * nên Mapbox dựng canvas 0×0 và trang trông trắng trơn.
+   */
+  function doLaiSauVe() {
+    if (!hieuLuc) return;
+    requestAnimationFrame(() => {
+      if (!hieuLuc) return;
+      capNhatKichThuoc();
+      // Lần thứ hai sau khi trình duyệt ổn định 100dvh (thanh địa chỉ co lại).
+      setTimeout(() => {
+        if (hieuLuc) capNhatKichThuoc();
+      }, 260);
+    });
+    // Ảnh (nếu có) đổi chiều cao khung → ResizeObserver lo, nhưng mạng chậm có thể
+    // xong sau mốc 260ms nên thêm một mốc nữa cho chắc.
+    setTimeout(() => {
+      if (hieuLuc) capNhatKichThuoc();
+    }, 900);
+  }
   huy.push(
     window.addEventListener('ngonngu:doi', () => {
       if (!hieuLuc) return;
@@ -734,7 +766,12 @@ export async function render(ctx) {
       })
     );
     // Nhãn aria-live cho sắp xếp theo khoảng cách
-    if (loc.gan && viTri) dem.textContent = t('map.nearMeOn') + ' · ' + demChuoi(locDanhSach(true).length, places.length);
+    if (loc.gan && viTri) {
+      const chu = t('map.nearMeOn') + ' · ' + demChuoi(locDanhSach(true).length, places.length);
+      dem.textContent = chu;
+      demCongCu.textContent = chu;
+      demPanel.textContent = chu;
+    }
   }
 
   function veVung() {
@@ -789,8 +826,12 @@ export async function render(ctx) {
 
   function capNhat(doThuHep) {
     const ds = locDanhSach();
-    dem.textContent = loc.gan && viTri ? t('map.nearMeOn') + ' · ' + demChuoi(ds.length, places.length) : demChuoi(ds.length, places.length);
-    demPanel.textContent = dem.textContent;
+    const chuDem = loc.gan && viTri ? t('map.nearMeOn') + ' · ' + demChuoi(ds.length, places.length) : demChuoi(ds.length, places.length);
+    // Điện thoại đọc ở thanh công cụ, máy tính đọc ở panel; phần tử bị display:none
+    // không được trình đọc màn hình thông báo nên ghi cả hai là an toàn.
+    dem.textContent = chuDem;
+    demCongCu.textContent = chuDem;
+    demPanel.textContent = chuDem;
     const tuy = { viTri: loc.gan ? viTri : null, chonId, onChon: chonDiaDiem, onHover: (p) => nhayGhimCua(p) };
     if (!ds.length) {
       replace(dsSheet, h('li', null, h('p', { class: 'trong-rong' }, t('map.empty') + ' ' + t('map.emptyHint'))));
@@ -1205,6 +1246,7 @@ export async function render(ctx) {
       if (viTri) datViTri(bd, viTri);
       sheet = taoSheet(sheetEl, { diemDung: 'nua' });
       capNhatKichThuoc();
+      doLaiSauVe();
       veKetQuaLichTrinh();
       // Câu AI gõ sẵn trên URL (?q=) vẫn được hiểu
       if (loc.q) {
@@ -1220,8 +1262,9 @@ export async function render(ctx) {
     } catch (e) {
       console.warn('[bản đồ] Không dựng được bản đồ', e);
       khungBanDo.setAttribute('data-dang-tai', 'false');
-      // Không hiển thị cảnh báo lỗi tile nữa
-      baoLo.hidden = true;
+      // Không để trang trắng trơn: nói rõ nền bản đồ hỏng, danh sách vẫn dùng được.
+      baoLo.hidden = false;
+      replace(baoLo, [icon('circle-question-mark', { size: 16 }), t('map.tilesFailed')]);
     }
   } catch (e) {
     console.warn('[bản đồ] Không tải được dữ liệu', e);

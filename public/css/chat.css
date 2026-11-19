@@ -183,7 +183,16 @@
   font-size: var(--fs-sm);
   line-height: var(--lh-noi-dung);
   max-width: min(100%, 560px);
+  /* Câu hỏi dài phải xuống dòng đầy đủ, không bao giờ bị cắt ngang */
+  white-space: pre-wrap;
   overflow-wrap: anywhere;
+  word-break: break-word;
+}
+/* Điện thoại: bong bóng của người dùng chừa 15% bên phải để thấy rõ ai nói */
+@media (max-width: 767px) {
+  .tin--nguoi .tin__bong {
+    max-width: 85%;
+  }
 }
 .tin__bong p {
   margin: 0 0 var(--sp-2);
@@ -738,6 +747,37 @@
   margin: 0;
   font-size: var(--fs-md);
 }
+.bieu-mau__dau {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+/* Nút thu gọn/mở rộng biểu mẫu — chỉ có tác dụng trên điện thoại */
+.bieu-mau__nut-mo {
+  width: 40px;
+  height: 40px;
+  margin: calc(-1 * var(--sp-2)) calc(-1 * var(--sp-2)) calc(-1 * var(--sp-2)) 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--cham);
+  flex: none;
+}
+.bieu-mau__nut-mo .icon {
+  transition: transform var(--thoi-gian-nhanh) var(--ease-ra);
+}
+.bieu-mau[data-mo='true'] .bieu-mau__nut-mo .icon {
+  transform: rotate(180deg);
+}
+.bieu-mau__than {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+.bieu-mau[data-mo='false'] .bieu-mau__than {
+  display: none;
+}
 .bieu-mau__luoi {
   display: grid;
   gap: var(--sp-3);
@@ -766,6 +806,13 @@
 
 /* ---------- Bố cục máy tính ---------- */
 @media (min-width: 1024px) {
+  /* Máy tính: biểu mẫu luôn mở, không cần nút thu gọn */
+  .bieu-mau__nut-mo {
+    display: none;
+  }
+  .bieu-mau[data-mo='false'] .bieu-mau__than {
+    display: flex;
+  }
   .hoi-duong {
     grid-template-columns: minmax(0, 1.1fr) minmax(380px, 0.9fr);
     height: 100%;

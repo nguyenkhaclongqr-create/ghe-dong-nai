@@ -155,6 +155,23 @@ export function taoChat(opts = {}) {
     gui.disabled = dangGui || !textarea.value.trim();
   }
 
+  /**
+   * Tự giãn ô nhập theo nội dung, tối đa bằng `max-height` khai báo trong CSS
+   * (khoảng 3–4 dòng). `field-sizing: content` chỉ có trên Chromium nên vẫn cần
+   * phép đo này cho Safari/Firefox — thiếu nó, câu dài bị cuộn trong một dòng.
+   */
+  function gianONhap() {
+    // Đang ở tab "Lịch trình" (ô nhập bị ẩn) thì `scrollHeight` bằng 0 — đo lúc đó
+    // sẽ ghi chiều cao 0 vào phần tử và ô nhập teo lại khi quay về tab chat.
+    if (!textarea.offsetParent) return;
+    textarea.style.height = 'auto';
+    const toiDa = parseFloat(getComputedStyle(textarea).maxHeight) || 160;
+    textarea.style.height = Math.min(textarea.scrollHeight, toiDa) + 'px';
+  }
+  const ngheResize = () => gianONhap();
+  window.addEventListener('resize', ngheResize);
+  window.addEventListener('orientationchange', ngheResize);
+
   /* ------------------------- Thiệp chào ------------------------- */
 
   function thiepChao() {
@@ -173,7 +190,9 @@ export function taoChat(opts = {}) {
   function veTinNguoi(m, i) {
     return h('li', { class: 'tin tin--nguoi', dataset: { i: String(i) } }, [
       h('div', { class: 'tin__dau' }, t('chat.you')),
-      h('div', { class: 'tin__bong' }, markdownLite(m.content))
+      // Câu người dùng là văn bản thuần: giữ nguyên xuống dòng, không diễn giải markdown
+      // (tránh nuốt dấu * hoặc gộp dòng khiến câu hỏi trông như bị cắt).
+      h('div', { class: 'tin__bong' }, String(m.content || ''))
     ]);
   }
 
@@ -328,6 +347,7 @@ export function taoChat(opts = {}) {
       toast(t('chat.tooLong', { n: SO_KY_TU_TOI_DA }), { bieuTuong: 'circle-question-mark' });
     }
     textarea.value = '';
+    gianONhap();
     tin.push(tinMoi('user', chu));
     veLai();
     cuonXuong(true);
@@ -445,10 +465,14 @@ export function taoChat(opts = {}) {
     baoLichMoi();
     textarea.value = '';
     capNhatDem();
+    gianONhap();
     textarea.focus();
   }
 
-  textarea.addEventListener('input', capNhatDem);
+  textarea.addEventListener('input', () => {
+    capNhatDem();
+    gianONhap();
+  });
   textarea.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) {
       e.preventDefault();

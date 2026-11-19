@@ -370,7 +370,20 @@
       "Bash(node -e \"const j=require\\('./.tmp-chat2.json'\\);console.log\\('mode:',j.mode,'| reply:',String\\(j.reply||''\\).slice\\(0,100\\).replace\\(/\\\\n/g,' '\\)\\)\")",
       "Bash(GEMINI_MODEL=gemini-2.5-flash PORT=3102 node server.js)",
       "Bash(time curl -s -m 30 -X POST http://localhost:3102/api/chat -H 'Content-Type: application/json' -d '{\"messages\":[{\"role\":\"user\",\"content\":\"Chỗ nào ăn bưởi ngon gần Biên Hòa?\"}],\"lang\":\"vi\"}' -o .tmp-chat3.json -w \"HTTP %{http_code} in %{time_total}s\\\\n\")",
-      "Bash(node -e \"const j=require\\('./.tmp-chat3.json'\\);console.log\\('mode:',j.mode,'| reply:',String\\(j.reply||''\\).slice\\(0,100\\).replace\\(/\\\\n/g,' '\\)\\)\")"
+      "Bash(node -e \"const j=require\\('./.tmp-chat3.json'\\);console.log\\('mode:',j.mode,'| reply:',String\\(j.reply||''\\).slice\\(0,100\\).replace\\(/\\\\n/g,' '\\)\\)\")",
+      "Bash(cd /tmp)",
+      "Bash(python3)",
+      "Bash(where python *)",
+      "Bash(python)",
+      "Bash(python -c \"import PIL, numpy; print\\('PIL', PIL.__version__, 'numpy', numpy.__version__\\)\")",
+      "Bash(python -m pip install --quiet pillow numpy opencv-python)",
+      "Bash(python -c \"import PIL, numpy, cv2; print\\('PIL', PIL.__version__, 'numpy', numpy.__version__, 'cv2', cv2.__version__\\)\")",
+      "Bash(node -e \"try{require.resolve\\('puppeteer'\\);console.log\\('puppeteer yes'\\)}catch{console.log\\('no puppeteer'\\)}\")",
+      "Bash(grep -n \"const el = h\\('div', { class: 'ban-do'\" -B5 -A5 public/js/pages/map-page.js)",
+      "Bash(git --no-pager diff --stat -- public/)",
+      "Bash(git --no-pager diff -- public/css/chat.css public/css/layout.css)",
+      "Bash(git --no-pager diff -- public/css/map.css public/index.html public/sw.js)",
+      "Bash(git --no-pager diff -- public/js/chat/chat.js public/js/pages/chat-page.js public/js/pages/map-page.js)"
     ],
     "additionalDirectories": [
       "\\dev",

@@ -420,7 +420,9 @@ body[data-trang='ban-do'] .footer {
     height: calc(100dvh - var(--cao-header) - 10px);
   }
 }
-@media (max-width: 759px) {
+/* nav dưới chỉ ẩn từ 768px trở lên — phải trừ nó tới hết 767px, nếu không
+   khoảng 760–767px sẽ có thanh điều hướng đè lên đáy trang. */
+@media (max-width: 767px) {
   .main[data-trang='ban-do'],
   .main[data-trang='hoi-duong'] {
     height: calc(100dvh - var(--cao-header) - 8px - var(--cao-nav-duoi) - env(safe-area-inset-bottom, 0px));

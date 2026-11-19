@@ -15,6 +15,7 @@
 
 /* ---------- Thanh công cụ trên bản đồ (điện thoại) ---------- */
 .ban-do__cong-cu {
+  position: relative; /* mốc định vị cho popover bộ lọc (position: absolute) */
   display: flex;
   flex-direction: column;
   gap: var(--sp-2);
@@ -27,6 +28,13 @@
   display: flex;
   align-items: center;
   gap: var(--sp-2);
+}
+/* Bàn phím ảo / màn hình thấp: bỏ hàng chip để bản đồ còn chỗ.
+   Đặt sau `.ban-do__hang` và dùng hai lớp vì cùng độ ưu tiên thì luật sau thắng. */
+@media (max-height: 560px) {
+  .ban-do__hang.ban-do__hang--chip {
+    display: none;
+  }
 }
 .ban-do__hang .o-tim {
   flex: 1;

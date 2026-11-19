@@ -204,6 +204,48 @@ export async function render(ctx) {
       o
     ]);
 
+  // Điện thoại: biểu mẫu mặc định thu gọn để khung chat + ô nhập nằm trọn
+  // trong 100dvh phía trên nav dưới. Máy tính (≥1024px) luôn mở như cũ.
+  const bieuMauThan = h('div', { class: 'bieu-mau__than', id: 'bieu-mau-than' }, [
+    h('div', { class: 'bieu-mau__luoi' }, [
+      truong('bd-ngay', t('chat.formDays'), chonNgay, true),
+      truong('bd-xuat-phat', t('chat.formStart'), chonXuatPhat, true),
+      truong('bd-nguoi', t('chat.formParty'), chonNguoi, true),
+      truong('bd-xe', t('chat.formVehicle'), chonXe, true),
+      h('div', { class: 'truong bieu-mau__rong' }, [
+        h('span', { class: 'nhan-nhom', id: 'bd-thich-nhan' }, t('chat.formInterests')),
+        nhomThich
+      ])
+    ]),
+    loiBieuMau,
+    nutLap
+  ]);
+
+  const moBieuMauBanDau = !LA_DIEN_THOAI();
+  const nutMoBieuMau = h(
+    'button',
+    {
+      type: 'button',
+      class: 'bieu-mau__nut-mo',
+      'aria-expanded': String(moBieuMauBanDau),
+      'aria-controls': 'bieu-mau-than',
+      'aria-label': t('chat.formTitle'),
+      title: t('chat.formTitle'),
+      on: {
+        click: () => {
+          const mo = bieuMau.getAttribute('data-mo') !== 'true';
+          datMoBieuMau(mo);
+        }
+      }
+    },
+    [icon('chevron-down', { size: 18 })]
+  );
+
+  function datMoBieuMau(mo) {
+    bieuMau.setAttribute('data-mo', mo ? 'true' : 'false');
+    nutMoBieuMau.setAttribute('aria-expanded', String(mo));
+  }
+
   const bieuMau = h(
     'form',
     {
@@ -215,22 +257,9 @@ export async function render(ctx) {
         }
       }
     },
-    [
-      h('h3', null, t('chat.formTitle')),
-      h('div', { class: 'bieu-mau__luoi' }, [
-        truong('bd-ngay', t('chat.formDays'), chonNgay, true),
-        truong('bd-xuat-phat', t('chat.formStart'), chonXuatPhat, true),
-        truong('bd-nguoi', t('chat.formParty'), chonNguoi, true),
-        truong('bd-xe', t('chat.formVehicle'), chonXe, true),
-        h('div', { class: 'truong bieu-mau__rong' }, [
-          h('span', { class: 'nhan-nhom', id: 'bd-thich-nhan' }, t('chat.formInterests')),
-          nhomThich
-        ])
-      ]),
-      loiBieuMau,
-      nutLap
-    ]
+    [h('div', { class: 'bieu-mau__dau' }, [h('h3', null, t('chat.formTitle')), nutMoBieuMau]), bieuMauThan]
   );
+  datMoBieuMau(moBieuMauBanDau);
   ben.appendChild(bieuMau);
 
   /** Câu hỏi tiếng Việt dựng từ biểu mẫu — gửi tới trợ lý như một câu người dùng */
@@ -290,6 +319,7 @@ export async function render(ctx) {
       if (!kq) {
         loiBieuMau.textContent = t('plan.noRoute');
         loiBieuMau.hidden = false;
+        datMoBieuMau(true); // form đang thu gọn thì mở ra để thấy lỗi
         return;
       }
       // Máy tính thấy lịch trình ngay ở cột bên; điện thoại chuyển sang tab Lịch trình
